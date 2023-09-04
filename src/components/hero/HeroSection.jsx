@@ -2,7 +2,7 @@ import { FULL_NAME } from "../../lib/config";
 
 export const HeroSection = () => {
   return (
-    <div className="relative m-auto flex max-w-4xl flex-col items-center md:flex-row">
+    <div className="relative flex flex-col items-center max-w-4xl m-auto md:flex-row">
       <img
         width={300}
         height={300}
@@ -17,15 +17,15 @@ export const HeroSection = () => {
         {/* Hero - Exercise*/}
         <h1 className="text-6xl dark:drop-shadow-[0_0px_20px_rgba(0,0,0,1)] md:text-6xl">
           I'm{" "}
-          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
+          <span className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
             {FULL_NAME}
           </span>
         </h1>
         <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
-          <b>React developper.</b> I’m a a web JavaScript developper,
-          specialized on React. I enhance my skills through daily self-learning
-          with online courses, tutorials, and personal projects, and I am ready
-          to put my technical skills to good use
+          <b>React developper.</b> I’m a web JavaScript developper, specialized
+          on React. I enhance my skills through daily self-learning with online
+          courses, tutorials, and personal projects, and I am ready to put my
+          technical skills to good use
         </p>
       </div>
     </div>
