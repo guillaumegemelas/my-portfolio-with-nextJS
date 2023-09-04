@@ -9,8 +9,9 @@ export const DrawCanvas = ({ canvas }) => {
   //permet de stocker la dernière coordonnée du curseur
   const lastCoordinate = useRef(null);
 
-  //state pour avoir la largeur de la fenetre (ecran)
+  //state pour avoir la largeur de la fenetre (ecran)----------------
   const [windowSize, setWindowSize] = useState([]);
+  //-----------------------------------------------------------------
 
   //--------------------------
   //fonction déjà présente dans canvas.js
@@ -92,6 +93,8 @@ export const DrawCanvas = ({ canvas }) => {
         onMouseLeave={stopDrawing}
         onMouseUp={stopDrawing}
         width={windowSize[0] > 600 ? 560 : 360}
+        //taille de largeur en dure au départ mais trop large pour le mobile
+        // width={560}
         height={315}
         // className="w-full m-auto bg-white rounded-md shadow-m"
         ref={canvas}
