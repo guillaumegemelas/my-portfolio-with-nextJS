@@ -19,6 +19,7 @@ export const Footer = () => {
         <SocialNetworks socialNetworks={SOCIAL_NETWORKS} />
       </div>
       {/* <p>
+      
         Created for educational purpose for the{' '}
         <a href="https://codelynx.dev/beginreact">BeginReact.dev formation</a> !
       </p> */}
