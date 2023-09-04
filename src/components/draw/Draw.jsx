@@ -28,7 +28,7 @@ export const Draw = () => {
 
   return (
     <div className="flex flex-col gap-8">
-      <DrawCanvas canvas={canvas} />
+      <DrawCanvas canvas={canvas} className="md:w-80 lg:w-80" />
       <DrawControl
         defaultColor={DEFAULT_COLOR}
         defaultSize={DEFAULT_SIZE}

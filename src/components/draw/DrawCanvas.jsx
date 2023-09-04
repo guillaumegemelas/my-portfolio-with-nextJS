@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { getCoordinates } from "../../lib/canvas";
 
 // Draw exercise
@@ -8,6 +8,9 @@ export const DrawCanvas = ({ canvas }) => {
 
   //permet de stocker la dernière coordonnée du curseur
   const lastCoordinate = useRef(null);
+
+  //state pour avoir la largeur de la fenetre (ecran)
+  const [windowSize, setWindowSize] = useState([]);
 
   //--------------------------
   //fonction déjà présente dans canvas.js
@@ -65,16 +68,35 @@ export const DrawCanvas = ({ canvas }) => {
     };
   }, []);
 
+  //useEffect pour vérifier la largeur en temps réelle de la fenetre--------------
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    };
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+  //--------------------------------------------------------------------------------
+
   return (
-    <canvas
-      onMouseDown={startDrawing}
-      onMouseMove={draw}
-      onMouseLeave={stopDrawing}
-      onMouseUp={stopDrawing}
-      width={560}
-      height={315}
-      ref={canvas}
-      className="m-auto bg-white rounded-md shadow-md"
-    />
+    <div>
+      {/* <h2>Width: {windowSize[0]}</h2>
+      <h2>Height: {windowSize[1]}</h2>{" "} */}
+      <canvas
+        onMouseDown={startDrawing}
+        onMouseMove={draw}
+        onMouseLeave={stopDrawing}
+        onMouseUp={stopDrawing}
+        width={windowSize[0] > 600 ? 560 : 360}
+        height={315}
+        // className="w-full m-auto bg-white rounded-md shadow-m"
+        ref={canvas}
+        className="m-auto rounded-md bg-white shadow-md"
+      />
+    </div>
   );
 };
