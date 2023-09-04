@@ -18,6 +18,7 @@ export const DrawCanvas = ({ canvas }) => {
   //     y: event.clientY - rect.top,
   //   };
   // };
+
   //--------------------------
 
   //3 fct
@@ -73,7 +74,7 @@ export const DrawCanvas = ({ canvas }) => {
       width={560}
       height={315}
       ref={canvas}
-      className="m-auto rounded-md bg-white shadow-md"
+      className="m-auto bg-white rounded-md shadow-md"
     />
   );
 };
