@@ -69,7 +69,7 @@ export const DrawCanvas = ({ canvas }) => {
     };
   }, []);
 
-  //useEffect pour vérifier la largeur en temps réelle de la fenetre--------------
+  //useEffect pour vérifier la largeur en temps réelle de la fenetre-----------------
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowSize([window.innerWidth, window.innerHeight]);
