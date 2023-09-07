@@ -29,6 +29,7 @@ export const Typography = ({
           className,
           "text-5xl",
           color === "primary" ? "text-skin-primary" : "text-skin-secondary"
+          // "font-bold"
         )}
       >
         {children}
@@ -44,7 +45,8 @@ export const Typography = ({
         className={clsx(
           className,
           "text-3xl md:text-4xl",
-          color === "primary" ? "text-skin-primary" : "text-skin-secondary"
+          color === "primary" ? "text-skin-primary" : "text-skin-secondary",
+          "font-bold"
         )}
       >
         {children}

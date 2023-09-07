@@ -1,25 +1,25 @@
 import { SectionWrapper } from "../atom/SectionWrapper";
-import { Draw } from "./Draw";
+import { FaTools } from "react-icons/fa";
 
-import { FaUmbrellaBeach } from "react-icons/fa";
-
-export const DrawSection = () => {
+export const Skills = () => {
   return (
     <SectionWrapper
       title={
         <div style={{ display: "flex", alignItems: "center" }}>
-          <FaUmbrellaBeach
+          <FaTools
             style={{
               fontSize: "28px",
               color: "#C424FF",
               marginRight: "15px",
             }}
           />{" "}
-          Just have fun !
+          Skills
         </div>
       }
     >
-      <Draw />
+      <div className="m-auto flex gap-4">
+        <p>Hello!</p>
+      </div>
     </SectionWrapper>
   );
 };

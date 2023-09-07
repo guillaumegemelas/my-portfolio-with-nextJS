@@ -7,6 +7,7 @@ import { Header } from "../src/components/Header";
 import { HeroSection } from "../src/components/hero";
 import { ProjectSection } from "../src/components/project";
 import { Curriculum } from "../src/components/curriculum/Curriculum";
+import { Skills } from "../src/components/skills/Skills";
 
 // dynamic import Memory Section
 const DynamicMemorySection = dynamic(() => import("../src/components/memory"), {
@@ -22,8 +23,10 @@ const Home = () => {
       <div className="flex flex-col gap-40">
         <Header />
         <HeroSection />
+        <Skills />
         <ProjectSection />
         <Curriculum />
+
         <DynamicMemorySection />
         <DrawSection />
         <CommentSection />

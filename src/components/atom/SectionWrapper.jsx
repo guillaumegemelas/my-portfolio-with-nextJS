@@ -11,7 +11,7 @@ import { Typography } from "./Typography";
 export const SectionWrapper = ({ children, title }) => {
   return (
     <div className="flex flex-col items-center gap-12">
-      <Typography id={title.replaceAll(" ", "-")} variant="h2">
+      <Typography id={String(title).replaceAll(" ", "-")} variant="h2">
         {title}
       </Typography>
       {children}

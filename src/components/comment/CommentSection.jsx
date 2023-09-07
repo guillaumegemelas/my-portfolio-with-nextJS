@@ -6,6 +6,8 @@ import { useFetch } from "../../hooks/useFetch";
 import { Loader } from "../atom/Loader/Loader";
 import { Typography } from "../atom/Typography";
 
+import { FaTools } from "react-icons/fa";
+
 export const CommentSection = () => {
   // Commentaires - Exercise
   const {
@@ -30,7 +32,20 @@ export const CommentSection = () => {
   // ];
 
   return (
-    <SectionWrapper title="Leave a comment!">
+    <SectionWrapper
+      title={
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <FaTools
+            style={{
+              fontSize: "28px",
+              color: "#C424FF",
+              marginRight: "15px",
+            }}
+          />{" "}
+          Leave a comment !
+        </div>
+      }
+    >
       <div className="m-auto flex w-full max-w-2xl flex-col items-center gap-8 ">
         <div className="grid w-full grid-cols-auto-fill-200-300 justify-center gap-4">
           {/* Commentaires - Exercise */}

@@ -1,6 +1,8 @@
 import { Button } from "../atom/Button";
 import { SectionWrapper } from "../atom/SectionWrapper";
 
+import { FaCloudsmith } from "react-icons/fa";
+
 export const Curriculum = () => {
   const handleDownloadCV = () => {
     //mettre le fichier pdf dans le dossier public et mettre l'url de cette façon "/....""
@@ -14,7 +16,20 @@ export const Curriculum = () => {
     // document.body.removeChild(a);
   };
   return (
-    <SectionWrapper title="My Curriculum.">
+    <SectionWrapper
+      title={
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <FaCloudsmith
+            style={{
+              fontSize: "28px",
+              color: "#C424FF",
+              marginRight: "15px",
+            }}
+          />{" "}
+          My Curriculum
+        </div>
+      }
+    >
       <div className="m-auto flex gap-4">
         <Button onClick={handleDownloadCV}>Watch it!</Button>
       </div>

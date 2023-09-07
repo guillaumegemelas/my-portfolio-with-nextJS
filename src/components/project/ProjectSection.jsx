@@ -6,6 +6,8 @@ import { GITHUB_USERNAME } from "../../lib/config";
 import { Loader } from "../atom/Loader/Loader";
 import { useFetch } from "../../hooks/useFetch";
 
+import { FaAtlassian } from "react-icons/fa";
+
 //pour refactor, on va utiliser le Hook useReducer avec un seul state:
 
 // const fetchReducer = (state, action) => {
@@ -123,7 +125,20 @@ export const ProjectSection = () => {
   //------------------------------------------------------
 
   return (
-    <SectionWrapper title="Projects">
+    <SectionWrapper
+      title={
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <FaAtlassian
+            style={{
+              fontSize: "28px",
+              color: "#C424FF",
+              marginRight: "15px",
+            }}
+          />{" "}
+          Projects
+        </div>
+      }
+    >
       <div className="flex flex-wrap justify-center gap-8">
         {/* on va mapper sur les repositories de Github */}
         {projects?.map((repository) => {

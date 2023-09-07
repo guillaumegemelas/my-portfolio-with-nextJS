@@ -5,9 +5,24 @@ import { MemoryBoard } from "./MemoryBoard";
 import { MemoryContextProvider } from "./MemoryProvider";
 import { useMemory } from "./MemoryProvider";
 
+import { FaKeybase } from "react-icons/fa";
+
 export const MemorySection = () => {
   return (
-    <SectionWrapper title="You're boring ? Let's play a game !">
+    <SectionWrapper
+      title={
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <FaKeybase
+            style={{
+              fontSize: "28px",
+              color: "#C424FF",
+              marginRight: "15px",
+            }}
+          />{" "}
+          You're boring ? Let's play a game !
+        </div>
+      }
+    >
       <MemoryContextProvider>
         <div className="flex flex-col items-center gap-14">
           <div className="flex flex-col items-center gap-2">
