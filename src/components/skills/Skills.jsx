@@ -32,7 +32,7 @@ export const Skills = () => {
         </div>
       }
     >
-      <div className="m-auto flex flex-col gap-4 md:flex-row">
+      <div className="m-auto flex flex-col gap-4 rounded-2xl bg-paper p-12 transition-transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 md:flex-row">
         <div className="mb-8 md:mr-12 lg:mb-0">
           {/* //titre à mettre en gros et gras */}
           <h1 className="mb-4 text-center text-lg font-extrabold ">
