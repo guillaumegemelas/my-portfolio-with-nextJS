@@ -7,6 +7,14 @@ import { SiTypescript } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { GrStripe } from "react-icons/gr";
+import { FaNode } from "react-icons/fa";
+import { SiAwsamplify } from "react-icons/si";
+import { AiOutlineCloud } from "react-icons/ai";
+import { SiMongodb } from "react-icons/si";
+import { FaFigma } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { TbBrandBootstrap } from "react-icons/tb";
+import { SiExpress } from "react-icons/si";
 
 export const Skills = () => {
   return (
@@ -24,10 +32,12 @@ export const Skills = () => {
         </div>
       }
     >
-      <div className="m-auto flex gap-4">
-        <div>
+      <div className="m-auto flex flex-col gap-4 md:flex-row">
+        <div className="mb-8 md:mr-12 lg:mb-0">
           {/* //titre à mettre en gros et gras */}
-          <h1>Front-End</h1>
+          <h1 className="mb-4 text-center text-lg font-extrabold ">
+            Front-End
+          </h1>
           <ul>
             <li className="flex items-center">
               <SiJavascript
@@ -87,22 +97,90 @@ export const Skills = () => {
             </li>
           </ul>
         </div>
-        <div>
-          <h1>Back-End</h1>
+        <div className="mb-8 md:mr-12 md:ml-12 lg:mb-0">
+          <h1 className="mb-4 text-center text-lg font-extrabold ">Back-End</h1>
           <ul>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>Axios</li>
-            <li>Cloudinary</li>
-            <li>MongoDB</li>
+            <li className="flex items-center">
+              {" "}
+              <FaNode
+                style={{
+                  fontSize: "18px",
+                  marginRight: "10px",
+                }}
+              />
+              Node.js
+            </li>
+            <li className="flex items-center">
+              <SiExpress
+                style={{
+                  fontSize: "18px",
+                  marginRight: "10px",
+                }}
+              />
+              Express.js
+            </li>
+            <li className="flex items-center">
+              {" "}
+              <SiAwsamplify
+                style={{
+                  fontSize: "18px",
+                  marginRight: "10px",
+                }}
+              />
+              Axios
+            </li>
+            <li className="flex items-center">
+              {" "}
+              <AiOutlineCloud
+                style={{
+                  fontSize: "18px",
+                  marginRight: "10px",
+                }}
+              />
+              Cloudinary
+            </li>
+            <li className="flex items-center">
+              <SiMongodb
+                style={{
+                  fontSize: "18px",
+                  marginRight: "10px",
+                }}
+              />
+              MongoDB
+            </li>
           </ul>
         </div>
-        <div>
-          <h1>Design</h1>
+        <div className="md:ml-12">
+          <h1 className="mb-4 text-center text-lg font-extrabold ">Design</h1>
           <ul>
-            <li>Figma</li>
-            <li>Tailwind</li>
-            <li>Bootstrap</li>
+            <li className="flex items-center">
+              {" "}
+              <FaFigma
+                style={{
+                  fontSize: "18px",
+                  marginRight: "10px",
+                }}
+              />
+              Figma
+            </li>
+            <li className="flex items-center">
+              <SiTailwindcss
+                style={{
+                  fontSize: "18px",
+                  marginRight: "10px",
+                }}
+              />
+              Tailwind
+            </li>
+            <li className="flex items-center">
+              <TbBrandBootstrap
+                style={{
+                  fontSize: "18px",
+                  marginRight: "10px",
+                }}
+              />
+              Bootstrap
+            </li>
           </ul>
         </div>
       </div>
