@@ -43,7 +43,7 @@ export const Skills = () => {
               <SiJavascript
                 style={{
                   fontSize: "18px",
-                  marginRight: "10px",
+                  marginRight: "12px",
                 }}
               />
               JavaScript
@@ -53,7 +53,7 @@ export const Skills = () => {
               <SiTypescript
                 style={{
                   fontSize: "18px",
-                  marginRight: "10px",
+                  marginRight: "12px",
                 }}
               />
               TypeScript
@@ -62,7 +62,7 @@ export const Skills = () => {
               <FaReact
                 style={{
                   fontSize: "18px",
-                  marginRight: "10px",
+                  marginRight: "12px",
                 }}
               />{" "}
               React
@@ -71,7 +71,7 @@ export const Skills = () => {
               <SiNextdotjs
                 style={{
                   fontSize: "18px",
-                  marginRight: "10px",
+                  marginRight: "12px",
                 }}
               />
               Next.js
@@ -80,7 +80,7 @@ export const Skills = () => {
               <FaHtml5
                 style={{
                   fontSize: "18px",
-                  marginRight: "10px",
+                  marginRight: "12px",
                 }}
               />{" "}
               HTML
@@ -90,7 +90,7 @@ export const Skills = () => {
               <GrStripe
                 style={{
                   fontSize: "18px",
-                  marginRight: "10px",
+                  marginRight: "12px",
                 }}
               />
               Stripe
@@ -105,7 +105,7 @@ export const Skills = () => {
               <FaNode
                 style={{
                   fontSize: "18px",
-                  marginRight: "10px",
+                  marginRight: "12px",
                 }}
               />
               Node.js
@@ -114,7 +114,7 @@ export const Skills = () => {
               <SiExpress
                 style={{
                   fontSize: "18px",
-                  marginRight: "10px",
+                  marginRight: "12px",
                 }}
               />
               Express.js
@@ -124,7 +124,7 @@ export const Skills = () => {
               <SiAwsamplify
                 style={{
                   fontSize: "18px",
-                  marginRight: "10px",
+                  marginRight: "12px",
                 }}
               />
               Axios
@@ -134,7 +134,7 @@ export const Skills = () => {
               <AiOutlineCloud
                 style={{
                   fontSize: "18px",
-                  marginRight: "10px",
+                  marginRight: "12px",
                 }}
               />
               Cloudinary
@@ -143,7 +143,7 @@ export const Skills = () => {
               <SiMongodb
                 style={{
                   fontSize: "18px",
-                  marginRight: "10px",
+                  marginRight: "12px",
                 }}
               />
               MongoDB
@@ -158,7 +158,7 @@ export const Skills = () => {
               <FaFigma
                 style={{
                   fontSize: "18px",
-                  marginRight: "10px",
+                  marginRight: "12px",
                 }}
               />
               Figma
@@ -167,7 +167,7 @@ export const Skills = () => {
               <SiTailwindcss
                 style={{
                   fontSize: "18px",
-                  marginRight: "10px",
+                  marginRight: "12px",
                 }}
               />
               Tailwind
@@ -176,7 +176,7 @@ export const Skills = () => {
               <TbBrandBootstrap
                 style={{
                   fontSize: "18px",
-                  marginRight: "10px",
+                  marginRight: "12px",
                 }}
               />
               Bootstrap
