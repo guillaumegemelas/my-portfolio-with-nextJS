@@ -5,6 +5,7 @@
 /*light mode*/
 #app {
   --color-background: 242 230 254;
+  /* --color-paper: 255 195 248; */
   --color-paper: 255 195 248;
   --color-text-primary: 0 0 0;
   --color-text-secondary: 38 38 38;
