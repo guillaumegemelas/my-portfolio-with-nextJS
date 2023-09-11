@@ -20,7 +20,7 @@ export const CommentSection = () => {
     run,
   } = useFetch(commentsUrl);
 
-  console.log(comments); //renvoie bien les commentaires
+  console.log(comments); //renvoie bien les commentaires---
 
   //pour l'exemple:
   // const comments = [
