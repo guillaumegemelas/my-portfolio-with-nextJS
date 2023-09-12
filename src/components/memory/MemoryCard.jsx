@@ -44,5 +44,5 @@ const QuestionEmoji = () => {
   //utilisation du contexte avec useTheme
   const { isLight } = useTheme();
 
-  return isLight ? "❓" : "❔";
+  return isLight ? "✩" : "❔";
 };

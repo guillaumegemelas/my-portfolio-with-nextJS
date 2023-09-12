@@ -22,7 +22,7 @@ export const Curriculum = () => {
           <FaCloudsmith
             style={{
               fontSize: "28px",
-              color: "#C424FF",
+              color: "#677AF1",
               marginRight: "15px",
             }}
           />{" "}

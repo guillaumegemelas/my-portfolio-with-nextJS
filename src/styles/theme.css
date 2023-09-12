@@ -4,28 +4,34 @@
 
 /*light mode*/
 #app {
-  --color-background: 242 230 254;
+  --color-background: 224 242 254;
   /* --color-paper: 255 195 248; */
-  --color-paper: 255 195 248;
+  --color-paper: 186 230 253;
   --color-text-primary: 0 0 0;
   --color-text-secondary: 38 38 38;
 
-  --color-primary: 234 0 255;
-  --color-secondary: 4 217 255;
+  /* --color-primary: 234 0 255;
+  --color-secondary: 4 217 255; */
+  --color-primary: 104 119 240;
+  --color-secondary: 125 211 252;
 }
 
 /*dark mode*/
 #app.dark {
-  --color-background: 24 3 46;
+  /* --color-background: 24 3 46; */
   /* --color-background: 29 2 2; */
-  --color-paper: 40 5 75;
-  /* --color-paper: 87 15 15; */
-  --color-text-primary: 255 255 255;
-  --color-text-secondary: 217 217 217;
+  --color-background: 4 8 47;
 
-  --color-primary: 234 0 255;
+  --color-paper: 17 23 69;
+  /* --color-paper: 87 15 15; */
+  --color-text-primary: 212 232 247;
+  --color-text-secondary: 212 232 247;
+
+  --color-primary: 104 119 240;
   /* --color-primary: 255 51 51; */
-  --color-secondary: 4 217 255;
+  --color-secondary: 41 238 253;
+  /* test */
+  --color-third: 65 193 248;
 }
 
 #app {
