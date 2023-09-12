@@ -205,7 +205,6 @@ export const Skills = () => {
                 style={{
                   fontSize: "18px",
                   marginRight: "12px",
-                  backgroundColor: "bg-gradient-to-r from-primary to-secondary",
                 }}
               />
               <p className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
