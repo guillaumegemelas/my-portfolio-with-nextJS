@@ -33,7 +33,7 @@ export const Footer = () => {
       {/* <p>
       
         Created for educational purpose for the{' '}
-        <a href="https://codelynx.dev/beginreact">BeginReact.dev formation</a> !
+        <a href="https://codelynx.dev/beginreact">BeginReact.dev formation</a>!
       </p> */}
     </footer>
   );
