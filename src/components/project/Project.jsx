@@ -3,7 +3,7 @@ import { Typography } from "../atom/Typography";
 export const Project = ({
   name,
   description,
-  stargazerCount,
+  // stargazerCount,
   url,
   homepageUrl,
   icon,
