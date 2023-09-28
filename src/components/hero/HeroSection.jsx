@@ -28,13 +28,20 @@ export const HeroSection = () => {
             self-learning with online courses, tutorials, and personal projects,
             and I am ready to put my technical skills to good use
           </p>
+
+          <p className="mt-36 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+            <p className="mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-4xl font-extrabold text-transparent">
+              What can I do for you.
+            </p>
+            <b>I develop your websites</b> on both the client-side (Front-end)
+            and server-side (Back-end). Below, you can find my projects, most of
+            which have been created using ReactJS or NextJS.
+          </p>
+          <p className="mt-3 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+            Do not hesitate to contact me, I would be happy to review your
+            project and respond as soon as possible
+          </p>
         </div>
-        {/* test pour ajouter offre de services */}
-      </div>
-      <div className="relative m-auto mb-12 flex max-w-4xl flex-col items-center md:flex-row">
-        <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
-          {/* Offre de service! à compléter */}
-        </span>
       </div>
     </>
   );
