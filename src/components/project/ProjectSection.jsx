@@ -31,6 +31,9 @@ import { FaAtlassian } from "react-icons/fa";
 // };
 
 export const ProjectSection = () => {
+  //ajouter un tableau d'icone
+  const iconArray = ["🎬", "🎯", "🚀", "🧸", "👁️", "👨🏻‍🦲"];
+
   const {
     status,
     data: projects,
@@ -141,8 +144,9 @@ export const ProjectSection = () => {
     >
       <div className="flex flex-wrap justify-center gap-8">
         {/* on va mapper sur les repositories de Github */}
-        {projects?.map((repository) => {
-          return <Project key={repository.name} {...repository} />;
+        {projects?.map((repository, index) => {
+          const icon = iconArray[index];
+          return <Project key={repository.name} {...repository} icon={icon} />;
         })}
         {/* GitHub Repository - Exercise (replace this) */}
         {/* <Project {...projects[0]} /> */}
