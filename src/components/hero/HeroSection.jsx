@@ -33,7 +33,7 @@ export const HeroSection = () => {
       </div>
       <div className="relative m-auto mb-12 flex max-w-4xl flex-col items-center md:flex-row">
         <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
-          Offre de service! à compléter
+          {/* Offre de service! à compléter */}
         </span>
       </div>
     </>

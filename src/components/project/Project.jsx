@@ -13,8 +13,7 @@ export const Project = ({
       <div className="flex">
         {" "}
         {/* <p className="w-full text-left ">⭐ {stargazerCount}</p> */}
-        <p className="w-full text-right text-xl">{icon}</p>
-        {/* {console.log(item)}; */}
+        <p className="w-full text-left text-xl">{icon}</p>
       </div>
 
       <a href={url}>
