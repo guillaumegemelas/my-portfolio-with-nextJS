@@ -12,9 +12,9 @@ export const CommentForm = ({ updateComment }) => {
 
     const formData = new FormData(event.currentTarget);
     const username = formData.get("username");
-    console.log({ username });
+    // console.log({ username });
     const comment = formData.get("comment");
-    console.log({ comment });
+    // console.log({ comment });
 
     if (username.length < 4 || username.length > 20) {
       setError("Username must be between 4 and 20 characters");

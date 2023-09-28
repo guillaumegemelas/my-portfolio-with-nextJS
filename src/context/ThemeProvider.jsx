@@ -48,7 +48,7 @@ export const ThemeProvider = ({ children }) => {
       return newTheme;
     });
 
-  console.log("render ThemeProvider");
+  // console.log("render ThemeProvider");
 
   const values = { theme, isDark, isLight, toggleTheme };
 
