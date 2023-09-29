@@ -4,7 +4,8 @@
 
 /*light mode*/
 #app {
-  --color-background: 224 242 254;
+  --color-background: 236 249 255;
+
   /* --color-paper: 255 195 248; */
   --color-paper: 186 230 253;
   --color-text-primary: 0 0 0;
