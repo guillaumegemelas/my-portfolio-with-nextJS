@@ -58,7 +58,7 @@ export const HeroSection = () => {
               <span className="ml-7">
                 <b>I develop your websites</b> on both the client-side
                 (Front-end) and server-side (Back-end). Below, you can find my
-                projects, most of which have been created using ReactJS or
+                projects, most of them have been created using ReactJS or
                 NextJS.
               </span>
             </span>
