@@ -107,7 +107,7 @@ export const Skills = () => {
             </li>
           </ul>
         </div>
-        <div className="rounded-2xl bg-paper  p-12 transition-transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 lg:mb-0">
+        <div className="rounded-2xl bg-paper p-12 transition-transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 lg:mb-0">
           <h1 className="mb-4 text-center text-lg font-extrabold ">Back-End</h1>
           <ul>
             <li className="flex items-center">
@@ -219,7 +219,7 @@ export const Skills = () => {
                   marginRight: "12px",
                 }}
               />
-              Northflanck
+              Northflank
             </li>
             <li className="flex items-center">
               <SiNetlify
