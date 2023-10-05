@@ -51,7 +51,7 @@ export const HeroSection = () => {
             <br />
             <span className="flex items-center">
               {" "}
-              {/* Use a flex container */}
+              {/* Use a flex container --*/}
               <span className="text-4xl font-extrabold ">
                 <HiOutlineDesktopComputer />
               </span>{" "}
