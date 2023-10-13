@@ -73,7 +73,7 @@ export const ProjectSection = () => {
     return <p>Error!</p>;
   }
 
-  //CI DESSOUS LA METHODE AVEC LES 3 STATES (CLASSIQUE)-----------
+  //CI DESSOUS LA METHODE AVEC LES 3 STATES (CLASSIQUE)---------------
 
   // const [projects, setProjects] = useState(null);
 
