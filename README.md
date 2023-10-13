@@ -20,5 +20,7 @@ You can leave a comment a the site. Thanks.
   React Icons
 
 
+
+
 <img width="1728" alt="portfolio" src="https://github.com/guillaumegemelas/my-portfolio-with-nextJS/assets/121306549/1fdc0d4e-e7c9-48b0-b6e3-c22a65aa1374">
 
