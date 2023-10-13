@@ -19,6 +19,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineCloudServer } from "react-icons/ai";
 import { SiNetlify } from "react-icons/si";
 import { SiVercel } from "react-icons/si";
+import { FaWordpressSimple } from "react-icons/fa";
 
 export const Skills = () => {
   return (
@@ -211,6 +212,16 @@ export const Skills = () => {
               <p className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
                 Git
               </p>
+            </li>
+
+            <li className="flex items-center">
+              <FaWordpressSimple
+                style={{
+                  fontSize: "18px",
+                  marginRight: "12px",
+                }}
+              />
+              Wordpress
             </li>
             <li className="flex items-center">
               <AiOutlineCloudServer
