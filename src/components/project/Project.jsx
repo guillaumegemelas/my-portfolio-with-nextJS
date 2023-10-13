@@ -7,6 +7,7 @@ export const Project = ({
   url,
   homepageUrl,
   icon,
+  image,
 }) => {
   return (
     <div className="flex w-60 flex-col gap-4 rounded-2xl bg-paper p-4 transition-transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 md:w-80 md:p-8">
@@ -14,6 +15,13 @@ export const Project = ({
         {" "}
         {/* <p className="w-full text-left ">⭐ {stargazerCount}</p> */}
         <p className="w-full text-left text-xl">{icon}</p>
+        <img
+          className="rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] shadow-current"
+          width={90}
+          height={50}
+          src={image}
+          alt="r"
+        />
       </div>
 
       <a href={url}>
