@@ -16,7 +16,7 @@ export const Project = ({
         {/* <p className="w-full text-left ">⭐ {stargazerCount}</p> */}
         <p className="w-full text-left text-xl">{icon}</p>
         <img
-          className="rounded-lg shadow-[0_10px_70px_-15px_rgba(0,0,0,0.3)] shadow-current"
+          className="mb-6 rounded-lg shadow-[0_10px_70px_-15px_rgba(0,0,0,0.3)] shadow-current"
           width={90}
           height={50}
           src={image}
