@@ -8,7 +8,7 @@ import { useFetch } from "../../hooks/useFetch";
 
 import { FaAtlassian } from "react-icons/fa";
 
-//pour refactor, on va utiliser le Hook useReducer avec un seul state:
+//--pour refactor, on va utiliser le Hook useReducer avec un seul state:
 
 // const fetchReducer = (state, action) => {
 //   switch (action.type) {
