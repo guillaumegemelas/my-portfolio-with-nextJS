@@ -48,23 +48,6 @@ export const ProjectSection = () => {
     error,
   } = useFetch(getListOfUrlRepositoriesUrl(GITHUB_USERNAME));
 
-  //state pour useReducer
-  // const [{ status, data: projects, error }, dispatch] = useReducer(
-  //   fetchReducer,
-  //   { status: "idle", data: null, error: null }
-  // );
-
-  // useEffect(() => {
-  //   dispatch({ type: "pending" });
-  //   fetch(getListOfUrlRepositoriesUrl(GITHUB_USERNAME))
-  //     .then((res) => res.json())
-  //     .then((repo) => {
-  //       dispatch({ type: "resolved", data: repo });
-  //       console.log(repo);
-  //     })
-  //     .catch((err) => dispatch({ type: "rejected", error: err }));
-  // }, []);
-
   if (status === "pending" || status === "idle") {
     return <Loader />;
   }

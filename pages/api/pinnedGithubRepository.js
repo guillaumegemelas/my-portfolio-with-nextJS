@@ -20,10 +20,10 @@ const handler = async (req, res) => {
   `;
   try {
     const response = await fetch(`https://api.github.com/graphql`, {
-      method: 'POST',
+      method: "POST",
       headers: {
         Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({ query }),
     }).then((r) => r.json());
