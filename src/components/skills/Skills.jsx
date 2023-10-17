@@ -21,6 +21,7 @@ import { SiNetlify } from "react-icons/si";
 import { SiVercel } from "react-icons/si";
 import { FaWordpressSimple } from "react-icons/fa";
 
+//skills
 export const Skills = () => {
   return (
     <SectionWrapper
