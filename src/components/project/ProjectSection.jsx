@@ -31,7 +31,7 @@ import { FaAtlassian } from "react-icons/fa";
 // };
 
 export const ProjectSection = () => {
-  //ajouter un tableau d'icone
+  //ajouter un tableau d'icone--
   const iconArray = ["🎬", "🎯", "🚀", "🧸", "👁️", "👨🏻‍🦲"];
   const imgArray = [
     "/images/tmdb.jpg",
