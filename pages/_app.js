@@ -22,7 +22,8 @@ const AppWithTheme = ({ children }) => {
 const MyApp = ({ Component, pageProps }) => (
   <ThemeProvider>
     <AppWithTheme>
-      <div className="m-auto h-full max-w-7xl px-4">
+      <div className="h-full px-4 m-auto max-w-7xl">
+        <div id="progress"></div>
         <Component {...pageProps} />
       </div>
     </AppWithTheme>
