@@ -9,7 +9,7 @@ export const Curriculum = () => {
     const cvSource = "/images/cv-développeur-web-1.pdf";
     const a = document.createElement("a");
     a.href = cvSource;
-    a.download = "cv-développeur-web-1.pdf";
+    a.download = "cv-développeur-web-2.pdf";
     // a.style.display = "none";
     // document.body.appendChild(a);
     a.click();
