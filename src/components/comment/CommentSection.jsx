@@ -43,7 +43,7 @@ export const CommentSection = () => {
             }}
           />{" "}
           {/* Leave a comment ! */}
-          Laisser un commentaire!
+          Laissez-moi un commentaire!
         </div>
       }
     >
