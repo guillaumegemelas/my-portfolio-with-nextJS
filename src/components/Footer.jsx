@@ -2,6 +2,7 @@ import { EMAIL, SOCIAL_NETWORKS } from "../lib/config";
 import { SocialNetworks } from "./atom/SocialNetwork";
 import { Typography } from "./atom/Typography";
 import { RiContactsLine } from "react-icons/ri";
+import { AiFillPhone } from "react-icons/ai";
 
 export const Footer = () => {
   return (
@@ -15,18 +16,24 @@ export const Footer = () => {
               marginRight: "15px",
             }}
           />{" "}
-          Contact me !
+          {/* Contact me ! */}
+          Contactez-moi!
         </div>
       </Typography>
       <div className="flex flex-col items-center gap-2">
         <Typography variant="body2">
-          I’ll be happy to chat with you about a potential job or a freelance
+          {/* I’ll be happy to chat with you about a potential job or a freelance */}
+          Je serai ravi d'échanger avec vous.
         </Typography>
         <a
-          className="text-base text-primary underline"
+          className="text-base underline text-primary"
           href={`mailto:${EMAIL}`}
         >
           {EMAIL}
+        </a>
+
+        <a className="flex items-center text-base text-primary">
+          <AiFillPhone className="mr-2" /> <p> 06.34.47.66.69</p>
         </a>
         <SocialNetworks socialNetworks={SOCIAL_NETWORKS} />
       </div>

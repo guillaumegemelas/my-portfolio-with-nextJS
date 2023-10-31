@@ -129,7 +129,7 @@ export const ProjectSection = () => {
               marginRight: "15px",
             }}
           />{" "}
-          Projects
+          Projets
         </div>
       }
     >

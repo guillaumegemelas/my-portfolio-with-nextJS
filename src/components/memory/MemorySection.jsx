@@ -19,14 +19,15 @@ export const MemorySection = () => {
               marginRight: "15px",
             }}
           />{" "}
-          You're boring ? Let's play a game !
+          {/* You're boring ? Let's play a game ! */}
+          Vous trouvez le temps long? Jouons à un petit jeu..
         </div>
       }
     >
       <MemoryContextProvider>
         <div className="flex flex-col items-center gap-14">
           <div className="flex flex-col items-center gap-2">
-            <p>Score go here</p>
+            <p>Votre score</p>
             <TryCountText />
             <MemoryBoard />
             <ResetButton />
@@ -47,7 +48,7 @@ const TryCountText = () => {
 
   if (!isFinish) {
     return (
-      <Typography variant="body2">You tried {tryCount} time(s)</Typography>
+      <Typography variant="body2">Tu as essayé {tryCount} fois</Typography>
     );
   }
 };
@@ -56,5 +57,5 @@ const TryCountText = () => {
 const ResetButton = () => {
   const { reset } = useMemory();
 
-  return <Button onClick={reset}>Reset go here</Button>;
+  return <Button onClick={reset}>Remettre à zéro</Button>;
 };

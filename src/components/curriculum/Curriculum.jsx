@@ -26,12 +26,12 @@ export const Curriculum = () => {
               marginRight: "15px",
             }}
           />{" "}
-          My Curriculum
+          Mon CV
         </div>
       }
     >
-      <div className="m-auto flex gap-4">
-        <Button onClick={handleDownloadCV}>Watch it!</Button>
+      <div className="flex gap-4 m-auto">
+        <Button onClick={handleDownloadCV}>Télécharger!</Button>
       </div>
     </SectionWrapper>
   );

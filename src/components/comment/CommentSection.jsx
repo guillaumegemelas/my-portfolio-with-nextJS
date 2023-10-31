@@ -42,12 +42,13 @@ export const CommentSection = () => {
               marginRight: "15px",
             }}
           />{" "}
-          Leave a comment !
+          {/* Leave a comment ! */}
+          Laisser un commentaire!
         </div>
       }
     >
-      <div className="m-auto flex w-full max-w-2xl flex-col items-center gap-8 ">
-        <div className="grid w-full grid-cols-auto-fill-200-300 justify-center gap-4">
+      <div className="flex flex-col items-center w-full max-w-2xl gap-8 m-auto ">
+        <div className="grid justify-center w-full gap-4 grid-cols-auto-fill-200-300">
           {/* Commentaires - Exercise */}
           {isResolved
             ? comments.map((comment) => {
@@ -57,7 +58,8 @@ export const CommentSection = () => {
           {isLoading || isIdle ? <Loader /> : null}
           {isRejected ? (
             <Typography variant="body1">
-              Sorry, there is an error : {error}
+              {/* Sorry, there is an error : {error} */}
+              Desolé, il y a eu une erreur: {error}
             </Typography>
           ) : null}
         </div>

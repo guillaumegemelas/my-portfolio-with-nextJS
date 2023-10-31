@@ -47,29 +47,29 @@ export const CommentForm = ({ updateComment }) => {
 
   return (
     <form
-      className="flex w-full flex-col gap-4 md:px-8"
+      className="flex flex-col w-full gap-4 md:px-8"
       onSubmit={handleSubmit}
     >
       <TextField
-        label="Username"
+        label="Votre nom"
         // id="comment"
         //l'id est inutile si il y a le name dans les paramètres
         name="username"
         type="text"
-        placeholder="Username"
+        placeholder="Votre nom"
       />
 
       <TextField
-        label="Comment"
+        label="Commentaire"
         // id="username"
         name="comment"
         type="text"
-        placeholder="Comment"
+        placeholder="Commentaire"
         component="textarea"
       />
       {error ? <p style={{ color: "#eb4d4b" }}>{error}</p> : null}
 
-      <Button type="submit">Submit</Button>
+      <Button type="submit">Envoyer</Button>
     </form>
   );
 };
