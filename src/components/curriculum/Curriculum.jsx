@@ -5,7 +5,7 @@ import { FaCloudsmith } from "react-icons/fa";
 
 export const Curriculum = () => {
   const handleDownloadCV = () => {
-    //mettre le fichier pdf dans le dossier public et mettre l'url de cette façon "/....""
+    //mettre le fichier pdf dans le dossier public et mettre l'url de cette façon "/.......""
     const cvSource = "/images/cv-développeur-web-1.pdf";
     const a = document.createElement("a");
     a.href = cvSource;
@@ -30,7 +30,7 @@ export const Curriculum = () => {
         </div>
       }
     >
-      <div className="flex gap-4 m-auto">
+      <div className="m-auto flex gap-4">
         <Button onClick={handleDownloadCV}>Télécharger!</Button>
       </div>
     </SectionWrapper>
