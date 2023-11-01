@@ -8,7 +8,7 @@ import { RiContactsLine } from "react-icons/ri";
 export const HeroSection = () => {
   return (
     <>
-      <div className="relative flex flex-col items-center max-w-4xl m-auto mt-12 mb-12 md:flex-row">
+      <div className="relative m-auto mt-12 mb-12 flex max-w-4xl flex-col items-center md:flex-row">
         <img
           width={300}
           height={300}
@@ -24,7 +24,7 @@ export const HeroSection = () => {
           <h1 className="text-6xl dark:drop-shadow-[0_0px_20px_rgba(0,0,0,1)] md:text-6xl">
             {/* I'm{" "} */}
             Je suis{" "}
-            <span className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
               {FULL_NAME}
             </span>
           </h1>
@@ -37,21 +37,21 @@ export const HeroSection = () => {
           <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
             <b>Développeur React.</b> Je suis un développeur web et mobile
             JavaScript spécialisé en React. J'améliore mes compétences à travers
-            de l'auto-formation, des tutoriels, des projets presonnels, et je
-            suis prêt à mettre à profit mes compétences techniques ainsi que mon
+            de l'auto-formation, des tutoriels ainsi que des projets personnels,
+            et je suis prêt à mettre à profit mes compétences techniques et mon
             expertise à votre service.
           </p>
 
           <p className="mt-48 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
-            <span className="flex items-center mb-3">
-              <span className="mr-4 text-4xl font-extrabold bg-gradient-to-r from-primary to-secondary bg-clip-text">
+            <span className="mb-3 flex items-center">
+              <span className="mr-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-4xl font-extrabold">
                 <AiOutlineQuestionCircle
                   style={{
                     color: "#677AF1",
                   }}
                 />
               </span>{" "}
-              <span className="text-4xl font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-4xl font-extrabold text-transparent">
                 Ce que je peux faire pour vous
               </span>{" "}
               {/* <span className="text-4xl font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
