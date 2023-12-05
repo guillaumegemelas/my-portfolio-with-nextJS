@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Portfolio</title>
+        <title>Portfolio Guillaume Gemelas</title>
       </Head>
       <div className="flex flex-col gap-40">
         <Header />
