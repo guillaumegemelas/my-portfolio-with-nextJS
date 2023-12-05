@@ -26,10 +26,11 @@ export const Footer = () => {
           Je serai ravi d'échanger avec vous.
         </Typography>
         <a
-          className="text-base underline text-primary"
+          className="text-base text-primary underline"
           href={`mailto:${EMAIL}`}
         >
-          {EMAIL}
+          guillaumegemelas@gmail.com
+          {/* {EMAIL} */}
         </a>
 
         <a className="flex items-center text-base text-primary">

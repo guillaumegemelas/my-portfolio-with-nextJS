@@ -1,4 +1,4 @@
-import { FULL_NAME } from "../../lib/config";
+// import { FULL_NAME } from "../../lib/config";
 
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 
@@ -14,7 +14,7 @@ export const HeroSection = () => {
           height={300}
           // src="/images/avatar.jpg"
           src="/images/photo_profil.jpg"
-          alt="avatar"
+          alt="avatar guillaume gemelas"
           className="top-[-16px] right-[-42px] rounded-full shadow-lg md:absolute"
           //md:absolute l'image passe en dessous du texte--
         />
@@ -25,7 +25,8 @@ export const HeroSection = () => {
             {/* I'm{" "} */}
             Je suis{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
-              {FULL_NAME}
+              {/* {FULL_NAME} */}
+              Guillaume Gemelas
             </span>
           </h1>
           {/* <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
