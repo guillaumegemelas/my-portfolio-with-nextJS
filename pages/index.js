@@ -18,7 +18,12 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Portfolio Guillaume Gemelas</title>
+        <title>Guillaume Gemelas, Développeur web et mobile</title>
+        <meta
+          name="description"
+          content="This is Guillaume Gemelas Portfolio as freelance web and mobile Javascript developper"
+          key="desc"
+        />
       </Head>
       <div className="flex flex-col gap-40">
         <Header />
