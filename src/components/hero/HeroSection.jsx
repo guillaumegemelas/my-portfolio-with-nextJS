@@ -30,6 +30,7 @@ export const HeroSection = () => {
               Guillaume Gemelas
             </span>
           </h1>
+          <br />
           {/* <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
             <b>React developper.</b> I’m a web JavaScript developper,
             specialized on React. I enhance my skills through daily
