@@ -36,11 +36,11 @@ export const HeroSection = () => {
             and I am ready to put my technical skills to good use
           </p> */}
           <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
-            <b>Développeur React.</b> Je suis un développeur web et mobile
-            JavaScript spécialisé en React. J'améliore mes compétences à travers
-            de l'auto-formation, des tutoriels ainsi que des projets personnels,
-            et je suis prêt à mettre à profit mes compétences techniques et mon
-            expertise à votre service.
+            <b>Concepteur Développeur d'Applications.</b> Je suis un développeur
+            web et mobile JavaScript spécialisé en React. J'améliore mes
+            compétences à travers de l'auto-formation, des tutoriels ainsi que
+            des projets personnels, et je suis prêt à mettre à profit mes
+            compétences techniques et mon expertise à votre service.
           </p>
 
           <p className="mt-48 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
