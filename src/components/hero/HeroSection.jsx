@@ -4,6 +4,7 @@ import { AiOutlineQuestionCircle } from "react-icons/ai";
 
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { RiContactsLine } from "react-icons/ri";
+import { FaGoogle } from "react-icons/fa";
 
 export const HeroSection = () => {
   return (
@@ -36,11 +37,13 @@ export const HeroSection = () => {
             and I am ready to put my technical skills to good use
           </p> */}
           <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
-            <b>Concepteur Développeur d'Applications.</b> Je suis un développeur
-            web et mobile JavaScript spécialisé en React. J'améliore mes
-            compétences à travers de l'auto-formation, des tutoriels ainsi que
-            des projets personnels, et je suis prêt à mettre à profit mes
-            compétences techniques et mon expertise à votre service.
+            <b>Concepteur Développeur d'Applications en Freelance.</b>
+            <br />
+            Je suis un développeur web et mobile JavaScript spécialisé en React.
+            J'améliore mes compétences à travers de l'auto-formation, des
+            tutoriels ainsi que des projets personnels, et je suis prêt à mettre
+            à profit mes compétences techniques et mon expertise à votre
+            service.
           </p>
 
           <p className="mt-48 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
@@ -80,7 +83,32 @@ export const HeroSection = () => {
                 réalisés avec ReactJS ou NextJS.
               </span>
             </span>
+            <br />
+            <br />
+            <span className="flex items-center">
+              {" "}
+              {/* Use a flex container --*/}
+              <span className="text-4xl font-extrabold ">
+                <FaGoogle />
+              </span>{" "}
+              {/* <span className="ml-7">
+                <b>I develop your websites</b> on both the client-side
+                (Front-end) and server-side (Back-end). Below, you can find my
+                projects, most of them have been created using ReactJS or
+                NextJS.
+              </span> */}
+              <span className="ml-7">
+                <b>
+                  Je réalise une étude complète de votre site afin d'améliorer
+                  son référencement naturel (SEO).
+                </b>{" "}
+                Je mets en place une statégie globale pour optimiser votre
+                présence en ligne, augmenter votre visibilité et ainsi générer
+                du traffic sur votre site.
+              </span>
+            </span>
           </p>
+          <br />
           <span className="flex items-center">
             <span className="text-4xl font-extrabold">
               {" "}
