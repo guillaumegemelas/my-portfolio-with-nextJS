@@ -17,7 +17,7 @@ export const HeroSection = () => {
           src="/images/photo_profil.jpg"
           alt="avatar guillaume gemelas"
           className="top-[-16px] right-[-42px] rounded-full shadow-lg md:absolute"
-          //md:absolute l'image passe en dessous du texte--
+          //md:absolute l'image passe en dessous du texte
         />
         {/* Hero - Exercise*/}
         <div className="flex flex-col gap-4 md:relative md:mr-32">
