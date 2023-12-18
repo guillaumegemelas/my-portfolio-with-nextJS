@@ -33,7 +33,7 @@ export const HeroSection = () => {
           <br />
           {/* <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
             <b>React developper.</b>   I’m a web JavaScript developper,
-            specialized on React. I enhance my skills through daily-----
+            specialized on React. I enhance my skills through daily---
             self-learning with online courses, tutorials, and personal projects,
             and I am ready to put my technical skills  to good use
           </p> */}
