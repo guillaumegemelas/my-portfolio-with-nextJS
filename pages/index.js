@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Guillaume Gemelas, Développeur web et mobile</title>
+        <title>Guillaume Gemelas, Concepteur Développeur web et mobile</title>
         <meta
           name="description"
           content="This is Guillaume Gemelas Portfolio as freelance web and mobile Javascript developper"
