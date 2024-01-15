@@ -27,10 +27,20 @@ export const Header = () => {
         </span>
       </div>
 
+      {/* <img
+        width={60}
+        height={60}
+        // src="/images/avatar.jpg"
+        src="/images/guigui.png"
+        alt="logo entreprise"
+        className="hidden shadow-lg md:mr-6 md:block"
+        //md:absolute l'image passe en dessous du texte--
+      /> */}
+
       <SocialNetworks className="ml-auto" socialNetworks={SOCIAL_NETWORKS} />
       <ToggleThemeButton />
     </header>
   );
 };
 
-// modifié le 05/10 FULLNAME-----
+// modifié le 05/10 FULLNAME---
