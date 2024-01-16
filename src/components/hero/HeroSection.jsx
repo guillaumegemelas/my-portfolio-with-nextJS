@@ -59,28 +59,18 @@ export const HeroSection = () => {
 
             <p className="mt-12  max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)] sm:mt-0">
               Ce qui m'anime, c'est avant tout la "vision locale". La notion de
-              proximité est à mon sens essentielle pour comprendre toutes les
+              proximité est, à mon sens essentielle pour comprendre toutes les
               facettes d'un projet, quel qu'il soit. C'est pourquoi j'ai choisi
-              de créer ma structure fin 2023. Son nom reflète bien ma façon de
-              travailler.
+              de créer ma structure fin 2023:
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
+                {" "}
+                ain.dev.
+              </span>
+              <br />
+              Son nom reflète parfaitement ma façon de travailler.
             </p>
           </div>
-          {/* <div className="flex flex-col justify-center w-full md:flex-row">
-            <div className="flex w-full sm:align-items sm:mb-12 sm:justify-center md:mb-0 lg:mr-16">
-              <img
-                src="/images/logo6.png"
-                alt="logo aindev"
-                className="mb-12 rounded shadow-lg"
-              />
-            </div>
-            <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]  md:ml-6">
-              Ce qui m'anime, c'est avant tout la "vision locale". La notion de
-              proximité est à mon sens essentielle pour comprendre toutes les
-              facettes d'un projet, quel qu'il soit. C'est pourquoi j'ai choisi
-              de créer ma structure fin 2023. Son nom reflète bien ma façon de
-              travailler.
-            </p>
-          </div> */}
+
           {/* modifs faite le 16/01------------------------------------------ */}
 
           <p className="mt-48 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
