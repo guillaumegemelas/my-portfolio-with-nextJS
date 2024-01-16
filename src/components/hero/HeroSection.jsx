@@ -59,15 +59,15 @@ export const HeroSection = () => {
 
             <p className="mt-12  max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)] sm:mt-0">
               Ce qui m'anime, c'est avant tout la "vision locale". La notion de
-              proximité est, à mon sens essentielle pour comprendre toutes les
-              facettes d'un projet, quel qu'il soit. C'est pourquoi j'ai choisi
-              de créer ma structure fin 2023:
+              proximité est, à mon sens, essentielle pour comprendre toutes les
+              facettes d'un projet. C'est pourquoi, fin 2023, j'ai choisi de
+              créer ma structure :
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
                 {" "}
                 ain.dev.
               </span>
               <br />
-              Son nom reflète parfaitement ma façon de travailler.
+              {/* Son nom reflète parfaitement ma façon de travailler. */}
             </p>
           </div>
 
