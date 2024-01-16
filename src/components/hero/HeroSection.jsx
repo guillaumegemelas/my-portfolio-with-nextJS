@@ -48,16 +48,16 @@ export const HeroSection = () => {
           </p>
           <br />
           {/* modifs faite le 16/01------------------------------------------ */}
-          <div className="flex flex-col justify-center md:flex-row ">
-            <div className="sm:align-items flex w-full sm:mb-12 sm:justify-center md:mb-0 md:mr-6 lg:mr-16">
+          <div className="mt-24 flex w-full flex-col justify-center md:flex-row">
+            <div className="flex w-full justify-center sm:mb-12 md:mb-0 md:mr-6 md:w-full lg:mr-16">
               <img
                 src="/images/logo6.png"
                 alt="logo aindev"
-                className="rounded shadow-lg sm:w-72 lg:w-64"
+                className="w-64 rounded shadow-lg md:w-full "
               />
             </div>
 
-            <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+            <p className="mt-12  max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)] sm:mt-0">
               Ce qui m'anime, c'est avant tout la "vision locale". La notion de
               proximité est à mon sens essentielle pour comprendre toutes les
               facettes d'un projet, quel qu'il soit. C'est pourquoi j'ai choisi
@@ -65,6 +65,22 @@ export const HeroSection = () => {
               travailler.
             </p>
           </div>
+          {/* <div className="flex flex-col justify-center w-full md:flex-row">
+            <div className="flex w-full sm:align-items sm:mb-12 sm:justify-center md:mb-0 lg:mr-16">
+              <img
+                src="/images/logo6.png"
+                alt="logo aindev"
+                className="mb-12 rounded shadow-lg"
+              />
+            </div>
+            <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]  md:ml-6">
+              Ce qui m'anime, c'est avant tout la "vision locale". La notion de
+              proximité est à mon sens essentielle pour comprendre toutes les
+              facettes d'un projet, quel qu'il soit. C'est pourquoi j'ai choisi
+              de créer ma structure fin 2023. Son nom reflète bien ma façon de
+              travailler.
+            </p>
+          </div> */}
           {/* modifs faite le 16/01------------------------------------------ */}
 
           <p className="mt-48 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
