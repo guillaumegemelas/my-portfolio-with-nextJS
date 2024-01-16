@@ -33,7 +33,7 @@ export const HeroSection = () => {
           <br />
           {/* <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
             <b>React developper.</b>   I’m a web JavaScript developper,
-            specialized on React. I enhance my skills through daily---
+            specialized on React. I enhance my skills through daily-
             self-learning with online courses, tutorials, and personal projects,
             and I am ready to put my technical skills  to good use
           </p> */}
@@ -46,6 +46,26 @@ export const HeroSection = () => {
             à profit mes compétences techniques et mon expertise à votre
             service.
           </p>
+          <br />
+          {/* modifs faite le 16/01------------------------------------------ */}
+          <div className="flex flex-col justify-center md:flex-row ">
+            <div className="sm:align-items flex w-full sm:mb-12 sm:justify-center md:mb-0 md:mr-6 lg:mr-16">
+              <img
+                src="/images/logo6.png"
+                alt="logo aindev"
+                className="rounded shadow-lg sm:w-72 lg:w-64"
+              />
+            </div>
+
+            <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+              Ce qui m'anime, c'est avant tout la "vision locale". La notion de
+              proximité est à mon sens essentielle pour comprendre toutes les
+              facettes d'un projet, quel qu'il soit. C'est pourquoi j'ai choisi
+              de créer ma structure fin 2023. Son nom reflète bien ma façon de
+              travailler.
+            </p>
+          </div>
+          {/* modifs faite le 16/01------------------------------------------ */}
 
           <p className="mt-48 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
             <span className="mb-3 flex items-center">
