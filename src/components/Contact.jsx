@@ -41,7 +41,6 @@ export const Contact = () => {
 
     const url =
       "https://site--mailing-back--zqfvjrr4byql.code.run/process-form";
-    //   "http://localhost:3000/process-form";
 
     try {
       const response = await fetch(url, {
@@ -49,12 +48,13 @@ export const Contact = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        // body: JSON.stringify({ contenu }),
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        alert("Message envoyé avec succès!");
+        alert(
+          "Votre message a bien été envoyé, je vous recontacterai dans les plus brefs délais."
+        );
         // Réinitialiser les champs du formulaire
         setFormData({
           nom: "",
