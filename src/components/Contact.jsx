@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "./atom/Button";
+import { Alert } from "./Alert";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,8 @@ export const Contact = () => {
     email: "",
     message: "",
   });
+
+  const [showAlert, setShowAlert] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -52,9 +55,8 @@ export const Contact = () => {
       });
 
       if (response.ok) {
-        alert(
-          "Votre message a bien été envoyé, je vous recontacterai dans les plus brefs délais."
-        );
+        setShowAlert(true);
+
         // Réinitialiser les champs du formulaire
         setFormData({
           nom: "",
@@ -62,6 +64,10 @@ export const Contact = () => {
           email: "",
           message: "",
         });
+
+        setTimeout(() => {
+          setShowAlert(false);
+        }, 3000);
       } else {
         alert("Erreur lors de l'envoi du formulaire. Veuillez réessayer.");
       }
@@ -93,7 +99,6 @@ export const Contact = () => {
           placeholder="Votre nom"
           required
         />
-
         <label
           className="block text-xs font-medium text-skin-secondary md:text-sm"
           htmlFor="prenom"
@@ -110,7 +115,6 @@ export const Contact = () => {
           placeholder="Votre prénom"
           required
         />
-
         <label
           className="block text-xs font-medium text-skin-secondary md:text-sm"
           htmlFor="email"
@@ -127,7 +131,6 @@ export const Contact = () => {
           placeholder="Votre email"
           required
         />
-
         <label
           className="block text-xs font-medium text-skin-secondary md:text-sm"
           htmlFor="message"
@@ -143,8 +146,8 @@ export const Contact = () => {
           placeholder="Votre message"
           required
         ></textarea>
-
         <Button type="submit">Envoyer</Button>
+        {showAlert && <Alert />}
       </form>
     </div>
   );
