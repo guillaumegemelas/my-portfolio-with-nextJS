@@ -1,7 +1,7 @@
 export const Alert = () => {
   return (
     <div
-      className="fixed top-1/2 left-1/2 w-11/12 max-w-xl -translate-x-1/2 -translate-y-1/2 transform rounded-b border-t-4 border-teal-500 bg-teal-100 px-4 py-3 text-teal-900 shadow-md"
+      className="w-full rounded-b border-t-4 border-teal-500 bg-teal-100 px-4 py-3 text-teal-900 shadow-md "
       role="alert"
     >
       <div className="flex">

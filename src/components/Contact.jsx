@@ -146,7 +146,7 @@ export const Contact = () => {
           placeholder="Votre message"
           required
         ></textarea>
-        <Button type="submit">Envoyer</Button>
+        {!showAlert && <Button type="submit">Envoyer</Button>}
         {showAlert && <Alert />}
       </form>
     </div>
