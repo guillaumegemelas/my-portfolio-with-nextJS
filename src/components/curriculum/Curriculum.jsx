@@ -6,10 +6,10 @@ import { FaCloudsmith } from "react-icons/fa";
 export const Curriculum = () => {
   const handleDownloadCV = () => {
     //mettre le fichier pdf dans le dossier public et mettre l'url de cette façon "/.......""
-    const cvSource = "/images/cv-développeur-web-2.pdf";
+    const cvSource = "/images/cv-développeur-web-3.pdf";
     const a = document.createElement("a");
     a.href = cvSource;
-    a.download = "cv-développeur-web-2.pdf";
+    a.download = "cv-développeur-web-3.pdf";
     // a.style.display = "none";
     // document.body.appendChild(a);
     a.click();
