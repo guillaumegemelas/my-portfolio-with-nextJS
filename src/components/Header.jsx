@@ -29,7 +29,7 @@ export const Header = () => {
         <nav>
           <section className="MOBILE-MENU flex lg:hidden">
             <div
-              className="HAMBURGER-ICON space-y-2"
+              className="HAMBURGER-ICON mr-6 space-y-2"
               onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
             >
               <span className="block h-0.5 w-8 animate-pulse bg-gray-100"></span>
@@ -78,7 +78,7 @@ export const Header = () => {
                 <li className="my-8 uppercase">
                   <a href="#Contact" onClick={closeNavMenu}>
                     <span className="text-secondary">4.</span>{" "}
-                    <span className="text-gray-100">Contact</span>{" "}
+                    <span className="text-gray-100 ">Contact</span>{" "}
                   </a>
                 </li>
               </ul>
@@ -89,25 +89,33 @@ export const Header = () => {
             <li>
               <a href="#Skills">
                 <span className="text-secondary">1.</span>{" "}
-                <span className="text-gray-100">Compétences</span>{" "}
+                <span className="dark:text-gray-100 dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+                  Compétences
+                </span>{" "}
               </a>
             </li>
             <li>
               <a href="#Projets">
                 <span className="text-secondary">2.</span>{" "}
-                <span className="text-gray-100">Projets</span>{" "}
+                <span className="dark:text-gray-100 dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+                  Projets
+                </span>{" "}
               </a>
             </li>
             <li>
               <a href="#Comments">
                 <span className="text-secondary">3.</span>{" "}
-                <span className="text-gray-100">Commentaires</span>{" "}
+                <span className="dark:text-gray-100 dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+                  Commentaires
+                </span>{" "}
               </a>
             </li>
             <li>
               <a href="#Contact">
                 <span className="text-secondary">4.</span>{" "}
-                <span className="mr-6 text-gray-100">Contact</span>{" "}
+                <span className="mr-8 dark:text-gray-100 dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+                  Contact
+                </span>{" "}
               </a>
             </li>
           </ul>
