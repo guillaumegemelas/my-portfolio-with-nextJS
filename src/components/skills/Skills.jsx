@@ -26,7 +26,7 @@ export const Skills = () => {
   return (
     <SectionWrapper
       title={
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ display: "flex", alignItems: "center" }} id="Skills">
           <FaTools
             style={{
               fontSize: "28px",
@@ -39,11 +39,11 @@ export const Skills = () => {
         </div>
       }
     >
-      <div className="grid gap-8 m-auto md:grid-cols-2 xl:grid-cols-4">
+      <div className="m-auto grid gap-8 md:grid-cols-2 xl:grid-cols-4">
         {/* <div className="flex flex-wrap justify-center gap-8 m-auto"> */}
-        <div className="p-12 transition-transform rounded-2xl bg-paper hover:scale-105 hover:shadow-xl focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 lg:mb-0">
+        <div className="rounded-2xl bg-paper p-12 transition-transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 lg:mb-0">
           {/* //titre à mettre en gros et gras */}
-          <h1 className="mb-4 text-lg font-extrabold text-center ">
+          <h1 className="mb-4 text-center text-lg font-extrabold ">
             Front-End
           </h1>
           <ul>
@@ -55,7 +55,7 @@ export const Skills = () => {
                   color: "bg-gradient-to-r from-primary to-secondary",
                 }}
               />
-              <p className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+              <p className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
                 JavaScript
               </p>
             </li>
@@ -76,7 +76,7 @@ export const Skills = () => {
                   marginRight: "12px",
                 }}
               />{" "}
-              <p className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+              <p className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
                 React
               </p>
             </li>
@@ -110,8 +110,8 @@ export const Skills = () => {
             </li>
           </ul>
         </div>
-        <div className="p-12 transition-transform rounded-2xl bg-paper hover:scale-105 hover:shadow-xl focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 lg:mb-0">
-          <h1 className="mb-4 text-lg font-extrabold text-center ">Back-End</h1>
+        <div className="rounded-2xl bg-paper p-12 transition-transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 lg:mb-0">
+          <h1 className="mb-4 text-center text-lg font-extrabold ">Back-End</h1>
           <ul>
             <li className="flex items-center">
               {" "}
@@ -121,7 +121,7 @@ export const Skills = () => {
                   marginRight: "12px",
                 }}
               />
-              <p className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+              <p className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
                 Node.JS
               </p>
             </li>
@@ -165,8 +165,8 @@ export const Skills = () => {
             </li>
           </ul>
         </div>
-        <div className="p-12 transition-transform rounded-2xl bg-paper hover:scale-105 hover:shadow-xl focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 ">
-          <h1 className="mb-4 text-lg font-extrabold text-center ">Design</h1>
+        <div className="rounded-2xl bg-paper p-12 transition-transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 ">
+          <h1 className="mb-4 text-center text-lg font-extrabold ">Design</h1>
           <ul>
             <li className="flex items-center">
               {" "}
@@ -185,7 +185,7 @@ export const Skills = () => {
                   marginRight: "12px",
                 }}
               />
-              <p className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+              <p className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
                 Tailwind
               </p>
             </li>
@@ -200,8 +200,8 @@ export const Skills = () => {
             </li>
           </ul>
         </div>
-        <div className="p-12 transition-transform rounded-2xl bg-paper hover:scale-105 hover:shadow-xl focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50">
-          <h1 className="mb-4 text-lg font-extrabold text-center ">Autres</h1>
+        <div className="rounded-2xl bg-paper p-12 transition-transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50">
+          <h1 className="mb-4 text-center text-lg font-extrabold ">Autres</h1>
           <ul>
             <li className="flex items-center">
               {" "}
@@ -211,7 +211,7 @@ export const Skills = () => {
                   marginRight: "12px",
                 }}
               />
-              <p className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+              <p className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
                 Git
               </p>
             </li>

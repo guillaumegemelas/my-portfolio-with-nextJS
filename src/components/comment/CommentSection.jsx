@@ -41,14 +41,15 @@ export const CommentSection = () => {
               color: "#677AF1",
               marginRight: "15px",
             }}
+            id="Comments"
           />{" "}
           {/* Leave a comment ! */}
           Laissez-moi un commentaire!
         </div>
       }
     >
-      <div className="flex flex-col items-center w-full max-w-2xl gap-8 m-auto ">
-        <div className="grid justify-center w-full gap-4 grid-cols-auto-fill-200-300">
+      <div className="m-auto flex w-full max-w-2xl flex-col items-center gap-8 ">
+        <div className="grid w-full grid-cols-auto-fill-200-300 justify-center gap-4">
           {/* Commentaires - Exercise */}
           {isResolved
             ? comments.map((comment) => {

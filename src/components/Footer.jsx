@@ -7,7 +7,7 @@ import { Contact } from "./Contact";
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col items-center gap-8 ">
+    <footer className="mb-12 flex flex-col items-center gap-8 " id="Contact">
       <Typography variant="h2">
         <div style={{ display: "flex", alignItems: "center" }}>
           <RiContactsLine

@@ -121,7 +121,7 @@ export const ProjectSection = () => {
   return (
     <SectionWrapper
       title={
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ display: "flex", alignItems: "center" }} id="Projets">
           <FaAtlassian
             style={{
               fontSize: "28px",
