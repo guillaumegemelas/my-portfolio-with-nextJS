@@ -32,9 +32,9 @@ export const Header = () => {
               className="HAMBURGER-ICON mr-6 space-y-2"
               onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
             >
-              <span className="block h-0.5 w-8 animate-pulse bg-gray-100"></span>
-              <span className="block h-0.5 w-8 animate-pulse bg-gray-100"></span>
-              <span className="block h-0.5 w-8 animate-pulse bg-gray-100"></span>
+              <span className="block h-0.5 w-8 bg-primary dark:bg-gray-300"></span>
+              <span className="block h-0.5 w-8 bg-primary dark:bg-gray-300"></span>
+              <span className="block h-0.5 w-8 bg-primary dark:bg-gray-300"></span>
             </div>
 
             <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
