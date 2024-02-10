@@ -41,7 +41,7 @@ export const Header = () => {
               {" "}
               <div
                 className="CROSS-ICON absolute top-0 right-0"
-                onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu!
+                onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu!!
               >
                 <svg
                   className="h-8 w-8 text-gray-100"
