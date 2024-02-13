@@ -23,7 +23,7 @@ export const Footer = () => {
       </Typography>
       <div className="flex w-full max-w-2xl flex-col items-center gap-2 ">
         <Typography variant="body2">
-          {/* I’ll be happy to chat with you about a potential job or a freelance */}
+          {/* I’ll be happy to chat with you about a potential job or a freelance! */}
           Je serai ravi d'échanger avec vous.
         </Typography>
 
