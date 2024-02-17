@@ -24,6 +24,11 @@ const Home = () => {
           content="This is Guillaume Gemelas Portfolio as freelance web and mobile Javascript developper"
           key="desc"
         />
+        <meta
+          name="keywords"
+          content="développeur web Ain, développeur web mobile Ain, freelance, ain.dev, aindev, Bourg-en-Bresse"
+          key="keywords"
+        />
       </Head>
       <div className="flex flex-col gap-40">
         <Header />
