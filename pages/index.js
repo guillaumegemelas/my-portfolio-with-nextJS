@@ -24,6 +24,7 @@ const Home = () => {
           content="This is Guillaume Gemelas Portfolio as freelance web and mobile Javascript developper"
           key="desc"
         />
+        {/* ajout de balise meta keywords: tout va bien avant ajout de cette balise */}
         <meta
           name="keywords"
           content="développeur web Ain, développeur web mobile Ain, freelance, ain.dev, aindev, Bourg-en-Bresse"
