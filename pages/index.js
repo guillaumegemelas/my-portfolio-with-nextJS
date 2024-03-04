@@ -9,7 +9,7 @@ import { ProjectSection } from "../src/components/project";
 import { Curriculum } from "../src/components/curriculum/Curriculum";
 import { Skills } from "../src/components/skills/Skills";
 
-// dynamic import Memory Section.
+// dynamic import Memory Section..
 const DynamicMemorySection = dynamic(() => import("../src/components/memory"), {
   ssr: false,
 });
