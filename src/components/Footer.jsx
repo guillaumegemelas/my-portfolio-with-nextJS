@@ -7,7 +7,7 @@ import { SocialNetworks } from "./atom/SocialNetwork";
 import { Typography } from "./atom/Typography";
 import { RiContactsLine } from "react-icons/ri";
 import { AiFillPhone } from "react-icons/ai";
-import { MdAnnouncement } from "react-icons/md";
+import { MdAccountBalance } from "react-icons/md";
 import { Contact } from "./Contact";
 
 export const Footer = () => {
@@ -64,7 +64,7 @@ export const Footer = () => {
         <SocialNetworks socialNetworks={SOCIAL_NETWORKS} />
         <div className="mt-2 flex flex-col items-center justify-center md:flex-row md:justify-between">
           <div className="mb-2 flex items-center md:mb-0">
-            <MdAnnouncement className="mr-2 text-2xl" />
+            <MdAccountBalance className="mr-2 text-2xl" />
             <button className="text-sm md:text-base" onClick={openLegalModal}>
               Mentions légales
             </button>
