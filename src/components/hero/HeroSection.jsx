@@ -15,7 +15,7 @@ export const HeroSection = () => {
           height={300}
           // src="/images/avatar.jpg"
           src="/images/photo_profil.jpg"
-          alt="avatar guillaume gemelas"
+          alt="photo de guillaume gemelas, développeur web freelance"
           className="top-[-16px] right-[-42px] rounded-full shadow-lg md:absolute"
           //md:absolute l'image passe en dessous du texte
         />

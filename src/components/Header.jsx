@@ -15,7 +15,7 @@ export const Header = () => {
           height={60}
           // src="/images/avatar.jpg"
           src="/images/photo_profil-2.jpg"
-          alt="avatar Guillaume Gemelas"
+          alt="photo de Guillaume Gemelas, développeur web freelance dans l'ain, en noir et blanc"
           className="hidden rounded-full shadow-lg md:mr-6 md:block"
           //md:absolute l'image passe en dessous du texte--
         />
