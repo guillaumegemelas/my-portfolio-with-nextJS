@@ -62,16 +62,17 @@ export const Footer = () => {
           <AiFillPhone className="mr-2" /> <p> 06.34.47.66.69</p>
         </a>
         <SocialNetworks socialNetworks={SOCIAL_NETWORKS} />
-        <div className="mt-16 mb-8 flex">
-          <p className="flex items-center">
-            {" "}
-            <MdAnnouncement />
-            <button className="ml-2" onClick={openLegalModal}>
+        <div className="mt-2 flex flex-col items-center justify-center md:flex-row md:justify-between">
+          <div className="mb-2 flex items-center md:mb-0">
+            <MdAnnouncement className="mr-2 text-2xl" />
+            <button className="text-sm md:text-base" onClick={openLegalModal}>
               Mentions légales
             </button>
-          </p>
-          <p className="ml-4 mr-4">-</p>
-          <p>Guillaume Gemelas - ain.dev</p>
+          </div>
+          <div className="hidden md:block">
+            <p className="ml-4 mr-4">-</p>
+          </div>
+          <p className="text-sm md:text-base">Guillaume Gemelas - ain.dev</p>
         </div>
       </div>
 
