@@ -136,10 +136,11 @@ export const Footer = () => {
                 <p>
                   La structure générale, ainsi que les textes, images animées ou
                   non et tous les éléments composants ce site Web, sont la
-                  propriété de … Toutes reproductions totales ou partielles de
-                  son contenu, ainsi que toute extraction d'une partie
-                  substantielle de la base de données qu'il contient est
-                  interdite sans autorisation expresse et préalable de …
+                  propriété de Guillaume Gemelas - ain.dev. Toutes reproductions
+                  totales ou partielles de son contenu, ainsi que toute
+                  extraction d'une partie substantielle de la base de données
+                  qu'il contient est interdite sans autorisation expresse et
+                  préalable de Guillaume Gemelas - ain.dev.
                 </p>
                 {/* Le reste du contenu de la section 3 */}
               </section>
