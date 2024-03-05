@@ -79,7 +79,7 @@ export const Footer = () => {
       {/* Modale des mentions légales */}
       {isLegalModalOpen && (
         <div className="modal-overlay">
-          <div className="modal">
+          <div className="modal ">
             <div className="modal-content">
               {/* Contenu des mentions légales */}
               <h2 className="mb-16 text-center text-3xl">Mentions légales</h2>
@@ -149,16 +149,13 @@ export const Footer = () => {
 
             {/* Bouton pour fermer la modale */}
             <div className="flex justify-center">
-              <Button onClick={closeLegalModal}>Fermer</Button>
+              <Button className="w-64" onClick={closeLegalModal}>
+                Fermer
+              </Button>
             </div>
           </div>
         </div>
       )}
-      {/* <p>
-      
-        Created for educational purpose for the{' '}
-        <a href="https://codelynx.dev/beginreact">BeginReact.dev formation</a>   !
-      </p> */}
     </footer>
   );
 };
