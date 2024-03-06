@@ -58,9 +58,9 @@ export const Footer = () => {
           {/* I’ll be happy to chat with you about a potential job or a freelance */}
           Si vous préférez échanger de vive voix, n'hésitez pas à me contacter!
         </Typography>
-        <a className="flex items-center pb-8 text-base text-primary">
+        <div className="flex items-center pb-8 text-base text-primary">
           <AiFillPhone className="mr-2" /> <p> 06.34.47.66.69</p>
-        </a>
+        </div>
         <SocialNetworks socialNetworks={SOCIAL_NETWORKS} />
         <div className="mt-2 flex flex-col items-center justify-center md:flex-row md:justify-between">
           <div className="mb-2 flex items-center md:mb-0">
