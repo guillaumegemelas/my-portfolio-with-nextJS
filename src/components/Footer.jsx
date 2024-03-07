@@ -55,7 +55,7 @@ export const Footer = () => {
         {/* {EMAIL} */}
         {/* </a> */}
         <Typography variant="body2">
-          {/* I’ll be happy to chat with you about a potential job or a freelance */}
+          {/* I’ll be happy to chat with you about a potential job or a freelance.. */}
           Si vous préférez échanger de vive voix, n'hésitez pas à me contacter!
         </Typography>
         <div className="flex items-center pb-8 text-base text-primary">
