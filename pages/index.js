@@ -30,7 +30,59 @@ const Home = () => {
           content="développeur web Ain, développeur web mobile Ain, freelance, ain.dev, aindev, Bourg-en-Bresse"
           key="keywords"
         />
+        {/* ajout de la balise schema.org. à vérifier SEO google si action ou pas: fait le 08/03/24! */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "http://schema.org",
+              "@type": "WebPage",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id": "https://guillaume-gemelas-dev.com/",
+              },
+              breadcrumb: {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    item: {
+                      "@id": "https://guillaume-gemelas-dev.com/#Skills",
+                      name: "Compétences",
+                    },
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    item: {
+                      "@id": "https://guillaume-gemelas-dev.com/#Projects",
+                      name: "Projets",
+                    },
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    item: {
+                      "@id": "https://guillaume-gemelas-dev.com/#Comments",
+                      name: "Commentaires",
+                    },
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 4,
+                    item: {
+                      "@id": "https://guillaume-gemelas-dev.com/#Contact",
+                      name: "Contact",
+                    },
+                  },
+                ],
+              },
+            }),
+          }}
+        />
       </Head>
+
       <div className="flex flex-col gap-40">
         <Header />
         <HeroSection />
