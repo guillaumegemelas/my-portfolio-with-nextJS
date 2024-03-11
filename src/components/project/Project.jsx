@@ -8,7 +8,18 @@ export const Project = ({
   homepageUrl,
   icon,
   image,
+  //---------
+  handleClick,
+  showAlertOnClick,
+  //---------
 }) => {
+  //---------------
+  const handleNameClick = () => {
+    if (showAlertOnClick) {
+      handleClick();
+    }
+  };
+  //---------------
   return (
     <div className="flex w-60 flex-col gap-4 rounded-2xl bg-paper p-4 transition-transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 md:w-80 md:p-8">
       <div className="flex">
@@ -24,7 +35,7 @@ export const Project = ({
         />
       </div>
 
-      <a href={url}>
+      <a onClick={handleNameClick} href={url}>
         <Typography className="font-bold" variant="h3">
           {name}
         </Typography>

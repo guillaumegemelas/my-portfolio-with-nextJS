@@ -107,7 +107,7 @@ export const HeroSection = () => {
                 <b>Je développe vos sites web</b> aussi bien sur la partie
                 client (Front-end) que sur la partie serveur (Back-end). Vous
                 pouvez consulter ci dessous mes projets, pour la plupart
-                réalisés avec ReactJS ou NextJS.
+                réalisés avec ReactJS, NextJS ou encore en VanillaJS.
               </span>
             </span>
             <br />
@@ -146,8 +146,12 @@ export const HeroSection = () => {
               project and respond as soon as possible
             </span> */}
             <span className="mt-3 ml-7 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
-              N'hésitez pas à me contacter, je serai ravi d'étudier votre projet
-              et de vous apporter une réponse dans les plus brefs délais.
+              N'hésitez pas à me{" "}
+              <a className="text-current" href="#Contact">
+                contacter
+              </a>
+              , je serai ravi d'étudier votre projet et de vous apporter une
+              réponse dans les plus brefs délais.
             </span>
           </span>
         </div>

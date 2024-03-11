@@ -8,35 +8,39 @@ import { useFetch } from "../../hooks/useFetch";
 
 import { FaAtlassian } from "react-icons/fa";
 
-//--pour refactor, on va utiliser le Hook useReducer avec un seul state:
+import { useState } from "react";
 
-// const fetchReducer = (state, action) => {
-//   switch (action.type) {
-//     case "pending": {
-//       // data et error null
-//       return { status: "pending", data: null, error: null };
-//     }
-//     case "resolved": {
-//       // si resolved, error: null et on met data: action.data
-//       return { status: "resolved", data: action.data, error: null };
-//     }
-//     case "rejected": {
-//       // si error, on met data: null et error: error
-//       return { status: "rejected", data: null, error: action.error };
-//     }
-//     default: {
-//       throw new Error(`Unhandled action type: ${action.type}`);
-//     }
-//   }
-// };
+//-------------
+// import { BsEyeglasses } from "react-icons/bs";
+import { RiMovie2Line } from "react-icons/ri";
+import { IoGameControllerOutline } from "react-icons/io5";
+import { GiSkirt } from "react-icons/gi";
+import { MdPermDeviceInformation } from "react-icons/md";
+import { BsFileEarmarkPerson } from "react-icons/bs";
+//-------------
 
 export const ProjectSection = () => {
+  //--------------
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleClick = () => {
+    setShowAlert(true);
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 3000);
+  };
+  //--------------
   //ajouter un tableau d'icone--
-  const iconArray = ["🎬", "🎯", "🚀", "🧸", "👁️", "👨🏻‍🦲"];
+  const iconArray = [
+    <RiMovie2Line key={1} />,
+    <IoGameControllerOutline key={2} />,
+    <GiSkirt key={3} />,
+    <MdPermDeviceInformation key={4} />,
+    <BsFileEarmarkPerson key={5} />,
+  ];
   const imgArray = [
     "/images/tmdb.jpg",
     "/images/gamepad.png",
-    "/images/marvel.png",
     "/images/vinted.png",
     "/images/news.png",
     "/images/portfolio.png",
@@ -56,68 +60,6 @@ export const ProjectSection = () => {
     return <p>Error!</p>;
   }
 
-  //CI DESSOUS LA METHODE AVEC LES 3 STATES (CLASSIQUE)--------------------
-
-  // const [projects, setProjects] = useState(null);
-
-  //state pour gestion d'erreur
-  // const [error, setError] = useState(null);
-
-  //loader à implémenter
-  // const [isLoading, setIsloading] = useState(true);
-
-  //on va utiliser un useEffect qui va gérer un fetch sur notre Github pour avoir les projets principaux
-
-  //première méthode donnée par Melvynx
-  // useEffect(() => {
-  //   setIsloading(true);
-  //   fetch(getListOfUrlRepositoriesUrl(GITHUB_USERNAME))
-  //     .then((res) => res.json())
-  //     .then((repo) => {
-  //       setProjects(repo);
-  //       console.log(repo);
-  //     })
-  //     .catch((err) => setError(err))
-  //     .finally(setIsloading(false));
-  // }, []);
-
-  //seconde méthode avec try/catch et async/await
-  // useEffect(() => {
-  //   setIsloading(true);
-  //   const fetchProjects = async () => {
-  //     try {
-  //       const response = await fetch(
-  //         getListOfUrlRepositoriesUrl(GITHUB_USERNAME)
-  //       );
-  //       const data = await response.json();
-  //       setProjects(data);
-  //       setIsloading(false);
-  //     } catch (error) {
-  //       setError(error);
-  //     }
-  //   };
-  //   fetchProjects();
-  // }, []);
-
-  // const projects = [
-  //   {
-  //     name: "DEMO",
-  //     description: "DEMO",
-  //     stargazerCount: 12,
-  //     url: "https://github.com",
-  //     homepageUrl: "https://github.com",
-  //   },
-  // ];
-
-  // if (isLoading) {
-  //   return <Loader />;
-  // }
-
-  // if (error) {
-  //   return <p>Error!</p>;
-  // }
-  //----------------------------------------------------
-
   return (
     <SectionWrapper
       title={
@@ -134,6 +76,16 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
+        {/* <Project
+          key="1"
+          icon={<BsEyeglasses />}
+          image="/images/essilor4.png"
+          name="Essilor-Webapp-Interface"
+          homepageUrl="https://www.meyecustom.com/index.php"
+          description="Webapp de type interface de personnalisation de lunettes de vue et solaires pour Essilor"
+          handleClick={handleClick}
+          showAlertOnClick={true} // Activer l'ale
+        /> */}
         {/* on va mapper sur les repositories de Github */}
         {projects?.map((repository, index) => {
           const icon = iconArray[index];
@@ -144,12 +96,21 @@ export const ProjectSection = () => {
               {...repository}
               icon={icon}
               image={image}
+              handleClick={handleClick}
+              showAlertOnClick={false} // Désactiver l'alerte pour les autres projet
             />
           );
         })}
         {/* GitHub Repository - Exercise (replace this) */}
         {/* <Project {...projects[0]} /> */}
       </div>
+      {showAlert && (
+        <div className="fixed top-0 left-0 z-10 flex h-full w-full items-center justify-center">
+          <div className="absolute top-0 left-0 right-0 bg-red-500 p-2 text-center text-white opacity-100 transition-opacity duration-500">
+            Le code source ne peut pas être visualisé.
+          </div>
+        </div>
+      )}
     </SectionWrapper>
   );
 };
