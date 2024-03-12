@@ -29,7 +29,7 @@ export const ProjectSection = () => {
       setShowAlert(false);
     }, 3000);
   };
-  //--------------
+  //-----------------
   //ajouter un tableau d'icone--
   const iconArray = [
     <RiMovie2Line key={1} />,
