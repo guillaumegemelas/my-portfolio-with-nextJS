@@ -10,14 +10,14 @@ import { FaAtlassian } from "react-icons/fa";
 
 import { useState } from "react";
 
-//-------------
+//--------------
 // import { BsEyeglasses } from "react-icons/bs";
 import { RiMovie2Line } from "react-icons/ri";
 import { IoGameControllerOutline } from "react-icons/io5";
 import { GiSkirt } from "react-icons/gi";
 import { MdPermDeviceInformation } from "react-icons/md";
 import { BsFileEarmarkPerson } from "react-icons/bs";
-//-------------
+//--------------
 
 export const ProjectSection = () => {
   //--------------
