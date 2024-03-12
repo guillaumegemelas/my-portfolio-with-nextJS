@@ -81,7 +81,7 @@ export const ProjectSection = () => {
           icon={<BsEyeglasses />}
           image="/images/essilor4.png"
           name="Essilor-Webapp-Interface"
-          homepageUrl="https://www.meyecustom.com/index.php"
+          homepageUrl="https://www.meyecustom.com"
           description="Webapp de type interface de personnalisation de lunettes de vue et solaires pour Essilor"
           handleClick={handleClick}
           showAlertOnClick={true} // Activer l'ale
