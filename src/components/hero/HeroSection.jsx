@@ -64,7 +64,7 @@ export const HeroSection = () => {
               créer ma structure :
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
                 {" "}
-                ain.dev.
+                aindev.
               </span>
               <br />
               {/* Son nom reflète parfaitement ma façon de travailler. */}
