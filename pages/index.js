@@ -30,7 +30,7 @@ const Home = () => {
           content="développeur web Ain, développeur web mobile Ain, freelance web ain, ain.dev, aindev, Bourg-en-Bresse"
           key="keywords"
         />
-        {/* ajout de la balise schema.org. à vérifier SEO google si action ou pas: fait le 08/03/24! */}
+        {/* ajout de la balise schema.org. à vérifier SEO google si action ou pas: fait le 08/03/24!! */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
