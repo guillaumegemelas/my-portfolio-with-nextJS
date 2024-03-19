@@ -45,10 +45,11 @@ export const HeroSection = () => {
             {/* J'améliore mes compétences à travers de l'auto-formation, des
             tutoriels ainsi que des projets personnels,  */}
             Je vous accompagne tout au long de votre projet, de la phase d'étude
-            initiale jusqu'à sa mise en ligne. Je mets à profit mes compétences
-            techniques et mon expertise pour vous proposer un site sur mesure,
-            que ce soit en utilisant des plateformes de gestion de contenu comme
-            WordPress ou en développant entièrement en code personnalisé.
+            initiale jusqu'à sa mise en ligne. <br />
+            Je mets à profit mes compétences techniques et mon expertise pour
+            vous proposer un site personnalisé, que ce soit en utilisant des
+            plateformes de gestion de contenu comme WordPress ou en développant
+            entièrement du code sur mesure.
           </p>
           <br />
           {/* modifs faite le 16/01------------------------------------------ */}
