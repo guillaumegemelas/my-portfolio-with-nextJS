@@ -40,11 +40,15 @@ export const HeroSection = () => {
           <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
             <b>Concepteur Développeur d'Applications en Freelance.</b>
             <br />
-            Je suis un développeur web et mobile JavaScript spécialisé en React.
-            J'améliore mes compétences à travers de l'auto-formation, des
-            tutoriels ainsi que des projets personnels, et je suis prêt à mettre
-            à profit mes compétences techniques et mon expertise à votre
-            service.
+            Je suis développeur web et mobile Freelance JavaScript spécialisé en
+            React.
+            {/* J'améliore mes compétences à travers de l'auto-formation, des
+            tutoriels ainsi que des projets personnels,  */}
+            Je vous accompagne tout au long de votre projet, de la phase d'étude
+            initiale jusqu'à sa mise en ligne. Je mets à profit mes compétences
+            techniques et mon expertise pour vous proposer un site sur mesure,
+            que ce soit en utilisant des plateformes de gestion de contenu comme
+            WordPress ou en développant entièrement en code personnalisé.
           </p>
           <br />
           {/* modifs faite le 16/01------------------------------------------ */}
