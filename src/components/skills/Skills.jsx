@@ -223,7 +223,9 @@ export const Skills = () => {
                   marginRight: "12px",
                 }}
               />
-              Wordpress
+              <p className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
+                Wordpress
+              </p>
             </li>
             <li className="flex items-center">
               <AiOutlineCloudServer
