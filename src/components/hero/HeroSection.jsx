@@ -43,7 +43,7 @@ export const HeroSection = () => {
             Je suis développeur web et mobile Freelance JavaScript spécialisé en
             React.
             {/* J'améliore mes compétences à travers de l'auto-formation, des
-            tutoriels ainsi que des projets personnels,  */}
+            tutoriels ainsi que des projets personnels  */}
             Je vous accompagne tout au long de votre projet, de la phase d'étude
             initiale jusqu'à sa mise en ligne. <br />
             Je mets à profit mes compétences techniques et mon expertise pour
