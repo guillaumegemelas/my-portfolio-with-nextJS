@@ -76,7 +76,7 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        <Project
+        {/* <Project
           key="1"
           icon={<BsEyeglasses />}
           image="/images/essilor4.png"
@@ -85,7 +85,8 @@ export const ProjectSection = () => {
           description="Webapp de type interface de personnalisation de lunettes de vue et solaires pour Essilor"
           handleClick={handleClick}
           showAlertOnClick={true} // Activer l'ale
-        />
+          url=""
+        /> */}
         {/* on va mapper sur les repositories de Github */}
         {projects?.map((repository, index) => {
           const icon = iconArray[index];
