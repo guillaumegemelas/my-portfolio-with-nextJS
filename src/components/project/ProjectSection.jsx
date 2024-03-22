@@ -30,7 +30,7 @@ export const ProjectSection = () => {
     }, 3000);
   };
   //-----------
-  //ajouter un tableau d'icone--
+  //ajouter un tableau d'icone----
   const iconArray = [
     <RiMovie2Line key={1} />,
     <IoGameControllerOutline key={2} />,
