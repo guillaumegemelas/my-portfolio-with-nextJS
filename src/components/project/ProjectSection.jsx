@@ -11,7 +11,7 @@ import { FaAtlassian } from "react-icons/fa";
 import { useState } from "react";
 
 //-----------
-// import { BsEyeglasses } from "react-icons/bs";
+import { BsEyeglasses } from "react-icons/bs";
 import { RiMovie2Line } from "react-icons/ri";
 import { IoGameControllerOutline } from "react-icons/io5";
 import { GiSkirt } from "react-icons/gi";
@@ -30,7 +30,7 @@ export const ProjectSection = () => {
     }, 3000);
   };
   //-----------
-  //ajouter un tableau d'icone----
+  //ajouter un tableau d'icone--
   const iconArray = [
     <RiMovie2Line key={1} />,
     <IoGameControllerOutline key={2} />,
@@ -76,7 +76,7 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* <Project
+        <Project
           key="1"
           icon={<BsEyeglasses />}
           image="/images/essilor4.png"
@@ -85,8 +85,8 @@ export const ProjectSection = () => {
           description="Webapp de type interface de personnalisation de lunettes de vue et solaires pour Essilor"
           handleClick={handleClick}
           showAlertOnClick={true} // Activer l'ale
-          url=""
-        /> */}
+          url="https://guillaume-gemelas-dev.com/#Projects"
+        />
         {/* on va mapper sur les repositories de Github */}
         {projects?.map((repository, index) => {
           const icon = iconArray[index];
