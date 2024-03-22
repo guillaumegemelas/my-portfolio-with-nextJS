@@ -42,7 +42,7 @@ export const Skills = () => {
       <div className="m-auto grid gap-8 md:grid-cols-2 xl:grid-cols-4">
         {/* <div className="flex flex-wrap justify-center gap-8 m-auto"> */}
         <div className="rounded-2xl bg-paper p-12 transition-transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 lg:mb-0">
-          {/* //titre à mettre en gros et gras !*/}
+          {/* //titre à mettre en gros et gras !!!!*/}
           <h1 className="mb-4 text-center text-lg font-extrabold ">
             Front-End
           </h1>
