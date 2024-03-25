@@ -86,6 +86,7 @@ export const ProjectSection = () => {
           handleClick={handleClick}
           showAlertOnClick={true} // Activer l'ale
           url="https://guillaume-gemelas-dev.com/#Projects"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
         {/* on va mapper sur les repositories de Github */}
         {projects?.map((repository, index) => {
