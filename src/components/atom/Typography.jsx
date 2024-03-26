@@ -29,7 +29,7 @@ export const Typography = ({
           className,
           "text-5xl",
           color === "primary" ? "text-skin-primary" : "text-skin-secondary"
-          // "font-bold"
+          // "font-bold"..
         )}
       >
         {children}
