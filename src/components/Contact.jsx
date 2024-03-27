@@ -20,6 +20,8 @@ export const Contact = () => {
   // Ref for the Google reCAPTCHA component
   const recaptchaRef = useRef(null);
 
+  const siteKey = process.env.CAPTCHA_KEY;
+
   // Function to handle changes in the reCAPTCHA token
   const onCaptchaChange = (token) => {
     setCaptchaToken(token);
@@ -177,7 +179,7 @@ export const Contact = () => {
           <ReCAPTCHA
             className="g-recaptcha"
             size="normal"
-            sitekey={process.env.CAPTCHA_KEY}
+            sitekey={siteKey}
             ref={recaptchaRef}
             onChange={onCaptchaChange}
           />
