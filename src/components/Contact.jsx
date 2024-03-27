@@ -170,7 +170,7 @@ export const Contact = () => {
           <ReCAPTCHA
             className="g-recaptcha"
             size="normal"
-            sitekey={process.env.NEXT_PUBLIC_CAPTCHA_KEY}
+            sitekey={process.env.CAPTCHA_KEY}
             // ref={recaptchaRef}
             onChange={setCaptcha}
           />
