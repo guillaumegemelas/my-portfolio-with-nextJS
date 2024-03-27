@@ -9,6 +9,10 @@ import { ProjectSection } from "../src/components/project";
 import { Curriculum } from "../src/components/curriculum/Curriculum";
 import { Skills } from "../src/components/skills/Skills";
 
+//---------------
+import Script from "next/script";
+//---------------
+
 // dynamic import Memory Section.
 const DynamicMemorySection = dynamic(() => import("../src/components/memory"), {
   ssr: false,
@@ -31,6 +35,12 @@ const Home = () => {
           key="keywords"
         />
         {/* ajout de la balise schema.org. à vérifier SEO google si action ou pas: fait le 08/03/24! */}
+
+        <Script
+          src="https://www.google.com/recaptcha/enterprise.js?render=6LfObqYpAAAAACQ3tWajFLwL7fE1X_pW9NF3ZKav"
+          strategy="beforeInteractive"
+        />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
