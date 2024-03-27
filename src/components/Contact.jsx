@@ -1,8 +1,11 @@
-import React, { useState, useRef } from "react";
+import React, {
+  useState,
+  // useRef
+} from "react";
 import { Button } from "./atom/Button";
 import { Alert } from "./Alert";
 //-----------------
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 //-----------------
 
 export const Contact = () => {
@@ -14,19 +17,19 @@ export const Contact = () => {
   });
 
   //-----------------
-  // State to store the Google reCAPTCHA token
-  const [captchaToken, setCaptchaToken] = useState("");
+  // // State to store the Google reCAPTCHA token
+  // const [captchaToken, setCaptchaToken] = useState("");
 
-  // Ref for the Google reCAPTCHA component
-  const recaptchaRef = useRef(null);
+  // // Ref for the Google reCAPTCHA component
+  // const recaptchaRef = useRef(null);
 
-  const siteKey1 = `${process.env.CAPTCHA_KEY}`;
-  // console.log(siteKey1);
+  // const siteKey1 = `${process.env.CAPTCHA_KEY}`;
+  // // console.log(siteKey1);
 
-  // Function to handle changes in the reCAPTCHA token
-  const onCaptchaChange = (token) => {
-    setCaptchaToken(token);
-  };
+  // // Function to handle changes in the reCAPTCHA token
+  // const onCaptchaChange = (token) => {
+  //   setCaptchaToken(token);
+  // };
   //-----------------
 
   const [showAlert, setShowAlert] = useState(false);
@@ -62,12 +65,12 @@ export const Contact = () => {
     }
     //-----------------
     // Vérifiez si le token ReCAPTCHA est présent
-    if (!captchaToken) {
-      console.error(
-        "Veuillez vérifier que vous êtes un humain en cochant la case reCAPTCHA."
-      );
-      return;
-    }
+    // if (!captchaToken) {
+    //   console.error(
+    //     "Veuillez vérifier que vous êtes un humain en cochant la case reCAPTCHA."
+    //   );
+    //   return;
+    // }
     //-----------------
 
     const url =
@@ -176,7 +179,7 @@ export const Contact = () => {
           required
         ></textarea>
         {/* Google reCAPTCHA */}
-        <div className="pb-20px">
+        {/* <div className="pb-20px">
           <ReCAPTCHA
             className="g-recaptcha"
             size="normal"
@@ -184,7 +187,7 @@ export const Contact = () => {
             ref={recaptchaRef}
             onChange={onCaptchaChange}
           />
-        </div>
+        </div> */}
         {/* Google reCAPTCHA */}
         {!showAlert && <Button type="submit">Envoyer</Button>}
         {showAlert && <Alert />}
