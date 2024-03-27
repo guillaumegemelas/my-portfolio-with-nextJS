@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Button } from "./atom/Button";
 import { Alert } from "./Alert";
+//-----------------
+import ReCAPTCHA from "react-google-recaptcha";
+//-----------------
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +12,19 @@ export const Contact = () => {
     email: "",
     message: "",
   });
+
+  //-----------------
+  // State to store the Google reCAPTCHA token
+  const [captchaToken, setCaptchaToken] = useState("");
+
+  // Ref for the Google reCAPTCHA component
+  const recaptchaRef = useRef(null);
+
+  // Function to handle changes in the reCAPTCHA token
+  const onCaptchaChange = (token) => {
+    setCaptchaToken(token);
+  };
+  //-----------------
 
   const [showAlert, setShowAlert] = useState(false);
 
@@ -41,9 +57,19 @@ export const Contact = () => {
       );
       return;
     }
+    //-----------------
+    // Vérifiez si le token ReCAPTCHA est présent
+    if (!captchaToken) {
+      console.error(
+        "Veuillez vérifier que vous êtes un humain en cochant la case reCAPTCHA."
+      );
+      return;
+    }
+    //-----------------
 
     const url =
       "https://site--mailing-back--zqfvjrr4byql.code.run/process-form";
+    // "http://localhost:3000/process-form";
 
     try {
       const response = await fetch(url, {
@@ -146,6 +172,17 @@ export const Contact = () => {
           placeholder="Votre message"
           required
         ></textarea>
+        {/* Google reCAPTCHA */}
+        <div className="pb-20px">
+          <ReCAPTCHA
+            className="g-recaptcha"
+            size="normal"
+            sitekey="6LfObqYpAAAAACQ3tWajFLwL7fE1X_pW9NF3ZKav"
+            ref={recaptchaRef}
+            onChange={onCaptchaChange}
+          />
+        </div>
+        {/* Google reCAPTCHA */}
         {!showAlert && <Button type="submit">Envoyer</Button>}
         {showAlert && <Alert />}
       </form>
