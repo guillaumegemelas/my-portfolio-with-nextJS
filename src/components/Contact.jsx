@@ -177,7 +177,7 @@ export const Contact = () => {
           <ReCAPTCHA
             className="g-recaptcha"
             size="normal"
-            sitekey={"CAPTCHA_KEY"}
+            sitekey={import.meta.env.CAPTCHA_KEY}
             ref={recaptchaRef}
             onChange={onCaptchaChange}
           />
