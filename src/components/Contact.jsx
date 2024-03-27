@@ -177,7 +177,7 @@ export const Contact = () => {
           <ReCAPTCHA
             className="g-recaptcha"
             size="normal"
-            sitekey="6LfObqYpAAAAACQ3tWajFLwL7fE1X_pW9NF3ZKav"
+            sitekey={"CAPTCHA_KEY"}
             ref={recaptchaRef}
             onChange={onCaptchaChange}
           />
