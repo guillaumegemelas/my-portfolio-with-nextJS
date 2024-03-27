@@ -37,8 +37,9 @@ const Home = () => {
         {/* ajout de la balise schema.org. à vérifier SEO google si action ou pas: fait le 08/03/24! */}
 
         {/* <Script
-          src="https://www.google.com/recaptcha/enterprise.js?render=6LfObqYpAAAAACQ3tWajFLwL7fE1X_pW9NF3ZKav"
-          strategy="beforeInteractive"
+          src="https://www.google.com/recaptcha/enterprise.js"
+          async
+          defer
         /> */}
 
         <script

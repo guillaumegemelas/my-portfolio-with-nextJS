@@ -5,7 +5,7 @@ import React, {
 import { Button } from "./atom/Button";
 import { Alert } from "./Alert";
 //-----------------
-// import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 //-----------------
 
 export const Contact = () => {
@@ -17,19 +17,7 @@ export const Contact = () => {
   });
 
   //-----------------
-  // // State to store the Google reCAPTCHA token
-  // const [captchaToken, setCaptchaToken] = useState("");
-
-  // // Ref for the Google reCAPTCHA component
-  // const recaptchaRef = useRef(null);
-
-  // const siteKey1 = `${process.env.CAPTCHA_KEY}`;
-  // // console.log(siteKey1);
-
-  // // Function to handle changes in the reCAPTCHA token
-  // const onCaptchaChange = (token) => {
-  //   setCaptchaToken(token);
-  // };
+  const [captcha, setCaptcha] = useState();
   //-----------------
 
   const [showAlert, setShowAlert] = useState(false);
@@ -45,6 +33,13 @@ export const Contact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    //-----------------
+    if (!captcha) {
+      console.log("reCAPTCHA not verified.");
+      alert("Merci de cliquer sur le Recaptcha");
+      return;
+    }
+    //-----------------
     const formData = {
       nom: event.target.elements.nom.value,
       prenom: event.target.elements.prenom.value,
@@ -63,15 +58,6 @@ export const Contact = () => {
       );
       return;
     }
-    //-----------------
-    // Vérifiez si le token ReCAPTCHA est présent
-    // if (!captchaToken) {
-    //   console.error(
-    //     "Veuillez vérifier que vous êtes un humain en cochant la case reCAPTCHA."
-    //   );
-    //   return;
-    // }
-    //-----------------
 
     const url =
       "https://site--mailing-back--zqfvjrr4byql.code.run/process-form";
@@ -178,16 +164,17 @@ export const Contact = () => {
           placeholder="Votre message"
           required
         ></textarea>
+
         {/* Google reCAPTCHA */}
-        {/* <div className="pb-20px">
+        <div className="pb-20px">
           <ReCAPTCHA
             className="g-recaptcha"
             size="normal"
-            sitekey={siteKey1}
-            ref={recaptchaRef}
-            onChange={onCaptchaChange}
+            sitekey={process.env.NEXT_PUBLIC_CAPTCHA_KEY}
+            // ref={recaptchaRef}
+            onChange={setCaptcha}
           />
-        </div> */}
+        </div>
         {/* Google reCAPTCHA */}
         {!showAlert && <Button type="submit">Envoyer</Button>}
         {showAlert && <Alert />}
