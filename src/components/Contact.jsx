@@ -100,7 +100,7 @@ export const Contact = () => {
     <div className="w-full pt-12 pb-12">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col w-full gap-4 md:px-8"
+        className="flex w-full flex-col gap-4 md:px-8"
       >
         <label
           className="block text-xs font-medium text-skin-secondary md:text-sm"
@@ -109,7 +109,7 @@ export const Contact = () => {
           Votre nom
         </label>
         <input
-          className="w-full p-3 text-sm bg-transparent border-2 border-opacity-50 rounded border-primary focus:border-opacity-100"
+          className="w-full rounded border-2 border-primary border-opacity-50 bg-transparent p-3 text-sm focus:border-opacity-100"
           type="text"
           id="nom"
           name="nom"
@@ -125,7 +125,7 @@ export const Contact = () => {
           Votre prénom
         </label>
         <input
-          className="w-full p-3 text-sm bg-transparent border-2 border-opacity-50 rounded border-primary focus:border-opacity-100"
+          className="w-full rounded border-2 border-primary border-opacity-50 bg-transparent p-3 text-sm focus:border-opacity-100"
           type="text"
           id="prenom"
           name="prenom"
@@ -141,7 +141,7 @@ export const Contact = () => {
           Votre email
         </label>
         <input
-          className="w-full p-3 text-sm bg-transparent border-2 border-opacity-50 rounded border-primary focus:border-opacity-100"
+          className="w-full rounded border-2 border-primary border-opacity-50 bg-transparent p-3 text-sm focus:border-opacity-100"
           type="email"
           id="email"
           name="email"
@@ -157,7 +157,7 @@ export const Contact = () => {
           Votre message
         </label>
         <textarea
-          className="w-full p-3 text-sm bg-transparent border-2 border-opacity-50 rounded border-primary focus:border-opacity-100"
+          className="w-full rounded border-2 border-primary border-opacity-50 bg-transparent p-3 text-sm focus:border-opacity-100"
           id="message"
           name="message"
           value={formData.message}
@@ -167,10 +167,11 @@ export const Contact = () => {
         ></textarea>
 
         {/* Google reCAPTCHA */}
-        <div className="pb-20px">
+        <div className="pb-20px flex justify-center ">
           <ReCAPTCHA
             className="g-recaptcha"
             size="normal"
+            theme="dark"
             sitekey={process.env.NEXT_PUBLIC_CAPTCHA_KEY}
             // ref={recaptchaRef}
             onChange={setCaptcha}
