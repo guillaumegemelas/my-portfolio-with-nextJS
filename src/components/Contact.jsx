@@ -177,7 +177,7 @@ export const Contact = () => {
             onChange={setCaptcha}
           />
         </div>
-        {/* Google reCAPTCHA -*/}
+        {/* Google reCAPTCHA */}
         {!showAlert && <Button type="submit">Envoyer</Button>}
         {showAlert && <Alert />}
       </form>
