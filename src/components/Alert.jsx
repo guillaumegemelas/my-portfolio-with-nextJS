@@ -15,6 +15,7 @@ export const Alert = () => {
           </svg>
         </div>
         <div>
+          {/* message d'alerte */}
           <p className="font-bold">Votre message a bien été envoyé!</p>
           <p className="text-sm">
             Je vous recontacterai dans les plus brefs délais
