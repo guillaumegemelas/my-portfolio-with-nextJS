@@ -17,6 +17,7 @@ import { IoGameControllerOutline } from "react-icons/io5";
 import { GiSkirt } from "react-icons/gi";
 import { MdPermDeviceInformation } from "react-icons/md";
 import { BsFileEarmarkPerson } from "react-icons/bs";
+import { SiGooglepodcasts } from "react-icons/si";
 //--------------
 
 export const ProjectSection = () => {
@@ -76,8 +77,22 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
+        {/* ----projet glc-com-------------------------*/}
         <Project
           key="1"
+          icon={<SiGooglepodcasts />}
+          image="/images/glc.png"
+          name="Glc Communication"
+          homepageUrl="https://glc-com.com"
+          description="Site Web Vitrine fait avec WordPress incluant un blog et une page podcasts"
+          handleClick={handleClick}
+          showAlertOnClick={true} // Activer l'ale
+          url="https://glc-com.com"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
+        {/* ----projet essilor-------------------------*/}
+        <Project
+          key="2"
           icon={<BsEyeglasses />}
           image="/images/essilor4.png"
           name="Essilor-Webapp-Interface"
