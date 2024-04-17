@@ -64,6 +64,13 @@ export const CommentSection = () => {
             </Typography>
           ) : null}
         </div>
+        {/* pour ajouter une publication facebook! */}
+        {/* <iframe
+          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid01HqF1feScWFB1nP6vsXZbs9h8BY2BXtU2ZosXLU6AsQ7zWjZx3Zm7rdQevVF31uMl%26id%3D61557617930908&show_text=true&width=500"
+          width="500"
+          height="341"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        ></iframe> */}
         <CommentForm updateComment={run} />
       </div>
     </SectionWrapper>
