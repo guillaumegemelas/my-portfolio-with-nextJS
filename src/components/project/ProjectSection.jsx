@@ -77,7 +77,7 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet glc-com-------------------------*/}
+        {/* ----projet glc-com-----------------------*/}
         <Project
           key="1"
           icon={<SiGooglepodcasts />}
