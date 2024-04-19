@@ -65,12 +65,23 @@ export const Footer = () => {
 
         {/* pour ajouter une publication facebook!! */}
         <iframe
-          className="mt-16 mb-16 rounded-lg"
+          className="mt-16 mb-16 hidden rounded-lg sm:block"
           src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61557617930908&amp;tabs=timeline&amp;width=500&amp;height=800&amp;small_header=false&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
           width="500"
           height="800"
           allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
         ></iframe>
+
+        {/* <!-- Seconde iframe visible uniquement sur des écrans de petite taille --> */}
+        <div className="flex w-full max-w-2xl flex-col items-center sm:hidden">
+          <iframe
+            className="mt-16 mb-16 rounded-lg"
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61557617930908&amp;tabs=timeline&amp;width=400&amp;height=800&amp;small_header=false&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
+            width="400"
+            height="800"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div>
 
         <div className="mt-2 flex flex-col items-center justify-center md:flex-row md:justify-between">
           <div className="mb-2 flex items-center md:mb-0">
