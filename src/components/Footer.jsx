@@ -62,6 +62,16 @@ export const Footer = () => {
           <AiFillPhone className="mr-2" /> <p> 06.34.47.66.69</p>
         </div>
         <SocialNetworks socialNetworks={SOCIAL_NETWORKS} />
+
+        {/* pour ajouter une publication facebook!! */}
+        <iframe
+          className="mt-16 mb-16 rounded-lg"
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61557617930908&amp;tabs=timeline&amp;width=500&amp;height=800&amp;small_header=false&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
+          width="500"
+          height="800"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        ></iframe>
+
         <div className="mt-2 flex flex-col items-center justify-center md:flex-row md:justify-between">
           <div className="mb-2 flex items-center md:mb-0">
             <MdAccountBalance className="mr-2 text-2xl" />
