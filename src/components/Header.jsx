@@ -66,7 +66,7 @@ export const Header = () => {
                 <li className="my-8 uppercase">
                   <a href="#Projects" onClick={closeNavMenu}>
                     <span className="text-secondary">2.</span>{" "}
-                    <span className="text-gray-100">Projets</span>{" "}
+                    <span className="text-gray-100">Réalisations</span>{" "}
                   </a>
                 </li>
                 <li className="my-8 uppercase">
@@ -98,7 +98,7 @@ export const Header = () => {
               <a href="#Projects">
                 <span className="text-secondary">2.</span>{" "}
                 <span className="dark:text-gray-100 dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
-                  Projets
+                  Réalisations
                 </span>{" "}
               </a>
             </li>

@@ -18,6 +18,7 @@ import { GiSkirt } from "react-icons/gi";
 import { MdPermDeviceInformation } from "react-icons/md";
 import { BsFileEarmarkPerson } from "react-icons/bs";
 import { SiGooglepodcasts } from "react-icons/si";
+import { MdSportsHandball } from "react-icons/md";
 //--------------
 
 export const ProjectSection = () => {
@@ -72,7 +73,7 @@ export const ProjectSection = () => {
               marginRight: "15px",
             }}
           />{" "}
-          Projets
+          Réalisations
         </div>
       }
     >
@@ -80,13 +81,26 @@ export const ProjectSection = () => {
         {/* ----projet glc-com-----------------------*/}
         <Project
           key="1"
+          icon={<MdSportsHandball />}
+          image="/images/epgv1.png"
+          name="Epgv01"
+          homepageUrl="https://epgv01.fr"
+          description="Site Web Vitrine réalisé avec WordPress pour la Fédération Française EPGV01 "
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://epgv01.fr"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
+        {/* ----projet glc-com-----------------------*/}
+        <Project
+          key="1"
           icon={<SiGooglepodcasts />}
           image="/images/glc.png"
           name="Glc Communication"
           homepageUrl="https://glc-com.com"
-          description="Site Web Vitrine fait avec WordPress incluant un blog et une page podcasts"
+          description="Site Web Vitrine réalisé avec WordPress (blog, podcasts..) pour l'entreprise Glc Communication"
           handleClick={handleClick}
-          showAlertOnClick={true} // Activer l'ale
+          // showAlertOnClick={true} // Activer l'ale
           url="https://glc-com.com"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
@@ -95,7 +109,7 @@ export const ProjectSection = () => {
           key="2"
           icon={<BsEyeglasses />}
           image="/images/essilor4.png"
-          name="Essilor-Webapp-Interface"
+          name="Essilor Webapp"
           homepageUrl="https://www.meyecustom.com"
           description="Webapp de type interface de personnalisation de lunettes de vue et solaires pour Essilor"
           handleClick={handleClick}
