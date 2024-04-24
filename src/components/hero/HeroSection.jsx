@@ -1,4 +1,8 @@
 // import { FULL_NAME } from "../../lib/config";
+// ---------------------------- ----------------------------
+import { useState } from "react";
+import { Button } from "../atom/Button";
+// ---------------------------- ----------------------------
 
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 
@@ -7,6 +11,17 @@ import { RiContactsLine } from "react-icons/ri";
 import { FaGoogle } from "react-icons/fa";
 
 export const HeroSection = () => {
+  // ---------------------------- ----------------------------
+  const [isLegalModalOpen, setIsLegalModalOpen] = useState(false);
+
+  const openLegalModal = () => {
+    setIsLegalModalOpen(true);
+  };
+
+  const closeLegalModal = () => {
+    setIsLegalModalOpen(false);
+  };
+  // ---------------------------- ----------------------------
   return (
     <>
       <div className="relative m-auto mt-12 mb-12 flex max-w-4xl flex-col items-center md:flex-row">
@@ -42,6 +57,7 @@ export const HeroSection = () => {
             <br />
             Je suis développeur web et mobile Freelance JavaScript spécialisé en
             React.
+            <br />
             {/* J'améliore mes compétences à travers de l'auto-formation, des
             tutoriels ainsi que des projets personnels  */}
             Je vous accompagne tout au long de votre projet, de la phase d'étude
@@ -65,11 +81,16 @@ export const HeroSection = () => {
             <p className="mt-12  max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)] sm:mt-0">
               Ce qui m'anime, c'est avant tout la "vision locale". La notion de
               proximité est, à mon sens, essentielle pour comprendre toutes les
-              facettes d'un projet. C'est pourquoi, fin 2023, j'ai choisi de
-              créer ma structure :
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
+              facettes d'un projet. <br />
+              C'est pourquoi, fin 2023, j'ai choisi de créer ma structure :
+              <span>
                 {" "}
-                aindev.
+                <button
+                  className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent"
+                  onClick={openLegalModal}
+                >
+                  aindev.
+                </button>
               </span>
               <br />
               {/* Son nom reflète parfaitement ma façon de travailler. */}
@@ -161,6 +182,71 @@ export const HeroSection = () => {
           </span>
         </div>
       </div>
+      {isLegalModalOpen && (
+        <div className="modal-overlay">
+          <div className="modal ">
+            <div className="modal-content">
+              {/* Contenu des mentions légales */}
+              <h2 className="mb-16 text-center text-3xl">Aindev</h2>
+
+              {/* Section 1 : Mentions légales */}
+              <section className="mb-12">
+                <h2 className="mb-6 text-xl underline">
+                  Informations juridiques :
+                </h2>
+                <p className="mb-4">
+                  <span className="font-semibold">Activité :</span>{" "}
+                  Programmation informatique
+                </p>
+                <p className="mb-4">
+                  <span className="font-semibold">Création :</span> 25/03/2024
+                </p>
+                <p className="mb-4">
+                  <span className="font-semibold">Dirigeant :</span> Guillaume
+                  Gemelas
+                </p>
+                <p className="mb-4">
+                  <span className="font-semibold">Forme juridique :</span>{" "}
+                  Entrepreneur individuel
+                </p>
+                <p className="mb-4">
+                  <span className="font-semibold">SIREN :</span> 924911951
+                </p>
+                <p className="mb-4">
+                  <span className="font-semibold">Activité principale :</span>{" "}
+                  Création de sites web, refonte de sites web, amélioration du
+                  référencement naturel, formations sur l'univers du web
+                </p>
+              </section>
+
+              {/* Section 2 : Protection des données personnelles */}
+              <section className="mt-24 mb-24">
+                <div className="justify-center gap-8 xl:flex">
+                  <img
+                    src="/images/carte2.png"
+                    alt="carte visite aindev"
+                    className="mx-auto mb-12 w-96 rounded shadow-lg xl:mb-0"
+                  />
+                  <img
+                    src="/images/carte1.png"
+                    alt="carte visite aindev"
+                    className="mx-auto w-96 rounded shadow-lg"
+                  />
+                </div>
+
+                {/* Le reste du contenu de la section 2 */}
+              </section>
+            </div>
+
+            {/* Bouton pour fermer la modale */}
+            <div className="flex justify-center">
+              <Button className="w-64" onClick={closeLegalModal}>
+                Fermer
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
