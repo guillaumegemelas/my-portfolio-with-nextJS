@@ -65,7 +65,10 @@ export const ProjectSection = () => {
   return (
     <SectionWrapper
       title={
-        <div style={{ display: "flex", alignItems: "center" }} id="Projects">
+        <div
+          style={{ display: "flex", alignItems: "center" }}
+          id="Achievements"
+        >
           <FaAtlassian
             style={{
               fontSize: "28px",
@@ -93,7 +96,7 @@ export const ProjectSection = () => {
         />
         {/* ----projet glc-com-----------------------*/}
         <Project
-          key="1"
+          key="2"
           icon={<SiGooglepodcasts />}
           image="/images/glc.png"
           name="Glc Communication"
@@ -106,7 +109,7 @@ export const ProjectSection = () => {
         />
         {/* ----projet essilor-------------------------*/}
         <Project
-          key="2"
+          key="3"
           icon={<BsEyeglasses />}
           image="/images/essilor4.png"
           name="Essilor Webapp"

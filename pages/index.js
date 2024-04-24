@@ -67,7 +67,7 @@ const Home = () => {
                     "@type": "ListItem",
                     position: 2,
                     item: {
-                      "@id": "https://guillaume-gemelas-dev.com/#Projects",
+                      "@id": "https://guillaume-gemelas-dev.com/#Réalisations",
                       name: "Réalisations",
                     },
                   },
