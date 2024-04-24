@@ -167,7 +167,7 @@ export const Contact = () => {
         ></textarea>
 
         {/* Google reCAPTCHA */}
-        <div className="pb-20px flex justify-center ">
+        <div className="pb-20px mt-4 mb-4 flex justify-center ">
           <ReCAPTCHA
             className="g-recaptcha"
             size="normal"

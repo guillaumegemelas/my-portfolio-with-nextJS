@@ -58,9 +58,13 @@ export const Footer = () => {
           {/* I’ll be happy to chat with you about a potential job or a freelance. */}
           Si vous préférez échanger de vive voix, n'hésitez pas à me contacter!
         </Typography>
-        <div className="flex items-center pb-8 text-base text-primary">
+        <div className="flex items-center pb-4 text-base text-primary">
           <AiFillPhone className="mr-2" /> <p> 06.34.47.66.69</p>
         </div>
+        <Typography variant="body2">
+          {/* I’ll be happy to chat with you about a potential job or a freelance. */}
+          ou me retrouver sur:
+        </Typography>
         <SocialNetworks socialNetworks={SOCIAL_NETWORKS} />
 
         {/* pour ajouter une publication facebook! */}
@@ -83,7 +87,7 @@ export const Footer = () => {
           ></iframe>
         </div> */}
 
-        <div className="mt-2 flex flex-col items-center justify-center md:flex-row md:justify-between">
+        <div className="mt-16 flex flex-col items-center justify-center md:flex-row md:justify-between">
           <div className="mb-2 flex items-center md:mb-0">
             <MdAccountBalance className="mr-2 text-2xl" />
             <button className="text-sm md:text-base" onClick={openLegalModal}>
