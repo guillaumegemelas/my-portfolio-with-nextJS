@@ -88,7 +88,7 @@ export const ProjectSection = () => {
           image="/images/epgv1.png"
           name="Epgv01"
           homepageUrl="https://epgv01.fr"
-          description="Site Web Vitrine réalisé avec WordPress pour la Fédération Française EPGV01 "
+          description="Site Web Vitrine réalisé avec WordPress pour le Comité Départemental d'Éducation Physique et de Gymnastique Volontaire de l'Ain - CODEP EPGV01 "
           handleClick={handleClick}
           // showAlertOnClick={true} // Activer l'ale
           url="https://epgv01.fr"
