@@ -9,6 +9,8 @@ import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { RiContactsLine } from "react-icons/ri";
 import { FaGoogle } from "react-icons/fa";
+import { FaInfoCircle } from "react-icons/fa";
+import { MdDevicesOther } from "react-icons/md";
 
 export const HeroSection = () => {
   // ---------------------------- ----------------------------
@@ -187,13 +189,25 @@ export const HeroSection = () => {
           <div className="modal ">
             <div className="modal-content">
               {/* Contenu des mentions légales */}
-              <h2 className="mb-16 text-center text-3xl">Aindev</h2>
+
+              <div className="mb-16 flex items-center justify-center ">
+                <h2 className="text-center text-3xl ">Aindev</h2>{" "}
+                <span className="ml-4 text-3xl">
+                  <MdDevicesOther />
+                </span>
+              </div>
 
               {/* Section 1 : Mentions légales */}
               <section className="mb-12">
-                <h2 className="mb-6 text-xl underline">
-                  Informations juridiques :
-                </h2>
+                <div className="mb-6 flex items-center">
+                  <span className="mr-4 text-2xl">
+                    <FaInfoCircle />
+                  </span>
+                  <h2 className="text-xl underline">
+                    Informations juridiques de l'entreprise:
+                  </h2>
+                </div>
+
                 <p className="mb-4">
                   <span className="font-semibold">Activité :</span>{" "}
                   Programmation informatique
