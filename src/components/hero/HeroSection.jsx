@@ -11,6 +11,7 @@ import { RiContactsLine } from "react-icons/ri";
 import { FaGoogle } from "react-icons/fa";
 import { FaInfoCircle } from "react-icons/fa";
 import { MdDevicesOther } from "react-icons/md";
+import { IoSchool } from "react-icons/io5";
 
 export const HeroSection = () => {
   // ---------------------------- ----------------------------
@@ -63,7 +64,8 @@ export const HeroSection = () => {
             {/* J'améliore mes compétences à travers de l'auto-formation, des
             tutoriels ainsi que des projets personnels  */}
             Je vous accompagne tout au long de votre projet, de la phase d'étude
-            initiale jusqu'à sa mise en ligne. <br />
+            initiale jusqu'à sa mise en ligne.
+            <br />
             Je mets à profit mes compétences techniques et mon expertise pour
             vous proposer un site personnalisé, que ce soit en utilisant des
             plateformes de gestion de contenu comme WordPress ou en développant
@@ -133,9 +135,17 @@ export const HeroSection = () => {
               </span> */}
               <span className="ml-7">
                 <b>Je développe vos sites web</b> aussi bien sur la partie
-                client (Front-end) que sur la partie serveur (Back-end). Vous
-                pouvez consulter ci dessous mes projets, pour la plupart
-                réalisés avec ReactJS, NextJS ou encore en VanillaJS.
+                client (Front-end) que sur la partie serveur (Back-end), soit en
+                partant d'une feuille blanche, soit en reprenant un site
+                existant (Refonte).
+                <br />
+                Vous pouvez consulter ci-dessous{" "}
+                <b>
+                  <a href="#Achievements" className="text-current">
+                    mes réalisations
+                  </a>{" "}
+                </b>
+                , réalisées avec ReactJS, NextJS, VanillaJS ou encore Wordpress.
               </span>
             </span>
             <br />
@@ -167,6 +177,25 @@ export const HeroSection = () => {
           <span className="flex items-center">
             <span className="text-4xl font-extrabold">
               {" "}
+              <IoSchool />
+            </span>
+            {/* <span className="mt-3 ml-7 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+              Do not hesitate to contact me, I would be happy to review your
+              project and respond as soon as possible
+            </span> */}
+            <span className="mt-3 ml-7 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+              Je peux <b>intervenir</b> dans votre entreprise dans le cadre de
+              formations sur mesure sur des sujets définis ensemble (création de
+              landing page, référencement naturel, maitrise d'outils de
+              communication). <br />
+              Je propose également des sessions de conseil pour vous aider à
+              optimiser votre présence en ligne (réseaux sociaux, site internet)
+            </span>
+          </span>
+          <br />
+          <span className="flex items-center">
+            <span className="text-4xl font-extrabold">
+              {" "}
               <RiContactsLine />
             </span>
             {/* <span className="mt-3 ml-7 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
@@ -175,9 +204,11 @@ export const HeroSection = () => {
             </span> */}
             <span className="mt-3 ml-7 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
               N'hésitez pas à me{" "}
-              <a className="text-current" href="#Contact">
-                contacter
-              </a>
+              <b>
+                <a className="text-current" href="#Contact">
+                  contacter
+                </a>
+              </b>
               , je serai ravi d'étudier votre projet et de vous apporter une
               réponse dans les plus brefs délais.
             </span>
