@@ -1,15 +1,12 @@
-import React, {
-  useState,
-  // useRef
-} from "react";
+import React, { useState } from "react";
 import { Button } from "./atom/Button";
 import { Alert } from "./Alert";
-//-----------------
-//ajout recaptcha le 27/03
 import ReCAPTCHA from "react-google-recaptcha";
-//-----------------
+
+import ConfettiExplosion from "react-confetti-explosion";
 
 export const Contact = () => {
+  const [isExploding, setIsExploding] = useState(false);
   const [formData, setFormData] = useState({
     nom: "",
     prenom: "",
@@ -17,10 +14,7 @@ export const Contact = () => {
     message: "",
   });
 
-  //-----------------
   const [captcha, setCaptcha] = useState();
-  //-----------------
-
   const [showAlert, setShowAlert] = useState(false);
 
   const handleChange = (event) => {
@@ -34,13 +28,12 @@ export const Contact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    //-----------------
     if (!captcha) {
       console.log("reCAPTCHA not verified.");
       alert("Merci de cliquer sur le Recaptcha");
       return;
     }
-    //-----------------
+
     const formData = {
       nom: event.target.elements.nom.value,
       prenom: event.target.elements.prenom.value,
@@ -62,7 +55,6 @@ export const Contact = () => {
 
     const url =
       "https://site--mailing-back--zqfvjrr4byql.code.run/process-form";
-    // "http://localhost:3000/process-form";
 
     try {
       const response = await fetch(url, {
@@ -75,8 +67,6 @@ export const Contact = () => {
 
       if (response.ok) {
         setShowAlert(true);
-
-        // Réinitialiser les champs du formulaire
         setFormData({
           nom: "",
           prenom: "",
@@ -87,6 +77,11 @@ export const Contact = () => {
         setTimeout(() => {
           setShowAlert(false);
         }, 3000);
+
+        setIsExploding(true);
+        setTimeout(() => {
+          setIsExploding(false);
+        }, 2500);
       } else {
         alert("Erreur lors de l'envoi du formulaire. Veuillez réessayer.");
       }
@@ -102,6 +97,8 @@ export const Contact = () => {
         onSubmit={handleSubmit}
         className="flex w-full flex-col gap-4 md:px-8"
       >
+        {/* Vos champs de formulaire ici */}
+
         <label
           className="block text-xs font-medium text-skin-secondary md:text-sm"
           htmlFor="nom"
@@ -166,21 +163,41 @@ export const Contact = () => {
           required
         ></textarea>
 
-        {/* Google reCAPTCHA */}
-        <div className="pb-20px mt-4 mb-4 flex justify-center ">
+        <div className="pb-20px mt-4 mb-4 flex justify-center">
           <ReCAPTCHA
             className="g-recaptcha"
             size="normal"
             theme="dark"
             sitekey={process.env.NEXT_PUBLIC_CAPTCHA_KEY}
-            // ref={recaptchaRef}
             onChange={setCaptcha}
           />
         </div>
-        {/* Google reCAPTCHA!*/}
+
         {!showAlert && <Button type="submit">Envoyer</Button>}
         {showAlert && <Alert />}
+        {isExploding && (
+          <div className="flex w-full justify-center">
+            <ConfettiExplosion
+              force={0.6}
+              // duration={2500}
+              particleCount={80}
+              width={1000}
+            />
+          </div>
+        )}
       </form>
+
+      {/* {!showConfetti && <Confetti width={width} height={height} />} */}
+      {/* <div className="absolute inset-0 flex items-start justify-center"> */}
+      {/* {isExploding && (
+          <ConfettiExplosion
+            force={0.6}
+            // duration={2500}
+            particleCount={80}
+            width={1000}
+          />
+        )} */}
+      {/* </div> */}
     </div>
   );
 };
