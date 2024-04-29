@@ -135,9 +135,10 @@ export const HeroSection = () => {
               </span> */}
               <span className="ml-7">
                 <b>Je développe vos sites web</b> aussi bien sur la partie
-                client (Front-end) que sur la partie serveur (Back-end), soit en
-                partant d'une feuille blanche, soit en reprenant un site
-                existant (Refonte).
+                client (Front-end) que sur la partie serveur (Back-end). <br />
+                Que vous souhaitiez partir d'une feuille blanche ou améliorer un
+                site existant, je prends le temps d'étudier votre projet pour
+                répondre au mieux à vos besoins.
                 <br />
                 Vous pouvez consulter ci-dessous{" "}
                 <b>
@@ -184,12 +185,13 @@ export const HeroSection = () => {
               project and respond as soon as possible
             </span> */}
             <span className="mt-3 ml-7 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
-              Je peux <b>intervenir</b> dans votre entreprise dans le cadre de
-              formations sur mesure sur des sujets définis ensemble (création de
-              landing page, référencement naturel, maitrise d'outils de
-              communication). <br />
-              Je propose également des sessions de conseil pour vous aider à
-              optimiser votre présence en ligne (réseaux sociaux, site internet)
+              <b>Je propose des formations personnalisées</b> dispensées
+              directement dans votre entreprise, sur des sujets définis
+              ensemble, comme la création de landing pages, le référencement
+              naturel ou encore la maîtrise des outils de communication. <br />
+              De plus, je vous offre des séances de conseil pour optimiser votre
+              présence en ligne, que ce soit sur les réseaux sociaux ou sur
+              votre site internet.
             </span>
           </span>
           <br />
