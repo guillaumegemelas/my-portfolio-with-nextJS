@@ -24,7 +24,7 @@ export const Footer = () => {
   // ---------------------------- ----------------------------
 
   return (
-    <footer className="mb-12 flex flex-col items-center gap-8 " id="Contact">
+    <footer className="flex flex-col items-center gap-8 mb-12 " id="Contact">
       <Typography variant="h2">
         <div style={{ display: "flex", alignItems: "center" }}>
           <RiContactsLine
@@ -38,7 +38,7 @@ export const Footer = () => {
           Contactez-moi!
         </div>
       </Typography>
-      <div className="flex w-full max-w-2xl flex-col items-center gap-2 ">
+      <div className="flex flex-col items-center w-full max-w-2xl gap-2 ">
         <Typography variant="body2">
           {/* I’ll be happy to chat with you about a potential job or a freelance! */}
           Je serai ravi d'échanger avec vous.
@@ -67,7 +67,7 @@ export const Footer = () => {
         </Typography>
         <SocialNetworks socialNetworks={SOCIAL_NETWORKS} />
 
-        {/* pour ajouter une publication facebook!! */}
+        {/* pour ajouter une publication facebook!!!! */}
         {/* <iframe
           className="hidden mt-16 mb-16 rounded-lg sm:block"
           src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61557617930908&amp;tabs=timeline&amp;width=500&amp;height=800&amp;small_header=false&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
@@ -87,8 +87,8 @@ export const Footer = () => {
           ></iframe>
         </div> */}
 
-        <div className="mt-16 flex flex-col items-center justify-center md:flex-row md:justify-between">
-          <div className="mb-2 flex items-center md:mb-0">
+        <div className="flex flex-col items-center justify-center mt-16 md:flex-row md:justify-between">
+          <div className="flex items-center mb-2 md:mb-0">
             <MdAccountBalance className="mr-2 text-2xl" />
             <button className="text-sm md:text-base" onClick={openLegalModal}>
               Mentions légales
@@ -107,7 +107,7 @@ export const Footer = () => {
           <div className="modal ">
             <div className="modal-content">
               {/* Contenu des mentions légales */}
-              <h2 className="mb-16 text-center text-3xl">Mentions légales</h2>
+              <h2 className="mb-16 text-3xl text-center">Mentions légales</h2>
 
               {/* Section 1 : Mentions légales */}
               <section className="mb-12">
