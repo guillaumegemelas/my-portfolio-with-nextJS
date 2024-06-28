@@ -168,7 +168,7 @@ export const Footer = () => {
                   qu'il contient est interdite sans autorisation expresse et
                   préalable de Guillaume Gemelas - aindev.
                 </p>
-                {/* Le reste du contenu de la section 3 */}
+                {/* Le reste du contenu de la section 3--- */}
               </section>
             </div>
 
