@@ -166,7 +166,7 @@ export const Footer = () => {
                   totales ou partielles de son contenu, ainsi que toute
                   extraction d'une partie substantielle de la base de données
                   qu'il contient est interdite sans autorisation expresse et
-                  préalable de Guillaume Gemelas - ain.dev.
+                  préalable de Guillaume Gemelas - aindev.
                 </p>
                 {/* Le reste du contenu de la section 3 */}
               </section>
