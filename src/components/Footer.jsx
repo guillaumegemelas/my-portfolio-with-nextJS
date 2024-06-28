@@ -97,7 +97,7 @@ export const Footer = () => {
           <div className="hidden md:block">
             <p className="ml-4 mr-4">-</p>
           </div>
-          <p className="text-sm md:text-base">Guillaume Gemelas - ain.dev</p>
+          <p className="text-sm md:text-base">Guillaume Gemelas - aindev</p>
         </div>
       </div>
 
