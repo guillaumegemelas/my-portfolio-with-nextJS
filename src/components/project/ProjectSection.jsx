@@ -19,6 +19,7 @@ import { MdPermDeviceInformation } from "react-icons/md";
 import { BsFileEarmarkPerson } from "react-icons/bs";
 import { SiGooglepodcasts } from "react-icons/si";
 import { MdSportsHandball } from "react-icons/md";
+import { RiTeamFill } from "react-icons/ri";
 //--------------
 
 export const ProjectSection = () => {
@@ -81,9 +82,22 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet glc-com-----------------------*/}
+        {/* ----projet essain-----------------------*/}
         <Project
           key="1"
+          icon={<RiTeamFill />}
+          image="/images/essain3.png"
+          name="ESS'Ain"
+          homepageUrl="https://essain.com"
+          description="Site Web réalisé pour la Coopérative d'Activités en d'Emploi ESS'Ain, avec interface de connexion et annuaire des membres "
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://essain.com"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
+        {/* ----projet glc-com-----------------------*/}
+        <Project
+          key="2"
           icon={<MdSportsHandball />}
           image="/images/epgv1.png"
           name="Epgv01"
@@ -96,7 +110,7 @@ export const ProjectSection = () => {
         />
         {/* ----projet glc-com-----------------------*/}
         <Project
-          key="2"
+          key="3"
           icon={<SiGooglepodcasts />}
           image="/images/glc.png"
           name="Glc Communication"
@@ -109,7 +123,7 @@ export const ProjectSection = () => {
         />
         {/* ----projet essilor------------------------*/}
         <Project
-          key="3"
+          key="4"
           icon={<BsEyeglasses />}
           image="/images/essilor4.png"
           name="Essilor Webapp"
