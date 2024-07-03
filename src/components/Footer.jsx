@@ -11,7 +11,7 @@ import { MdAccountBalance } from "react-icons/md";
 import { Contact } from "./Contact";
 
 export const Footer = () => {
-  // ---------------------------- ----------------------------
+  // ---------------------------- ------------------------------
   const [isLegalModalOpen, setIsLegalModalOpen] = useState(false);
 
   const openLegalModal = () => {
