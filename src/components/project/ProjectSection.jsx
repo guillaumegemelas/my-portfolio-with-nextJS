@@ -82,7 +82,7 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet essain--------------------*/}
+        {/* ----projet essain-----------------*/}
         <Project
           key="1"
           icon={<RiTeamFill />}
