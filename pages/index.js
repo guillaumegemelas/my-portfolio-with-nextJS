@@ -31,7 +31,7 @@ const Home = () => {
         {/* ajout de balise meta keywords: tout va bien avant ajout de cette balise */}
         <meta
           name="keywords"
-          content="développeur web Ain, création de site web ain, freelance web ain, aindev, web Bourg-en-Bresse"
+          content="développeur web ain, création de site web ain, freelance web ain, aindev, ain.dev, web Bourg-en-Bresse"
           key="keywords"
         />
         {/* ajout de la balise schema.org. à vérifier SEO google si action ou pas: fait le 08/03/24! */}
