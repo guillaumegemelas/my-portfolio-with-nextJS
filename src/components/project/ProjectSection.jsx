@@ -154,20 +154,20 @@ export const ProjectSection = () => {
           const icon = iconArray[index];
           const image = imgArray[index];
           return (
-            // <React.Fragment key={repository.name}>
-            //   {" "}
-            //   {/* Ajout d'une clé unique */}
-            //   {index < 1 && (
-            <Project
-              key={repository.name}
-              {...repository}
-              icon={icon}
-              image={image}
-              handleClick={handleClick}
-              showAlertOnClick={false} // Désactiver l'alerte pour les autres projet
-            />
-            //   )}
-            // </React.Fragment>
+            <React.Fragment key={repository.name}>
+              {" "}
+              {/* Ajout d'une clé unique */}
+              {index < 1 && (
+                <Project
+                  key={repository.name}
+                  {...repository}
+                  icon={icon}
+                  image={image}
+                  handleClick={handleClick}
+                  showAlertOnClick={false} // Désactiver l'alerte pour les autres projet
+                />
+              )}
+            </React.Fragment>
           );
         })}
         {/* GitHub Repository - Exercise (replace this) */}
