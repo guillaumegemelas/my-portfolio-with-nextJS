@@ -21,7 +21,7 @@ export const Footer = () => {
   const closeLegalModal = () => {
     setIsLegalModalOpen(false);
   };
-  // ---------------------------- ----------------------------
+  // ---------------------------- ------------------------------
 
   return (
     <footer className="mb-12 flex flex-col items-center gap-8 " id="Contact">
