@@ -1,4 +1,5 @@
 // import useEffect, useState, useReducer,"react";
+import React from "react";
 import { SectionWrapper } from "../atom/SectionWrapper";
 import { Project } from "./Project";
 import { getListOfUrlRepositoriesUrl } from "../../lib/api-url";
@@ -20,6 +21,7 @@ import { BsFileEarmarkPerson } from "react-icons/bs";
 import { SiGooglepodcasts } from "react-icons/si";
 import { MdSportsHandball } from "react-icons/md";
 import { RiTeamFill } from "react-icons/ri";
+import { MdOutlinePets } from "react-icons/md";
 //--------------
 
 export const ProjectSection = () => {
@@ -82,14 +84,27 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet essain-------------*/}
+        {/* ----projet nathalie et cie-------------*/}
         <Project
           key="1"
+          icon={<MdOutlinePets />}
+          image="/images/nathalie.png"
+          name="Nathalie & cie"
+          homepageUrl="https://nathalie-et-cie.fr"
+          description="Site Web réalisé pour la Coopérative d'Activités en d'Emploi ESS'Ain, avec interface de connexion et annuaire des membres "
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://nathalie-et-cie.fr"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
+        {/* ----projet essain--------------*/}
+        <Project
+          key="2"
           icon={<RiTeamFill />}
           image="/images/essain3.png"
           name="ESS'Ain"
           homepageUrl="https://essain.com"
-          description="Site Web réalisé pour la Coopérative d'Activités en d'Emploi ESS'Ain, avec interface de connexion et annuaire des membres "
+          description="Site Web e-commerce réalisé pour l'entreprise Nathalie & cie, avec une boutique en ligne"
           handleClick={handleClick}
           // showAlertOnClick={true} // Activer l'ale
           url="https://essain.com"
@@ -97,7 +112,7 @@ export const ProjectSection = () => {
         />
         {/* ----projet glc-com-----------------------*/}
         <Project
-          key="2"
+          key="3"
           icon={<MdSportsHandball />}
           image="/images/epgv1.png"
           name="Epgv01"
@@ -110,7 +125,7 @@ export const ProjectSection = () => {
         />
         {/* ----projet glc-com-----------------------*/}
         <Project
-          key="3"
+          key="4"
           icon={<SiGooglepodcasts />}
           image="/images/glc.png"
           name="Glc Communication"
@@ -123,7 +138,7 @@ export const ProjectSection = () => {
         />
         {/* ----projet essilor------------------------*/}
         <Project
-          key="4"
+          key="5"
           icon={<BsEyeglasses />}
           image="/images/essilor4.png"
           name="Essilor Webapp"
@@ -139,14 +154,20 @@ export const ProjectSection = () => {
           const icon = iconArray[index];
           const image = imgArray[index];
           return (
-            <Project
-              key={repository.name}
-              {...repository}
-              icon={icon}
-              image={image}
-              handleClick={handleClick}
-              showAlertOnClick={false} // Désactiver l'alerte pour les autres projet
-            />
+            <React.Fragment key={repository.name}>
+              {" "}
+              {/* Ajout d'une clé unique */}
+              {index < 1 && (
+                <Project
+                  key={repository.name}
+                  {...repository}
+                  icon={icon}
+                  image={image}
+                  handleClick={handleClick}
+                  showAlertOnClick={false} // Désactiver l'alerte pour les autres projet
+                />
+              )}
+            </React.Fragment>
           );
         })}
         {/* GitHub Repository - Exercise (replace this) */}
