@@ -88,7 +88,7 @@ export const ProjectSection = () => {
         <Project
           key="1"
           icon={<MdOutlinePets />}
-          image="/images/nathalie.png"
+          image="/images/nath.png"
           name="Nathalie & cie"
           homepageUrl="https://nathalie-et-cie.fr"
           description="Site web e-commerce développé pour l’entreprise Nathalie & Cie, intégrant une boutique en ligne avec un système avancé de gestion des produits et des commandes, et une interface utilisateur à la fois intuitive et moderne."
@@ -101,7 +101,7 @@ export const ProjectSection = () => {
         <Project
           key="2"
           icon={<RiTeamFill />}
-          image="/images/essain3.png"
+          image="/images/essain4.png"
           name="ESS'Ain"
           homepageUrl="https://essain.com"
           description="Création d’un site web pour la Coopérative ESS’Ain, intégrant une fonctionnalité de connexion sécurisée pour les utilisateurs et un annuaire des membres, visant à améliorer la communication et la gestion des informations au sein de la coopérative."
@@ -110,11 +110,11 @@ export const ProjectSection = () => {
           url="https://essain.com"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
-        {/* ----projet glc-com-----------------------*/}
+        {/* ----projet glc-com-------------------*/}
         <Project
           key="3"
           icon={<MdSportsHandball />}
-          image="/images/epgv1.png"
+          image="/images/epgv2.png"
           name="Epgv01"
           homepageUrl="https://epgv01.fr"
           description="Conception d’un site vitrine pour le CODEP EPGV01, visant à améliorer la visibilité du comité et à fournir une plateforme facile à mettre à jour pour partager les informations sur les activités physiques et les événements locaux."
@@ -140,7 +140,7 @@ export const ProjectSection = () => {
         <Project
           key="5"
           icon={<BsEyeglasses />}
-          image="/images/essilor4.png"
+          image="/images/essilo.png"
           name="Essilor Webapp"
           homepageUrl="https://www.meyecustom.com"
           description="Développement d’une webapp interactive pour Essilor, permettant aux utilisateurs de personnaliser des lunettes de vue et solaires en magasin. Cette interface de personnalisation offre une expérience utilisateur fluide, avec des options variées pour ajuster le style, la couleur, et les fonctionnalités des lunettes."
@@ -174,8 +174,8 @@ export const ProjectSection = () => {
         {/* <Project {...projects[0]} /> */}
       </div>
       {showAlert && (
-        <div className="fixed top-0 left-0 z-10 flex items-center justify-center w-full h-full">
-          <div className="absolute top-0 left-0 right-0 p-2 text-center text-white transition-opacity duration-500 bg-red-500 opacity-100">
+        <div className="fixed top-0 left-0 z-10 flex h-full w-full items-center justify-center">
+          <div className="absolute top-0 left-0 right-0 bg-red-500 p-2 text-center text-white opacity-100 transition-opacity duration-500">
             Le code source ne peut pas être visualisé.
           </div>
         </div>
