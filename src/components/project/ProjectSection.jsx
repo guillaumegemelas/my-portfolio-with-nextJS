@@ -91,7 +91,7 @@ export const ProjectSection = () => {
           image="/images/nathalie.png"
           name="Nathalie & cie"
           homepageUrl="https://nathalie-et-cie.fr"
-          description="Site Web réalisé pour la Coopérative d'Activités en d'Emploi ESS'Ain, avec interface de connexion et annuaire des membres "
+          description="Site web e-commerce développé pour l’entreprise Nathalie & Cie, intégrant une boutique en ligne avec un système avancé de gestion des produits et des commandes, et une interface utilisateur à la fois intuitive et moderne."
           handleClick={handleClick}
           // showAlertOnClick={true} // Activer l'ale
           url="https://nathalie-et-cie.fr"
@@ -104,7 +104,7 @@ export const ProjectSection = () => {
           image="/images/essain3.png"
           name="ESS'Ain"
           homepageUrl="https://essain.com"
-          description="Site Web e-commerce réalisé pour l'entreprise Nathalie & cie, avec une boutique en ligne"
+          description="Création d’un site web pour la Coopérative ESS’Ain, intégrant une fonctionnalité de connexion sécurisée pour les utilisateurs et un annuaire des membres, visant à améliorer la communication et la gestion des informations au sein de la coopérative."
           handleClick={handleClick}
           // showAlertOnClick={true} // Activer l'ale
           url="https://essain.com"
@@ -117,7 +117,7 @@ export const ProjectSection = () => {
           image="/images/epgv1.png"
           name="Epgv01"
           homepageUrl="https://epgv01.fr"
-          description="Site Web Vitrine réalisé avec WordPress pour le Comité Départemental d'Éducation Physique et de Gymnastique Volontaire de l'Ain - CODEP EPGV01 "
+          description="Conception d’un site vitrine pour le CODEP EPGV01, visant à améliorer la visibilité du comité et à fournir une plateforme facile à mettre à jour pour partager les informations sur les activités physiques et les événements locaux."
           handleClick={handleClick}
           // showAlertOnClick={true} // Activer l'ale
           url="https://epgv01.fr"
@@ -130,7 +130,7 @@ export const ProjectSection = () => {
           image="/images/glc.png"
           name="Glc Communication"
           homepageUrl="https://glc-com.com"
-          description="Site Web Vitrine réalisé avec WordPress (blog, podcasts..) pour l'entreprise Glc Communication"
+          description="Site web vitrine développé pour l’entreprise Glc Communication avec WordPress, intégrant un blog, des podcasts, et divers contenus multimédias. Ce site est conçu pour renforcer la présence en ligne de l’entreprise et offrir une plateforme interactive pour partager des actualités et des informations."
           handleClick={handleClick}
           // showAlertOnClick={true} // Activer l'ale
           url="https://glc-com.com"
@@ -143,7 +143,7 @@ export const ProjectSection = () => {
           image="/images/essilor4.png"
           name="Essilor Webapp"
           homepageUrl="https://www.meyecustom.com"
-          description="Webapp de type interface de personnalisation de lunettes de vue et solaires pour Essilor"
+          description="Développement d’une webapp interactive pour Essilor, permettant aux utilisateurs de personnaliser des lunettes de vue et solaires en magasin. Cette interface de personnalisation offre une expérience utilisateur fluide, avec des options variées pour ajuster le style, la couleur, et les fonctionnalités des lunettes."
           handleClick={handleClick}
           showAlertOnClick={true} // Activer l'ale
           url="https://guillaume-gemelas-dev.com/#Projects"
