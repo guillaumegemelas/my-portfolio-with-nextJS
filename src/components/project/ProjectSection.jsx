@@ -25,7 +25,7 @@ import { MdOutlinePets } from "react-icons/md";
 //--------------
 
 export const ProjectSection = () => {
-  //--------------
+  //------------
   const [showAlert, setShowAlert] = useState(false);
 
   const handleClick = () => {
@@ -34,7 +34,7 @@ export const ProjectSection = () => {
       setShowAlert(false);
     }, 3000);
   };
-  //-------------
+  //------------
   //ajouter un tableau d'icone--
   const iconArray = [
     <RiMovie2Line key={1} />,
@@ -44,7 +44,7 @@ export const ProjectSection = () => {
     <BsFileEarmarkPerson key={5} />,
   ];
   const imgArray = [
-    "/images/tmdb.jpg",
+    "/images/tmdb.png",
     "/images/gamepad.png",
     "/images/vinted.png",
     "/images/news.png",
@@ -127,7 +127,7 @@ export const ProjectSection = () => {
         <Project
           key="4"
           icon={<SiGooglepodcasts />}
-          image="/images/glc.png"
+          image="/images/glc3.png"
           name="Glc Communication"
           homepageUrl="https://glc-com.com"
           description="Site web vitrine développé pour l’entreprise Glc Communication avec WordPress, intégrant un blog, des podcasts, et divers contenus multimédias. Ce site est conçu pour renforcer la présence en ligne de l’entreprise et offrir une plateforme interactive pour partager des actualités et des informations."
