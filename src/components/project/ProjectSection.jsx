@@ -97,7 +97,7 @@ export const ProjectSection = () => {
           url="https://nathalie-et-cie.fr"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
-        {/* ----projet essain--------------*/}
+        {/* ----projet essain----------------*/}
         <Project
           key="2"
           icon={<RiTeamFill />}
