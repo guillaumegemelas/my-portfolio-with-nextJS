@@ -79,7 +79,7 @@ export const ProjectSection = () => {
               marginRight: "15px",
             }}
           />{" "}
-          Réalisations
+          Ils m'ont fait confiance.
         </div>
       }
     >
