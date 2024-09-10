@@ -84,7 +84,7 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet nathalie et cie-------------*/}
+        {/* ----projet nathalie et cie---------------*/}
         <Project
           key="1"
           icon={<MdOutlinePets />}
