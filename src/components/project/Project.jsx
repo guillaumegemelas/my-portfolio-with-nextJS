@@ -13,7 +13,7 @@ export const Project = ({
   showAlertOnClick,
   //---------
 }) => {
-  //--------------
+  //----------------
   const handleNameClick = () => {
     if (showAlertOnClick) {
       handleClick();
