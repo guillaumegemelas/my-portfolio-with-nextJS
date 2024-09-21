@@ -67,9 +67,10 @@ export const HeroSection = () => {
             initiale jusqu'à sa mise en ligne.
             <br />
             Je mets à profit mes compétences techniques et mon expertise pour
-            vous proposer un site personnalisé, que ce soit en utilisant des
-            plateformes de gestion de contenu comme WordPress ou en développant
+            vous proposer un site ou une application web personnalisés, que ce
+            soit avec des plateformes comme WordPress ou en développant
             entièrement du code sur mesure.
+            {/* Je mets mes compétences au service de la création de sites et d’applications web sur mesure. Que ce soit via WordPress ou par un développement personnalisé, je m’adapte à vos attentes */}
           </p>
           <br />
           {/* modifs faite le 16/01------------------------------------------ */}
