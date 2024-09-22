@@ -19,6 +19,15 @@ export const Header = () => {
           className="hidden rounded-full shadow-lg md:mr-6 md:block"
           //md:absolute l'image passe en dessous du texte--
         />
+        {/* <img
+          width={160}
+          height={60}
+          // src="/images/avatar.jpg"
+          src="/images/aindev1.png"
+          alt="logo de aindev, en couleur"
+          className="hidden rounded-full shadow-lg md:mr-6 md:block"
+          //md:absolute l'image passe en dessous du texte--
+        /> */}
 
         <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-2xl font-extrabold text-transparent drop-shadow-[0_0px_20px_rgba(0,0,0,0.25)]">
           Bienvenue!

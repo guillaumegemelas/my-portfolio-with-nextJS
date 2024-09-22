@@ -13,6 +13,9 @@ import { FaInfoCircle } from "react-icons/fa";
 import { MdDevicesOther } from "react-icons/md";
 import { IoSchool } from "react-icons/io5";
 
+import { FaSortAlphaDown } from "react-icons/fa";
+import { FaTools } from "react-icons/fa";
+
 export const HeroSection = () => {
   // ---------------------------- ----------------------------
   const [isLegalModalOpen, setIsLegalModalOpen] = useState(false);
@@ -61,15 +64,33 @@ export const HeroSection = () => {
             Je suis développeur web et mobile Freelance JavaScript spécialisé en
             React.
             <br />
-            {/* J'améliore mes compétences à travers de l'auto-formation, des
-            tutoriels ainsi que des projets personnels  */}
-            Je vous accompagne tout au long de votre projet, de la phase d'étude
-            initiale jusqu'à sa mise en ligne.
             <br />
-            Je mets à profit mes compétences techniques et mon expertise pour
-            vous proposer un site ou une application web personnalisés, que ce
-            soit avec des plateformes comme WordPress ou en développant
-            entièrement du code sur mesure.
+            <span className="flex items-center">
+              {/* J'améliore mes compétences à travers de l'auto-formation, des
+            tutoriels ainsi que des projets personnels  */}
+              <span className="text-4xl font-extrabold">
+                <FaTools />
+              </span>
+              <span className="ml-7">
+                Je mets à profit mes compétences techniques et mon expertise
+                pour vous proposer un site ou une application web personnalisés,
+                que ce soit avec des plateformes comme WordPress ou en
+                développant entièrement du code sur mesure.
+              </span>{" "}
+            </span>
+            <br />
+            <span className="flex items-center">
+              {/* J'améliore mes compétences à travers de l'auto-formation, des
+            tutoriels ainsi que des projets personnels  */}
+              <span className="text-4xl font-extrabold">
+                <FaSortAlphaDown />
+              </span>
+              <span className="ml-7">
+                Je vous accompagne tout au long de votre projet, de la phase
+                d'étude initiale jusqu'à sa mise en ligne.
+              </span>
+            </span>
+            <br />
             {/* Je mets mes compétences au service de la création de sites et d’applications web sur mesure. Que ce soit via WordPress ou par un développement personnalisé, je m’adapte à vos attentes */}
           </p>
           <br />
