@@ -11,7 +11,7 @@ import { FaAtlassian } from "react-icons/fa";
 
 import { useState } from "react";
 
-//-----------------
+//-------------------
 import { BsEyeglasses } from "react-icons/bs";
 import { RiMovie2Line } from "react-icons/ri";
 import { IoGameControllerOutline } from "react-icons/io5";
