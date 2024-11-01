@@ -22,6 +22,7 @@ import { SiGooglepodcasts } from "react-icons/si";
 import { MdSportsHandball } from "react-icons/md";
 import { RiTeamFill } from "react-icons/ri";
 import { MdOutlinePets } from "react-icons/md";
+import { IoIosBed } from "react-icons/io";
 //--------------
 
 export const ProjectSection = () => {
@@ -84,6 +85,19 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
+        {/* ----projet nathalie et cie--------------*/}
+        <Project
+          key="9"
+          icon={<IoIosBed />}
+          image="/images/mailland.png"
+          name="Les Meubles Mailland"
+          homepageUrl="https://meublesmailland.fr"
+          description="Conception d’un site vitrine pour l’entreprise Les Meubles Mailland, moderne et fonctionnel, mettant en avant leur savoir-faire artisanal et leurs créations sur mesure permettant aux visiteurs de découvrir l’univers de l’entreprise"
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://meublesmailland.fr"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
         {/* ----projet nathalie et cie--------------*/}
         <Project
           key="1"
