@@ -14,6 +14,7 @@ import { MdDevicesOther } from "react-icons/md";
 import { IoSchool } from "react-icons/io5";
 import { TbDrone } from "react-icons/tb";
 import { FaSortAlphaDown } from "react-icons/fa";
+import { MdOutlineSelfImprovement } from "react-icons/md";
 // import { IoVideocamOutline } from "react-icons/io5";
 import { FaTools } from "react-icons/fa";
 
@@ -69,11 +70,20 @@ export const HeroSection = () => {
               </b>
               <br />
               <br />
-              Je suis développeur web et mobile Freelance, spécialisé en
-              JavaScript et React. J'accompagne aussi bien les particuliers que
-              les entreprises dans la création de solutions numériques
-              performantes.
               <br />
+              <span className="flex items-center">
+                {/* J'améliore mes compétences à travers de l'auto-formation, des
+            tutoriels ainsi que des projets personnels---  */}
+                <span className="text-4xl font-extrabold">
+                  <MdOutlineSelfImprovement />
+                </span>
+                <span className="ml-7">
+                  Je suis développeur web et mobile Freelance, spécialisé en
+                  JavaScript et React. J'accompagne aussi bien les particuliers
+                  que les entreprises dans la création de solutions numériques
+                  performantes.
+                </span>{" "}
+              </span>
               <br />
               <span className="flex items-center">
                 {/* J'améliore mes compétences à travers de l'auto-formation, des
