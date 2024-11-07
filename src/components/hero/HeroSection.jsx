@@ -14,7 +14,7 @@ import { MdDevicesOther } from "react-icons/md";
 import { IoSchool } from "react-icons/io5";
 import { TbDrone } from "react-icons/tb";
 import { FaSortAlphaDown } from "react-icons/fa";
-import { IoVideocamOutline } from "react-icons/io5";
+// import { IoVideocamOutline } from "react-icons/io5";
 import { FaTools } from "react-icons/fa";
 
 export const HeroSection = () => {
@@ -90,19 +90,6 @@ export const HeroSection = () => {
                 Je vous accompagne tout au long de votre projet, de la phase
                 d'étude initiale jusqu'à sa mise en ligne.
               </span>
-            </span>
-            <br />
-            <span className="flex items-center">
-              {/* J'améliore mes compétences à travers de l'auto-formation, des
-            tutoriels ainsi que des projets personnels---  */}
-              <span className="text-4xl font-extrabold">
-                <IoVideocamOutline />
-              </span>
-              <span className="ml-7">
-                Cette nouvelle activité est spécialement pensée pour les
-                entreprises souhaitant dynamiser leur communication avec des
-                contenus visuels percutants et immersifs.
-              </span>{" "}
             </span>
             <br />
             {/* Je mets mes compétences au service de la création de sites et d’applications web sur mesure. Que ce soit via WordPress ou par un développement personnalisé, je m’adapte à vos attentes */}
