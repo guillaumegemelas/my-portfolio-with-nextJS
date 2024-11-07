@@ -59,41 +59,49 @@ export const HeroSection = () => {
             self-learning with online courses, tutorials, and personal projects,
             and I am ready to put my technical skills  to good use
           </p> */}
-          <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
-            <b>Concepteur Développeur d'Applications en Freelance.</b>
-            <br />
-            Je suis développeur web et mobile Freelance JavaScript spécialisé en
-            React.
-            <br />
-            <br />
-            <span className="flex items-center">
-              {/* J'améliore mes compétences à travers de l'auto-formation, des
+          <h2>
+            <p className="max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+              <b>
+                Concepteur Développeur d'Applications Freelance, basé dans
+                l'Ain.
+              </b>
+              <br />
+              <br />
+              Je suis développeur web et mobile Freelance, spécialisé en
+              JavaScript et React. J'accompagne aussi bien les particuliers que
+              les entreprises dans la création de solutions numériques
+              performantes.
+              <br />
+              <br />
+              <span className="flex items-center">
+                {/* J'améliore mes compétences à travers de l'auto-formation, des
             tutoriels ainsi que des projets personnels---  */}
-              <span className="text-4xl font-extrabold">
-                <FaTools />
+                <span className="text-4xl font-extrabold">
+                  <FaTools />
+                </span>
+                <span className="ml-7">
+                  Je mets à profit mes compétences techniques et mon expertise
+                  pour vous proposer un site ou une application web
+                  personnalisés, que ce soit avec des plateformes comme
+                  WordPress ou en développant entièrement du code sur mesure.
+                </span>{" "}
               </span>
-              <span className="ml-7">
-                Je mets à profit mes compétences techniques et mon expertise
-                pour vous proposer un site ou une application web personnalisés,
-                que ce soit avec des plateformes comme WordPress ou en
-                développant entièrement du code sur mesure.
-              </span>{" "}
-            </span>
-            <br />
-            <span className="flex items-center">
-              {/* J'améliore mes compétences à travers de l'auto-formation, des
+              <br />
+              <span className="flex items-center">
+                {/* J'améliore mes compétences à travers de l'auto-formation, des
             tutoriels ainsi que des projets personnels  */}
-              <span className="text-4xl font-extrabold">
-                <FaSortAlphaDown />
+                <span className="text-4xl font-extrabold">
+                  <FaSortAlphaDown />
+                </span>
+                <span className="ml-7">
+                  Je vous accompagne tout au long de votre projet, de la phase
+                  d'étude initiale jusqu'à sa mise en ligne.
+                </span>
               </span>
-              <span className="ml-7">
-                Je vous accompagne tout au long de votre projet, de la phase
-                d'étude initiale jusqu'à sa mise en ligne.
-              </span>
-            </span>
-            <br />
-            {/* Je mets mes compétences au service de la création de sites et d’applications web sur mesure. Que ce soit via WordPress ou par un développement personnalisé, je m’adapte à vos attentes */}
-          </p>
+              <br />
+              {/* Je mets mes compétences au service de la création de sites et d’applications web sur mesure. Que ce soit via WordPress ou par un développement personnalisé, je m’adapte à vos attentes */}
+            </p>
+          </h2>
           <br />
 
           {/* modifs faite le 16/01------------------------------------------ */}

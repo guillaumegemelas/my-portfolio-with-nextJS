@@ -25,7 +25,7 @@ const Home = () => {
         <title>Guillaume Gemelas, Développeur web et mobile</title>
         <meta
           name="description"
-          content="This is Guillaume Gemelas Portfolio as freelance web and mobile Javascript web developper"
+          content="Guillaume Gemelas, développeur web et mobile freelance, dans l'Ain. J'accompagne les entreprises et particuliers avec aindev dans la création de leur site web sur-mesure"
           key="desc"
         />
         {/* ajout de balise meta keywords: tout va bien avant ajout de cette balise */}
