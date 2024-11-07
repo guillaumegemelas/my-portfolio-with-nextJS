@@ -12,8 +12,9 @@ import { FaGoogle } from "react-icons/fa";
 import { FaInfoCircle } from "react-icons/fa";
 import { MdDevicesOther } from "react-icons/md";
 import { IoSchool } from "react-icons/io5";
-
+import { TbDrone } from "react-icons/tb";
 import { FaSortAlphaDown } from "react-icons/fa";
+import { IoVideocamOutline } from "react-icons/io5";
 import { FaTools } from "react-icons/fa";
 
 export const HeroSection = () => {
@@ -91,9 +92,23 @@ export const HeroSection = () => {
               </span>
             </span>
             <br />
+            <span className="flex items-center">
+              {/* J'améliore mes compétences à travers de l'auto-formation, des
+            tutoriels ainsi que des projets personnels---  */}
+              <span className="text-4xl font-extrabold">
+                <IoVideocamOutline />
+              </span>
+              <span className="ml-7">
+                Cette nouvelle activité est spécialement pensée pour les
+                entreprises souhaitant dynamiser leur communication avec des
+                contenus visuels percutants et immersifs.
+              </span>{" "}
+            </span>
+            <br />
             {/* Je mets mes compétences au service de la création de sites et d’applications web sur mesure. Que ce soit via WordPress ou par un développement personnalisé, je m’adapte à vos attentes */}
           </p>
           <br />
+
           {/* modifs faite le 16/01------------------------------------------ */}
           <div className="mt-24 flex w-full flex-col justify-center md:flex-row">
             <div className="flex w-full justify-center sm:mb-12 md:mb-0 md:mr-6 md:w-full lg:mr-16">
@@ -122,7 +137,7 @@ export const HeroSection = () => {
               {/* Son nom reflète parfaitement ma façon de travailler. */}
             </p>
           </div>
-
+          {/* modifs faite pour le drone------------------------------------------ 
           {/* modifs faite le 16/01------------------------------------------ */}
 
           <p className="mt-48 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
@@ -217,6 +232,43 @@ export const HeroSection = () => {
             </span>
           </span>
           <br />
+
+          <span className="flex items-center">
+            <span className="text-4xl font-extrabold">
+              {" "}
+              <TbDrone />
+            </span>
+            {/* <span className="mt-3 ml-7 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+              Do not hesitate to contact me, I would be happy to review your
+              project and respond as soon as possible
+            </span> */}
+            <span className="mt-3 ml-7 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+              En complément de mes services en développement web,{" "}
+              <b>je propose désormais des prises de vues aériennes par drone</b>
+              . Que ce soit pour mettre en valeur vos locaux, vos événements ou
+              votre environnement, je mets à disposition mon expertise pour
+              capturer des images et vidéos de haute qualité. Cette nouvelle
+              activité est spécialement pensée pour les entreprises souhaitant{" "}
+              <b>
+                dynamiser leur communication avec des contenus visuels
+                percutants et immersifs
+              </b>
+              .
+              <span>
+                {" "}
+                <button
+                  className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent"
+                  // onClick={openLegalModal}
+                >
+                  Vous voulez en savoir plus?
+                </button>
+              </span>
+            </span>
+          </span>
+          <br />
+
+          <br />
+
           <span className="flex items-center">
             <span className="text-4xl font-extrabold">
               {" "}
