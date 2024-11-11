@@ -32,7 +32,7 @@ export const HeroSection = () => {
   // ---------------------------- ----------------------------
   return (
     <>
-      <div className="relative m-auto mt-12 mb-12 flex max-w-4xl flex-col items-center md:flex-row">
+      <div className="relative flex flex-col items-center max-w-4xl m-auto mt-12 mb-12 md:flex-row">
         <img
           width={300}
           height={300}
@@ -48,7 +48,7 @@ export const HeroSection = () => {
           <h1 className="text-6xl dark:drop-shadow-[0_0px_20px_rgba(0,0,0,1)] md:text-6xl">
             {/* I'm{" "} */}
             Je suis{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
+            <span className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
               {/* {FULL_NAME} */}
               Guillaume Gemelas
             </span>
@@ -73,7 +73,7 @@ export const HeroSection = () => {
               <br />
               <span className="flex items-center">
                 {/* J'améliore mes compétences à travers de l'auto-formation, des
-            tutoriels ainsi que des projets personnels---  */}
+            tutoriels ainsi que des projets personnels-  */}
                 <span className="text-4xl font-extrabold">
                   <MdOutlineSelfImprovement />
                 </span>
@@ -117,8 +117,8 @@ export const HeroSection = () => {
           <br />
 
           {/* modifs faite le 16/01------------------------------------------ */}
-          <div className="mt-24 flex w-full flex-col justify-center md:flex-row">
-            <div className="flex w-full justify-center sm:mb-12 md:mb-0 md:mr-6 md:w-full lg:mr-16">
+          <div className="flex flex-col justify-center w-full mt-24 md:flex-row">
+            <div className="flex justify-center w-full sm:mb-12 md:mb-0 md:mr-6 md:w-full lg:mr-16">
               <img
                 src="/images/logo6.png"
                 alt="logo aindev"
@@ -134,7 +134,7 @@ export const HeroSection = () => {
               <span>
                 {" "}
                 <button
-                  className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent"
+                  className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text"
                   onClick={openLegalModal}
                 >
                   aindev.
@@ -148,15 +148,15 @@ export const HeroSection = () => {
           {/* modifs faite le 16/01------------------------------------------ */}
 
           <p className="mt-48 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
-            <span className="mb-3 flex items-center">
-              <span className="mr-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-4xl font-extrabold">
+            <span className="flex items-center mb-3">
+              <span className="mr-4 text-4xl font-extrabold bg-gradient-to-r from-primary to-secondary bg-clip-text">
                 <AiOutlineQuestionCircle
                   style={{
                     color: "#677AF1",
                   }}
                 />
               </span>{" "}
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-4xl font-extrabold text-transparent">
+              <span className="text-4xl font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
                 Ce que je peux faire pour vous
               </span>{" "}
               {/* <span className="text-4xl font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
@@ -264,7 +264,7 @@ export const HeroSection = () => {
               <span>
                 {" "}
                 <button
-                  className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent"
+                  className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text"
                   // onClick={openLegalModal}
                 >
                   Vous voulez en savoir plus?
@@ -304,8 +304,8 @@ export const HeroSection = () => {
             <div className="modal-content">
               {/* Contenu des mentions légales */}
 
-              <div className="mb-16 flex items-center justify-center ">
-                <h2 className="text-center text-3xl ">Aindev</h2>{" "}
+              <div className="flex items-center justify-center mb-16 ">
+                <h2 className="text-3xl text-center ">Aindev</h2>{" "}
                 <span className="ml-4 text-3xl">
                   <MdDevicesOther />
                 </span>
@@ -313,7 +313,7 @@ export const HeroSection = () => {
 
               {/* Section 1 : Mentions légales */}
               <section className="mb-12">
-                <div className="mb-6 flex items-center">
+                <div className="flex items-center mb-6">
                   <span className="mr-4 text-2xl">
                     <FaInfoCircle />
                   </span>
@@ -353,12 +353,12 @@ export const HeroSection = () => {
                   <img
                     src="/images/carte2.png"
                     alt="carte visite aindev"
-                    className="mx-auto mb-12 w-96 rounded shadow-lg xl:mb-0"
+                    className="mx-auto mb-12 rounded shadow-lg w-96 xl:mb-0"
                   />
                   <img
                     src="/images/carte1.png"
                     alt="carte visite aindev"
-                    className="mx-auto w-96 rounded shadow-lg"
+                    className="mx-auto rounded shadow-lg w-96"
                   />
                 </div>
 
