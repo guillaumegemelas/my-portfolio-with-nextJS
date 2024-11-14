@@ -73,7 +73,7 @@ export const HeroSection = () => {
               <br />
               <span className="flex items-center">
                 {/* J'améliore mes compétences à travers de l'auto-formation, des
-            tutoriels ainsi que des projets personnels */}
+            tutoriels ainsi que des projets personnels-- */}
                 <span className="text-4xl font-extrabold">
                   <MdOutlineSelfImprovement />
                 </span>
