@@ -23,6 +23,7 @@ import { MdSportsHandball } from "react-icons/md";
 import { RiTeamFill } from "react-icons/ri";
 import { MdOutlinePets } from "react-icons/md";
 import { IoIosBed } from "react-icons/io";
+import { FaTree } from "react-icons/fa";
 //--------------
 
 export const ProjectSection = () => {
@@ -85,6 +86,19 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
+        {/* ----projet kodama--------------*/}
+        <Project
+          key="10"
+          icon={<FaTree />}
+          image="/images/kodama.png"
+          name="Kodama web app"
+          // homepageUrl="https://guillaume-gemelas-dev.com/#Projects"
+          description="Développement d’une application web sur mesure intégrant une gestion avancée de marqueurs sur une carte interactive (Leaflet), avec suivi des projets clients, interface utilisateur optimisée en React, et gestion des données via une base MongoDB"
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://guillaume-gemelas-dev.com/#Projects"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
         {/* ----projet nathalie et cie--------------*/}
         <Project
           key="9"
