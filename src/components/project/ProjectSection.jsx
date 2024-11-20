@@ -86,7 +86,7 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet kodama--------------*/}
+        {/* ----projet kodama----------------*/}
         <Project
           key="10"
           icon={<FaTree />}
