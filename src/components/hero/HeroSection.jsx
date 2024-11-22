@@ -385,9 +385,9 @@ export const HeroSection = () => {
         </div>
       )}
       {isDroneModalOpen && (
-        <div className="modal-overlay">
-          <div className="modal ">
-            <div className="modal-content">
+        <div className="modal-overlay-test">
+          <div className="modal-test max-h-screen overflow-y-auto ">
+            <div className="modal-content mt-24">
               <div className="mb-16 flex items-center justify-center ">
                 <h2 className="text-center text-3xl ">
                   Prises de vue par drone
@@ -397,7 +397,7 @@ export const HeroSection = () => {
                 </span>
               </div>
 
-              <section className="mb-12">
+              <section className="mx-auto mb-12 w-2/3 justify-center text-center">
                 <p className="mb-4">
                   Avec mon DJI Air 3, je capture des vidéos aériennes
                   spectaculaires et réalise des{" "}
@@ -408,18 +408,46 @@ export const HeroSection = () => {
                 </p>
               </section>
 
+              {/* Section de contenu visuel */}
               <section className="mt-24 mb-24">
-                <div className="justify-center gap-8 xl:flex">
-                  <img
-                    src="/images/drone.jpg"
-                    alt="visuel drone sur montagnes"
-                    className="mx-auto mb-12 w-96 rounded shadow-lg xl:mb-0"
-                  />
-                  {/* <img
-                    src="/images/carte1.png"
-                    alt="carte visite aindev"
-                    className="mx-auto rounded shadow-lg w-96"
-                  /> */}
+                <div className="flex flex-col gap-16 xl:flex-row">
+                  {/* Colonne gauche */}
+                  <div className="flex flex-col items-center gap-8 xl:w-1/2">
+                    {/* Image */}
+                    <div className="flex h-[400px] w-full items-center justify-center  ">
+                      <img
+                        src="/images/revermont.webp"
+                        alt="visuel drone sur montagnes"
+                        className="h-full w-full rounded-3xl object-cover shadow-lg"
+                      />
+                    </div>
+
+                    {/* Vidéo YouTube */}
+                    <div
+                      className="relative w-full"
+                      style={{
+                        height: "400px",
+                      }} /* Fixe la hauteur en pixels */
+                    >
+                      <iframe
+                        src="https://www.youtube.com/embed/Vcva5RqbjUA"
+                        title="YouTube video"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="absolute top-0 left-0 h-full w-full rounded-3xl shadow-lg"
+                      ></iframe>
+                    </div>
+                  </div>
+
+                  {/* Colonne droite */}
+                  <div className="flex h-[830px] w-full items-center justify-center   xl:w-1/2">
+                    <img
+                      src="/images/drone.jpg"
+                      alt="visuel drone sur montagnes"
+                      className="h-full w-full rounded-3xl object-cover shadow-lg"
+                    />
+                  </div>
                 </div>
               </section>
             </div>

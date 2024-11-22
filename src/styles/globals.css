@@ -36,7 +36,6 @@ a {
 #progress {
   animation: progress;
   animation-timeline: scroll();
-
   position: fixed;
   left: 0;
   top: 0;
@@ -70,20 +69,58 @@ a {
   scrollbar-width: none;
 }
 
+.modal-overlay-test {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/revermont.webp"); /* Chemin vers ton image */
+  background-size: cover; /* L'image couvre toute la zone */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay-test::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 27, 82, 0.8); /* Superposition de couleur */
+  z-index: 1; /* S'assurer que la couleur de fond est au-dessus de l'image */
+}
+.modal-test {
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 90%;
+  overflow-y: auto;
+  scrollbar-width: none;
+  z-index: 1000;
+}
+
 @media (min-width: 768px) {
-  .modal {
+  .modal,
+  .modal-test {
     max-width: 70%;
   }
 }
 
 @media (min-width: 1024px) {
-  .modal {
-    max-width: 50%;
+  .modal,
+  .modal-test {
+    max-width: 80%;
   }
 }
 
 @media (max-width: 767px) {
-  .modal {
+  .modal,
+  .modal-test {
     max-width: 90%;
   }
 }
