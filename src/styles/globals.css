@@ -104,6 +104,10 @@ a {
   z-index: 1000;
 }
 
+.modal-test::-webkit-scrollbar {
+  display: none; /* Chrome, Safari et autres WebKit */
+}
+
 @media (min-width: 768px) {
   .modal,
   .modal-test {
