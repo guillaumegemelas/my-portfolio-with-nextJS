@@ -451,7 +451,17 @@ export const HeroSection = () => {
                 </div>
               </section>
             </div>
-
+            <section className="mx-auto mb-12 w-2/3 justify-center text-center">
+              <p className="mb-4">
+                Si vous souhaitez ajouter une touche de dynamisme à votre site
+                web ou simplement immortaliser un moment unique, je suis à votre
+                service.
+              </p>
+              <p className="mb-4 font-bold">
+                N’hésitez pas à me contacter, je me ferai un plaisir de
+                transformer vos idées en images spectaculaires !
+              </p>
+            </section>
             <div className="flex justify-center">
               <Button className="w-64" onClick={closeDroneModal}>
                 Fermer
