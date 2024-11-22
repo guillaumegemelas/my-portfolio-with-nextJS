@@ -5,7 +5,7 @@ import { useTheme, ThemeProvider } from "../src/context/ThemeProvider";
 
 const AppWithTheme = ({ children }) => {
   const { isDark } = useTheme();
-  // console.log(isDark, "log de isDark");
+  console.log(isDark, "log de isDark");
   //true si mode Dark actif ou false si light actif;
   return (
     <div

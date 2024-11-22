@@ -23,21 +23,22 @@ export const ThemeProvider = ({ children }) => {
       return;
     }
     //si non, il utilise une requête média (window.matchMedia) pour détecter le thème du système d'exploitation (par exemple, le mode sombre du système d'exploitation) et le configure comme thème (dans les settings du mac)
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    // const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    //   const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
-    //on créé une fonction:si il n'y a pas de localStorage on utilise la mediaQuery et on ajoute un event listener pour écouter les changement.
-    const handleChange = () => {
-      setTheme(mediaQuery.matches ? "dark" : "light");
-    };
+    //   //on créé une fonction:si il n'y a pas de localStorage on utilise la mediaQuery et on ajoute un event listener pour écouter les changement.
+    //   const handleChange = () => {
+    //     setTheme(mediaQuery.matches ? "dark" : "light");
+    //   };
 
-    //on écoute les changements pour appeler notre handleChange
-    mediaQuery.addEventListener("change", handleChange);
+    //   //on écoute les changements pour appeler notre handleChange
+    //   mediaQuery.addEventListener("change", handleChange);
 
-    //on appelle notre fonction
-    handleChange();
-    return () => {
-      mediaQuery.removeEventListener("change", handleChange);
-    };
+    //   //on appelle notre fonction
+    //   handleChange();
+    //   return () => {
+    //     mediaQuery.removeEventListener("change", handleChange);
+    //   };
   }, []);
 
   //permet de basculer entre les thèmes sombre et clair et met à jour le thème dans le localStorage.
