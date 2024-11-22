@@ -1,7 +1,7 @@
 import { useState, createContext, useContext, useEffect } from "react";
 
 //Création du contexte: utilisé pour stocker le thème actuel de l'appli.
-const ThemeContext = createContext({ theme: "light" });
+const ThemeContext = createContext({ theme: "dark" });
 //on met une valeur par défaut, pas obligatoire mais possible.
 
 //on créé une variable pour gérer le thème du localstorage: constante définie pour représenter la clé utilisée pour stocker le thème dans le stockage local (localStorage) du navigateur.
@@ -9,7 +9,7 @@ const LOCALE_STORAGE_THEME_KEY = "colorScheme";
 
 // Dark mode exercise
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const isDark = theme === "dark";
   const isLight = theme === "light";
