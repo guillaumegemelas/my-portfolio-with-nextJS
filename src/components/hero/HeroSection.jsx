@@ -21,6 +21,7 @@ import { FaTools } from "react-icons/fa";
 export const HeroSection = () => {
   // ---------------------------- ----------------------------
   const [isLegalModalOpen, setIsLegalModalOpen] = useState(false);
+  const [isDroneModalOpen, setIsDroneModalOpen] = useState(false);
 
   const openLegalModal = () => {
     setIsLegalModalOpen(true);
@@ -28,6 +29,14 @@ export const HeroSection = () => {
 
   const closeLegalModal = () => {
     setIsLegalModalOpen(false);
+  };
+
+  const openDroneModal = () => {
+    setIsDroneModalOpen(true);
+  };
+
+  const closeDroneModal = () => {
+    setIsDroneModalOpen(false);
   };
   // ---------------------------- ----------------------------
   return (
@@ -265,7 +274,7 @@ export const HeroSection = () => {
                 {" "}
                 <button
                   className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent"
-                  // onClick={openLegalModal}
+                  onClick={openDroneModal}
                 >
                   Vous voulez en savoir plus?
                 </button>
@@ -369,6 +378,54 @@ export const HeroSection = () => {
             {/* Bouton pour fermer la modale */}
             <div className="flex justify-center">
               <Button className="w-64" onClick={closeLegalModal}>
+                Fermer
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+      {isDroneModalOpen && (
+        <div className="modal-overlay">
+          <div className="modal ">
+            <div className="modal-content">
+              <div className="mb-16 flex items-center justify-center ">
+                <h2 className="text-center text-3xl ">
+                  Prises de vue par drone
+                </h2>{" "}
+                <span className="ml-12 text-3xl">
+                  <TbDrone />
+                </span>
+              </div>
+
+              <section className="mb-12">
+                <p className="mb-4">
+                  Avec mon DJI Air 3, je capture des vidéos aériennes
+                  spectaculaires et réalise des{" "}
+                  <span className="font-semibold">montages professionnels</span>{" "}
+                  grâce à DaVinci Resolve. Que ce soit pour un projet
+                  immobilier, un événement ou une création artistique, je peux
+                  vous fournir des contenus visuels de haute qualité, en 4k
+                </p>
+              </section>
+
+              <section className="mt-24 mb-24">
+                <div className="justify-center gap-8 xl:flex">
+                  <img
+                    src="/images/drone.jpg"
+                    alt="visuel drone sur montagnes"
+                    className="mx-auto mb-12 w-96 rounded shadow-lg xl:mb-0"
+                  />
+                  {/* <img
+                    src="/images/carte1.png"
+                    alt="carte visite aindev"
+                    className="mx-auto rounded shadow-lg w-96"
+                  /> */}
+                </div>
+              </section>
+            </div>
+
+            <div className="flex justify-center">
+              <Button className="w-64" onClick={closeDroneModal}>
                 Fermer
               </Button>
             </div>
