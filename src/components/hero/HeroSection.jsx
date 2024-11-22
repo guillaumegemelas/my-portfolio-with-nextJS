@@ -462,7 +462,7 @@ export const HeroSection = () => {
                 transformer vos idées en images spectaculaires !
               </p>
             </section>
-            <div className="flex justify-center">
+            <div className="mb-24 flex justify-center">
               <Button className="w-64" onClick={closeDroneModal}>
                 Fermer
               </Button>
