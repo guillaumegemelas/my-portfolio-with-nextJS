@@ -398,13 +398,14 @@ export const HeroSection = () => {
               </div>
 
               <section className="mx-auto mb-12 w-2/3 justify-center text-center">
-                <p className="mb-4">
-                  Avec mon DJI Air 3, je capture des vidéos aériennes
-                  spectaculaires et réalise des{" "}
+                <p>
+                  Avec mon DJI Air 3, je capture des photos et vidéos aériennes
+                  spectaculaires, et réalise des{" "}
                   <span className="font-semibold">montages professionnels</span>{" "}
-                  grâce à DaVinci Resolve. Que ce soit pour un projet
-                  immobilier, un événement ou une création artistique, je peux
-                  vous fournir des contenus visuels de haute qualité, en 4k
+                  .
+                  <br />
+                  Pour un projet immobilier, un événement ou une création
+                  artistique, je vous garantis des contenus visuels d’exception!
                 </p>
               </section>
 
