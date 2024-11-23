@@ -401,11 +401,16 @@ export const HeroSection = () => {
                 <p>
                   Avec mon DJI Air 3, je capture des photos et vidéos aériennes
                   spectaculaires, et réalise des{" "}
-                  <span className="font-semibold">montages professionnels</span>{" "}
+                  <span className="mb-4 font-semibold">
+                    montages professionnels
+                  </span>{" "}
                   .
                   <br />
                   Pour un projet immobilier, un événement ou une création
-                  artistique, je vous garantis des contenus visuels d’exception!
+                  artistique, je vous garantis des{" "}
+                  <span className="font-semibold">
+                    contenus visuels d’exception!
+                  </span>
                 </p>
               </section>
 
