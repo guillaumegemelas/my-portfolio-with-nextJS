@@ -398,14 +398,16 @@ export const HeroSection = () => {
               </div>
 
               <section className="mx-auto mb-12 w-2/3 justify-center text-center">
-                <p>
+                <p className="mb-4">
                   Avec mon DJI Air 3, je capture des photos et vidéos aériennes
                   spectaculaires, et réalise des{" "}
                   <span className="mb-4 font-semibold">
                     montages professionnels
-                  </span>{" "}
+                  </span>
                   .
-                  <br />
+                </p>
+                <p>
+                  {" "}
                   Pour un projet immobilier, un événement ou une création
                   artistique, je vous garantis des{" "}
                   <span className="font-semibold">
