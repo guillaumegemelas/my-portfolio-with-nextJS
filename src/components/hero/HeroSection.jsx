@@ -41,7 +41,7 @@ export const HeroSection = () => {
   // ---------------------------- ----------------------------
   return (
     <>
-      <div className="relative flex flex-col items-center max-w-4xl m-auto mt-12 mb-12 md:flex-row">
+      <div className="relative m-auto mt-12 mb-12 flex max-w-4xl flex-col items-center md:flex-row">
         <img
           width={300}
           height={300}
@@ -57,7 +57,7 @@ export const HeroSection = () => {
           <h1 className="text-6xl dark:drop-shadow-[0_0px_20px_rgba(0,0,0,1)] md:text-6xl">
             {/* I'm{" "} */}
             Je suis{" "}
-            <span className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
               {/* {FULL_NAME} */}
               Guillaume Gemelas
             </span>
@@ -126,8 +126,8 @@ export const HeroSection = () => {
           <br />
 
           {/* modifs faite le 16/01------------------------------------------ */}
-          <div className="flex flex-col justify-center w-full mt-24 md:flex-row">
-            <div className="flex justify-center w-full sm:mb-12 md:mb-0 md:mr-6 md:w-full lg:mr-16">
+          <div className="mt-24 flex w-full flex-col justify-center md:flex-row">
+            <div className="flex w-full justify-center sm:mb-12 md:mb-0 md:mr-6 md:w-full lg:mr-16">
               <img
                 src="/images/logo6.png"
                 alt="logo aindev"
@@ -143,7 +143,7 @@ export const HeroSection = () => {
               <span>
                 {" "}
                 <button
-                  className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text"
+                  className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent"
                   onClick={openLegalModal}
                 >
                   aindev.
@@ -157,15 +157,15 @@ export const HeroSection = () => {
           {/* modifs faite le 16/01------------------------------------------ */}
 
           <p className="mt-48 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
-            <span className="flex items-center mb-3">
-              <span className="mr-4 text-4xl font-extrabold bg-gradient-to-r from-primary to-secondary bg-clip-text">
+            <span className="mb-3 flex items-center">
+              <span className="mr-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-4xl font-extrabold">
                 <AiOutlineQuestionCircle
                   style={{
                     color: "#677AF1",
                   }}
                 />
               </span>{" "}
-              <span className="text-4xl font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-4xl font-extrabold text-transparent">
                 Ce que je peux faire pour vous
               </span>{" "}
               {/* <span className="text-4xl font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
@@ -273,7 +273,7 @@ export const HeroSection = () => {
               <span>
                 {" "}
                 <button
-                  className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text"
+                  className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent"
                   onClick={openDroneModal}
                 >
                   Vous voulez en savoir plus?
@@ -313,8 +313,8 @@ export const HeroSection = () => {
             <div className="modal-content">
               {/* Contenu des mentions légales */}
 
-              <div className="flex items-center justify-center mb-16 ">
-                <h2 className="text-3xl text-center ">Aindev</h2>{" "}
+              <div className="mb-16 flex items-center justify-center ">
+                <h2 className="text-center text-3xl ">Aindev</h2>{" "}
                 <span className="ml-4 text-3xl">
                   <MdDevicesOther />
                 </span>
@@ -322,7 +322,7 @@ export const HeroSection = () => {
 
               {/* Section 1 : Mentions légales */}
               <section className="mb-12">
-                <div className="flex items-center mb-6">
+                <div className="mb-6 flex items-center">
                   <span className="mr-4 text-2xl">
                     <FaInfoCircle />
                   </span>
@@ -362,12 +362,12 @@ export const HeroSection = () => {
                   <img
                     src="/images/carte2.png"
                     alt="carte visite aindev"
-                    className="mx-auto mb-12 rounded shadow-lg w-96 xl:mb-0"
+                    className="mx-auto mb-12 w-96 rounded shadow-lg xl:mb-0"
                   />
                   <img
                     src="/images/carte1.png"
                     alt="carte visite aindev"
-                    className="mx-auto rounded shadow-lg w-96"
+                    className="mx-auto w-96 rounded shadow-lg"
                   />
                 </div>
 
@@ -386,10 +386,10 @@ export const HeroSection = () => {
       )}
       {isDroneModalOpen && (
         <div className="modal-overlay-test">
-          <div className="max-h-screen overflow-y-auto modal-test ">
-            <div className="mt-24 modal-content">
-              <div className="flex items-center justify-center mb-16 ">
-                <h2 className="text-3xl text-center ">
+          <div className="modal-test max-h-screen overflow-y-auto ">
+            <div className="modal-content mt-24">
+              <div className="mb-16 flex items-center justify-center ">
+                <h2 className="text-center text-3xl ">
                   Prises de vue par drone
                 </h2>{" "}
                 <span className="ml-12 text-3xl">
@@ -397,7 +397,7 @@ export const HeroSection = () => {
                 </span>
               </div>
 
-              <section className="justify-center w-2/3 mx-auto mb-12 text-center">
+              <section className="mx-auto mb-12 w-2/3 justify-center text-center">
                 <p className="mb-4">
                   Avec mon DJI Air 3, je capture des photos et vidéos aériennes
                   spectaculaires, et réalise des{" "}
@@ -426,7 +426,7 @@ export const HeroSection = () => {
                       <img
                         src="/images/revermont.webp"
                         alt="visuel drone sur montagnes"
-                        className="object-cover w-full h-full shadow-lg rounded-3xl"
+                        className="h-full w-full rounded-3xl object-cover shadow-lg"
                       />
                     </div>
 
@@ -435,7 +435,7 @@ export const HeroSection = () => {
                       className="relative w-full"
                       style={{
                         height: "400px",
-                      }} /* Fixe la hauteur en pixels */
+                      }} /* Fixe la hauteur en pixels ---*/
                     >
                       <iframe
                         // src="https://www.youtube.com/embed/Vcva5RqbjUA"
@@ -444,7 +444,7 @@ export const HeroSection = () => {
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
-                        className="absolute top-0 left-0 w-full h-full shadow-lg rounded-3xl"
+                        className="absolute top-0 left-0 h-full w-full rounded-3xl shadow-lg"
                       ></iframe>
                     </div>
                   </div>
@@ -454,13 +454,13 @@ export const HeroSection = () => {
                     <img
                       src="/images/drone.jpg"
                       alt="visuel drone sur montagnes"
-                      className="object-cover w-full h-full shadow-lg rounded-3xl"
+                      className="h-full w-full rounded-3xl object-cover shadow-lg"
                     />
                   </div>
                 </div>
               </section>
             </div>
-            <section className="justify-center w-2/3 mx-auto mb-12 text-center">
+            <section className="mx-auto mb-12 w-2/3 justify-center text-center">
               <p className="mb-4">
                 Si vous souhaitez ajouter une touche de dynamisme à votre site
                 web ou simplement immortaliser un moment unique, je suis à votre
@@ -471,7 +471,7 @@ export const HeroSection = () => {
                 transformer vos idées en images spectaculaires !
               </p>
             </section>
-            <div className="flex justify-center mb-24">
+            <div className="mb-24 flex justify-center">
               <Button className="w-64" onClick={closeDroneModal}>
                 Fermer
               </Button>
