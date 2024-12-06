@@ -11,7 +11,7 @@ import { Skills } from "../src/components/skills/Skills";
 
 //----------------
 // import Script from "next/script";
-//---------------
+//------------------
 
 // dynamic import Memory Section.
 const DynamicMemorySection = dynamic(() => import("../src/components/memory"), {
