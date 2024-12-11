@@ -24,6 +24,7 @@ import { RiTeamFill } from "react-icons/ri";
 import { MdOutlinePets } from "react-icons/md";
 import { IoIosBed } from "react-icons/io";
 import { FaTree } from "react-icons/fa";
+import { MdOutlineAutoGraph } from "react-icons/md";
 //--------------
 
 export const ProjectSection = () => {
@@ -86,6 +87,19 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
+        {/* ----projet kodama----------------*/}
+        <Project
+          key="10"
+          icon={<MdOutlineAutoGraph />}
+          image="/images/comp3.png"
+          name="Compétences & vous"
+          homepageUrl="https://competencesetvous.fr"
+          description="Sécurisation et optimisation des performances du site, optimisation du SEO pour améliorer sa visibilité sur les moteurs de recherche. Mise en place de stratégies d’optimisation on-page et off-page pour un référencement durable"
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://competencesetvous.fr/"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
         {/* ----projet kodama----------------*/}
         <Project
           key="10"
