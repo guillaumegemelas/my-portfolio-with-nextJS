@@ -8,7 +8,7 @@ import { Typography } from "./atom/Typography";
 import { RiContactsLine } from "react-icons/ri";
 import { AiFillPhone } from "react-icons/ai";
 import { MdAccountBalance } from "react-icons/md";
-// import { Contact } from "./Contact";
+import { Contact } from "./Contact";
 
 export const Footer = () => {
   // ---------------------------- ------------------------------
@@ -45,7 +45,7 @@ export const Footer = () => {
         </Typography>
 
         {/* --------------test form contact----------------------------------- */}
-        {/* <Contact /> */}
+        <Contact />
         {/* --------------fin test form contact------------------------------- */}
         {/* <a
           className="text-base underline text-primary"

@@ -54,7 +54,7 @@ export const Contact = () => {
     }
 
     const url =
-      "https://site--mailing-back--zqfvjrr4byql.code.run/process-form";
+      "https://site--mail-portfolio-1--zqfvjrr4byql.code.run/send-email";
 
     try {
       const response = await fetch(url, {
