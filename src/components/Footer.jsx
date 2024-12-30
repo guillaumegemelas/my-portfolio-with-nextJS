@@ -46,7 +46,7 @@ export const Footer = () => {
           pas à me contacter pour parler de votre projet !
         </Typography>
 
-        {/* --------------test form contact------------------- */}
+        {/* --------------test form contact----------------------- */}
         <Contact />
         {/* --------------fin test form conta */}
         {/* <a
