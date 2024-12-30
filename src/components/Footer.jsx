@@ -41,7 +41,9 @@ export const Footer = () => {
       <div className="flex w-full max-w-2xl flex-col items-center gap-2 ">
         <Typography variant="body2">
           {/* I’ll be happy to chat with you about a potential job or a freelance! */}
-          Je serai ravi d'échanger avec vous.
+          Je suis à votre disposition pour discuter de vos idées, vous
+          conseiller, ou vous proposer un devis adapté à vos besoins. N’hésitez
+          pas à me contacter pour parler de votre projet !
         </Typography>
 
         {/* --------------test form contact------------------- */}
