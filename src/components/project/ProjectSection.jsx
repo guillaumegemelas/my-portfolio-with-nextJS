@@ -25,6 +25,7 @@ import { MdOutlinePets } from "react-icons/md";
 import { IoIosBed } from "react-icons/io";
 import { FaTree } from "react-icons/fa";
 import { MdOutlineAutoGraph } from "react-icons/md";
+import { TbMoodKid } from "react-icons/tb";
 //--------------
 
 export const ProjectSection = () => {
@@ -90,7 +91,7 @@ export const ProjectSection = () => {
         {/* ----projet sou des ecoles--------------------*/}
         <Project
           key="12"
-          icon={<MdOutlineAutoGraph />}
+          icon={<TbMoodKid />}
           image="/images/sou.png"
           name="Sou des écoles"
           homepageUrl="https://sou-des-ecoles-01370.fr"
@@ -229,8 +230,8 @@ export const ProjectSection = () => {
         {/* <Project {...projects[0]} /> */}
       </div>
       {showAlert && (
-        <div className="fixed top-0 left-0 z-10 flex items-center justify-center w-full h-full">
-          <div className="absolute top-0 left-0 right-0 p-2 text-center text-white transition-opacity duration-500 bg-red-500 opacity-100">
+        <div className="fixed left-0 top-0 z-10 flex h-full w-full items-center justify-center">
+          <div className="absolute left-0 right-0 top-0 bg-red-500 p-2 text-center text-white opacity-100 transition-opacity duration-500">
             Le code source ne peut pas être visualisé.
           </div>
         </div>
