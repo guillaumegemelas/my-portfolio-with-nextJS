@@ -88,7 +88,7 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet sou des ecoles--------------------*/}
+        {/* ----projet sou des ecoles------------------*/}
         <Project
           key="12"
           icon={<TbMoodKid />}
