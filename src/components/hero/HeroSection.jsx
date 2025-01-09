@@ -19,8 +19,12 @@ import { MdOutlineSelfImprovement } from "react-icons/md";
 import { FaTools } from "react-icons/fa";
 
 //animations lottie---------
-// import Lottie from "lottie-react";
-// import animationData from "../../../public/animation/animation.json"; // Remplace le chemin si nécessaire
+import LottieComponent from "../Lottie/LottieComponent";
+import animationData from "../../../public/animation/animation.json";
+import animationData1 from "../../../public/animation/animation1.json";
+import animationData2 from "../../../public/animation/animation2.json"; // Remplace le chemin si nécessaire
+import animationData4 from "../../../public/animation/animation4.json";
+import animationData5 from "../../../public/animation/animation5.json";
 //--------------------------
 
 export const HeroSection = () => {
@@ -139,13 +143,7 @@ export const HeroSection = () => {
                 className="w-64 rounded shadow-lg md:w-full "
               />
             </div>
-            {/* <div className="flex flex-col items-center justify-center w-full">
-              <Lottie
-                animationData={animationData}
-                className="flex items-center justify-center"
-                loop={true}
-              />{" "}
-            </div> */}
+
             <p className="mt-12  max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)] sm:mt-0">
               Ce qui m'anime, c'est avant tout la "vision locale". La notion de
               proximité est, à mon sens, essentielle pour comprendre toutes les
@@ -167,88 +165,105 @@ export const HeroSection = () => {
           {/* modifs faite pour le drone------------------------------------------ 
           {/* modifs faite le 16/01------------------------------------------ */}
 
-          <p className="mt-48 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
-            <span className="mb-3 flex items-center">
-              <span className="mr-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-4xl font-extrabold">
-                <AiOutlineQuestionCircle
-                  style={{
-                    color: "#677AF1",
-                  }}
-                />
-              </span>{" "}
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-4xl font-extrabold text-transparent">
-                Ce que je peux faire pour vous
-              </span>{" "}
-              {/* <span className="text-4xl font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+          {/* <p className="mt-48 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]"> */}
+          <span className="mb-3 mt-48 flex items-center ">
+            <span className="mr-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-4xl font-extrabold">
+              <AiOutlineQuestionCircle
+                style={{
+                  color: "#677AF1",
+                }}
+              />
+            </span>{" "}
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-4xl font-extrabold text-transparent">
+              Ce que je peux faire pour vous
+            </span>{" "}
+            {/* <span className="text-4xl font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
                 What can I do for you
               </span>{" "} */}
-            </span>
-            <br />
-            <br />
-            <span className="flex items-center">
-              {" "}
-              {/* Use a flex container --*/}
-              <span className="text-4xl font-extrabold ">
-                <HiOutlineDesktopComputer />
-              </span>{" "}
-              {/* <span className="ml-7">
-                <b>I develop your websites</b> on both the client-side
-                (Front-end) and server-side (Back-end). Below, you can find my
-                projects, most of them have been created using ReactJS or
-                NextJS.
-              </span> */}
-              <span className="ml-7">
-                <b>Je développe vos sites web</b> aussi bien sur la partie
-                client (Front-end) que sur la partie serveur (Back-end). <br />
-                Que vous souhaitiez partir d'une feuille blanche ou améliorer un
-                site existant, je prends le temps d'étudier votre projet pour
-                répondre au mieux à vos besoins.
-                <br />
-                Vous pouvez consulter ci-dessous{" "}
-                <b>
-                  <a href="#Achievements" className="text-current">
-                    mes réalisations
-                  </a>{" "}
-                </b>
-                , réalisées avec ReactJS, NextJS, VanillaJS ou encore Wordpress.
-              </span>
-            </span>
-            <br />
-            <br />
-            <span className="flex items-center">
-              {" "}
-              {/* Use a flex container --*/}
-              <span className="text-4xl font-extrabold ">
-                <FaGoogle />
-              </span>{" "}
-              {/* <span className="ml-7">
-                <b>I develop your websites</b> on both the client-side
-                (Front-end) and server-side (Back-end). Below, you can find my
-                projects, most of them have been created using ReactJS or
-                NextJS.
-              </span> */}
-              <span className="ml-7">
-                <b>
-                  Je réalise une étude complète de votre site afin d'améliorer
-                  son référencement naturel (SEO).
-                </b>{" "}
-                Je mets en place une statégie globale pour optimiser votre
-                présence en ligne, augmenter votre visibilité et ainsi générer
-                du traffic sur votre site.
-              </span>
-            </span>
-          </p>
+          </span>
           <br />
-          <span className="flex items-center">
-            <span className="text-4xl font-extrabold">
-              {" "}
-              <IoSchool />
+          <br />
+          <span className="flex w-full flex-col items-center justify-center">
+            {/* Animation Lottie centrée */}
+            <div className="mt-12 flex items-center justify-center">
+              <LottieComponent
+                animationData={animationData5}
+                width={200}
+                height={200}
+                loop={true}
+              />
+            </div>
+            {/* Use a flex container --*/}
+            {/* <span className="text-4xl font-extrabold ">
+                <HiOutlineDesktopComputer />
+              </span> */}{" "}
+            {/* <span className="ml-7">
+                <b>I develop your websites</b> on both the client-side
+                (Front-end) and server-side (Back-end). Below, you can find my
+                projects, most of them have been created using ReactJS or
+                NextJS.
+              </span> */}
+            <span className=" ml-16 mt-3 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+              <b>Je développe vos sites web</b> aussi bien sur la partie client
+              (Front-end) que sur la partie serveur (Back-end). <br />
+              Que vous souhaitiez partir d'une feuille blanche ou améliorer un
+              site existant, je prends le temps d'étudier votre projet pour
+              répondre au mieux à vos besoins.
+              <br />
+              Vous pouvez consulter ci-dessous{" "}
+              <b>
+                <a href="#Achievements" className="text-current">
+                  mes réalisations
+                </a>{" "}
+              </b>
+              , réalisées avec ReactJS, NextJS, VanillaJS ou encore Wordpress.
             </span>
+          </span>
+          <br />
+          <br />
+          {/* </p> */}
+          <br />
+          <span className="flex w-full flex-col items-center justify-center">
+            {/* Animation Lottie centrée */}
+            <div className="mb-12 flex items-center justify-center">
+              <LottieComponent
+                animationData={animationData}
+                width={200}
+                height={200}
+                loop={true}
+              />
+            </div>
+            {/* <span className="ml-7">
+                <b>I develop your websites</b> on both the client-side
+                (Front-end) and server-side (Back-end). Below, you can find my
+                projects, most of them have been created using ReactJS or
+                NextJS.
+              </span> */}
+            <span className="mb-24 ml-16 mt-3 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+              <b>
+                Je réalise une étude complète de votre site afin d'améliorer son
+                référencement naturel (SEO).
+              </b>{" "}
+              Je mets en place une statégie globale pour optimiser votre
+              présence en ligne, augmenter votre visibilité et ainsi générer du
+              traffic sur votre site.
+            </span>
+          </span>
+          <span className="flex w-full flex-col items-center justify-center">
+            {/* Animation Lottie centrée */}
+            <div className="flex items-center justify-center">
+              <LottieComponent
+                animationData={animationData1}
+                width={250}
+                height={250}
+                loop={true}
+              />
+            </div>
             {/* <span className="mt-3 ml-7 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
               Do not hesitate to contact me, I would be happy to review your
               project and respond as soon as possible
             </span> */}
-            <span className="ml-7 mt-3 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+            <span className=" ml-16 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
               <b>Je propose des formations personnalisées</b> dispensées
               directement dans votre entreprise, sur des sujets définis
               ensemble, comme la création de landing pages, le référencement
@@ -260,16 +275,26 @@ export const HeroSection = () => {
           </span>
           <br />
 
-          <span className="flex items-center">
+          <span className="flex w-full flex-col items-center justify-center">
+            {/* Animation Lottie centrée */}
+            <div className="flex items-center justify-center">
+              <LottieComponent
+                animationData={animationData2}
+                width={250}
+                height={250}
+                loop={true}
+              />
+            </div>
+            {/* <span className="flex items-center">
             <span className="text-4xl font-extrabold">
               {" "}
               <TbDrone />
-            </span>
+            </span> */}
             {/* <span className="mt-3 ml-7 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
               Do not hesitate to contact me, I would be happy to review your
               project and respond as soon as possible
             </span> */}
-            <span className="ml-7 mt-3 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+            <span className="mb-24 ml-16 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
               En complément de mes services en développement web,{" "}
               <b>je propose désormais des prises de vues aériennes par drone</b>
               . Que ce soit pour mettre en valeur vos locaux, vos événements ou
@@ -295,17 +320,26 @@ export const HeroSection = () => {
           <br />
 
           <br />
-
-          <span className="flex items-center">
+          <span className="flex w-full flex-col items-center justify-center">
+            {/* Animation Lottie centrée */}
+            <div className="flex items-center justify-center">
+              <LottieComponent
+                animationData={animationData4}
+                width={230}
+                height={230}
+                loop={true}
+              />
+            </div>
+            {/* <span className="flex items-center">
             <span className="text-4xl font-extrabold">
               {" "}
               <RiContactsLine />
-            </span>
+            </span> */}
             {/* <span className="mt-3 ml-7 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
               Do not hesitate to contact me, I would be happy to review your
               project and respond as soon as possible
             </span> */}
-            <span className="ml-7 mt-3 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+            <span className="ml-7 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
               N'hésitez pas à me{" "}
               <b>
                 <a className="text-current" href="#Contact">
