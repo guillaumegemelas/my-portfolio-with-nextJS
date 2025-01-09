@@ -218,6 +218,15 @@ export const HeroSection = () => {
               </b>
               , réalisées avec ReactJS, NextJS, VanillaJS ou encore Wordpress.
             </span>
+            <br />
+            <span className=" ml-16 mt-3 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
+              <b>Je m'occupe également de la maintenance de site web.</b> Mon
+              objectif est de garantir le bon fonctionnement de votre site tout
+              en étant <b>transparent sur les coûts mensuels</b>. Je propose une
+              maintenance <b>adaptée à vos besoins</b>, avec un juste prix, pour
+              vous accompagner en toute confiance.
+              <br />
+            </span>
           </span>
           <br />
           <br />
