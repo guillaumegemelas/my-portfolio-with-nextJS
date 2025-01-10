@@ -88,45 +88,6 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet sou des ecoles---------------*/}
-        <Project
-          key="12"
-          icon={<TbMoodKid />}
-          image="/images/sou.png"
-          name="Sou des écoles"
-          homepageUrl="https://sou-des-ecoles-01370.fr"
-          description="Création d’un site pour le Sou des Écoles de Saint-Étienne-du-Bois, conçu pour refléter l’engagement solidaire de l’association. Ce site convivial et informatif permet de présenter les actions, événements et missions du Sou, tout en encourageant la participation des parents et bénévoles au service des enfants de l’école publique."
-          handleClick={handleClick}
-          // showAlertOnClick={true} // Activer l'ale
-          url="https://sou-des-ecoles-01370.fr/"
-          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
-        />
-        {/* ----projet comp&vous--------------------*/}
-        <Project
-          key="11"
-          icon={<MdOutlineAutoGraph />}
-          image="/images/comp3.png"
-          name="Compétences & vous"
-          homepageUrl="https://competencesetvous.fr"
-          description="Sécurisation et optimisation des performances du site, optimisation du SEO pour améliorer sa visibilité sur les moteurs de recherche. Mise en place de stratégies d’optimisation on-page et off-page pour un référencement durable"
-          handleClick={handleClick}
-          // showAlertOnClick={true} // Activer l'ale
-          url="https://competencesetvous.fr/"
-          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
-        />
-        {/* ----projet kodama----------------*/}
-        <Project
-          key="10"
-          icon={<FaTree />}
-          image="/images/kodama.png"
-          name="Kodama web app"
-          // homepageUrl="https://guillaume-gemelas-dev.com/#Projects"
-          description="Développement d’une application web sur mesure intégrant une gestion avancée de marqueurs sur une carte interactive (Leaflet), avec suivi des projets clients, interface utilisateur optimisée en React, et gestion des données via une base MongoDB"
-          handleClick={handleClick}
-          // showAlertOnClick={true} // Activer l'ale
-          url="https://guillaume-gemelas-dev.com/#Projects"
-          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
-        />
         {/* ----projet nathalie et cie--------------*/}
         <Project
           key="9"
@@ -164,6 +125,45 @@ export const ProjectSection = () => {
           handleClick={handleClick}
           // showAlertOnClick={true} // Activer l'ale
           url="https://essain.com"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
+        {/* ----projet sou des ecoles---------------*/}
+        <Project
+          key="12"
+          icon={<TbMoodKid />}
+          image="/images/sou.png"
+          name="Sou des écoles"
+          homepageUrl="https://sou-des-ecoles-01370.fr"
+          description="Création d’un site pour le Sou des Écoles de Saint-Étienne-du-Bois, conçu pour refléter l’engagement solidaire de l’association. Ce site convivial et informatif permet de présenter les actions, événements et missions du Sou, tout en encourageant la participation des parents et bénévoles au service des enfants de l’école publique."
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://sou-des-ecoles-01370.fr/"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
+        {/* ----projet comp&vous--------------------*/}
+        <Project
+          key="11"
+          icon={<MdOutlineAutoGraph />}
+          image="/images/comp3.png"
+          name="Compétences & vous"
+          homepageUrl="https://competencesetvous.fr"
+          description="Sécurisation et optimisation des performances du site, optimisation du SEO pour améliorer sa visibilité sur les moteurs de recherche. Mise en place de stratégies d’optimisation on-page et off-page pour un référencement durable"
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://competencesetvous.fr/"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
+        {/* ----projet kodama----------------*/}
+        <Project
+          key="10"
+          icon={<FaTree />}
+          image="/images/kodama.png"
+          name="Kodama web app"
+          // homepageUrl="https://guillaume-gemelas-dev.com/#Projects"
+          description="Développement d’une application web sur mesure intégrant une gestion avancée de marqueurs sur une carte interactive (Leaflet), avec suivi des projets clients, interface utilisateur optimisée en React, et gestion des données via une base MongoDB"
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://guillaume-gemelas-dev.com/#Projects"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
         {/* ----projet glc-com-------------------*/}
