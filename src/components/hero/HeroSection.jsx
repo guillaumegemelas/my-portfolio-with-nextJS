@@ -409,6 +409,19 @@ export const HeroSection = () => {
                   site, amélioration du référencement naturel, formations sur
                   l'univers du web
                 </p>
+                <p className="mb-4">
+                  <span className="font-semibold">
+                    Voir la fiche My business Google :
+                  </span>{" "}
+                  <a
+                    href="https://g.co/kgs/V3PL7r3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline hover:text-blue-700"
+                  >
+                    Par ici
+                  </a>
+                </p>
               </section>
 
               {/* Section 2 : Protection des données personnelles */}
