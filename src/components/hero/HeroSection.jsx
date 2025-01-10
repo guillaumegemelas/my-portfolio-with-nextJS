@@ -255,7 +255,7 @@ export const HeroSection = () => {
               </b>{" "}
               Je mets en place une statégie globale pour optimiser votre
               présence en ligne, augmenter votre visibilité et ainsi générer du
-              traffic sur votre site.
+              trafic sur votre site.
             </span>
           </span>
           <span className="flex w-full flex-col items-center justify-center">
@@ -305,11 +305,11 @@ export const HeroSection = () => {
             </span> */}
             <span className="mb-24 ml-16 max-w-xl text-xl dark:drop-shadow-[0_0px_5px_rgba(0,0,0,1)]">
               En complément de mes services en développement web,{" "}
-              <b>je propose désormais des prises de vues aériennes par drone</b>
-              . Que ce soit pour mettre en valeur vos locaux, vos événements ou
-              votre environnement, je mets à disposition mon expertise pour
-              capturer des images et vidéos de haute qualité. Cette nouvelle
-              activité est spécialement pensée pour les entreprises souhaitant{" "}
+              <b>je propose des prises de vues aériennes par drone</b>. Que ce
+              soit pour mettre en valeur vos locaux, vos événements ou votre
+              environnement, je mets à disposition mon expertise pour capturer
+              des images et vidéos de haute qualité. Cette nouvelle activité est
+              spécialement pensée pour les entreprises souhaitant{" "}
               <b>
                 dynamiser leur communication avec des contenus visuels
                 percutants et immersifs
