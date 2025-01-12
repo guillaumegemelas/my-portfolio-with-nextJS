@@ -18,14 +18,14 @@ import { MdOutlineSelfImprovement } from "react-icons/md";
 // import { IoVideocamOutline } from "react-icons/io5";
 import { FaTools } from "react-icons/fa";
 
-//animations lottie---------
+//animations lottie-----------
 import LottieComponent from "../Lottie/LottieComponent";
 import animationData from "../../../public/animation/animation.json";
 import animationData1 from "../../../public/animation/animation1.json";
 import animationData2 from "../../../public/animation/animation2.json"; // Remplace le chemin si nécessaire
 import animationData4 from "../../../public/animation/animation4.json";
 import animationData5 from "../../../public/animation/animation5.json";
-//--------------------------
+//----------------------------
 
 export const HeroSection = () => {
   // ---------------------------- ----------------------------
