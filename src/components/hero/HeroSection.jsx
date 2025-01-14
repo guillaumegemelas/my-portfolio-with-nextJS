@@ -18,7 +18,7 @@ import { MdOutlineSelfImprovement } from "react-icons/md";
 // import { IoVideocamOutline } from "react-icons/io5";
 import { FaTools } from "react-icons/fa";
 
-//animations lottie-----------
+//animations lottie-------------
 import LottieComponent from "../Lottie/LottieComponent";
 import animationData from "../../../public/animation/animation.json";
 import animationData1 from "../../../public/animation/animation1.json";
