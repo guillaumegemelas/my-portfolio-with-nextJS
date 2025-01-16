@@ -158,7 +158,7 @@ export const ProjectSection = () => {
           key="10"
           icon={<FaTree />}
           image="/images/kodama.png"
-          name="Kodama web app"
+          name="Kodama"
           // homepageUrl="https://guillaume-gemelas-dev.com/#Projects"
           description="Développement d’une application web sur mesure intégrant une gestion avancée de marqueurs sur une carte interactive (Leaflet), avec suivi des projets clients, interface utilisateur optimisée en React, et gestion des données via une base MongoDB"
           handleClick={handleClick}
@@ -197,7 +197,7 @@ export const ProjectSection = () => {
           key="5"
           icon={<BsEyeglasses />}
           image="/images/essilo.png"
-          name="Essilor Webapp"
+          name="Essilor"
           homepageUrl="https://www.meyecustom.com"
           description="Développement d’une webapp interactive pour Essilor, permettant aux utilisateurs de personnaliser des lunettes de vue et solaires en magasin. Cette interface de personnalisation offre une expérience utilisateur fluide, avec des options variées pour ajuster le style, la couleur, et les fonctionnalités des lunettes."
           handleClick={handleClick}
