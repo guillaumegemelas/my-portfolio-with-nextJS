@@ -9,7 +9,7 @@ import { ProjectSection } from "../src/components/project";
 import { Curriculum } from "../src/components/curriculum/Curriculum";
 import { Skills } from "../src/components/skills/Skills";
 
-//--------------------
+//-------------------
 // import Script from "next/script";
 //--------------------
 
