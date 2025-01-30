@@ -308,7 +308,7 @@ export const HeroSection = () => {
               <b>je propose des prises de vues aériennes par drone</b>. Que ce
               soit pour mettre en valeur vos locaux, vos événements ou votre
               environnement, je mets à disposition mon expertise pour capturer
-              des images et vidéos de haute qualité. Cette nouvelle activité est
+              des images et vidéos de haute qualité. Cette activité est
               spécialement pensée pour les entreprises souhaitant{" "}
               <b>
                 dynamiser leur communication avec des contenus visuels
