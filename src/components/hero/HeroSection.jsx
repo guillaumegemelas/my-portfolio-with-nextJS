@@ -28,7 +28,7 @@ import animationData5 from "../../../public/animation/animation5.json";
 //----------------------------
 
 export const HeroSection = () => {
-  // ---------------------------- ----------------------------
+  // --------------------------------------------------------
   const [isLegalModalOpen, setIsLegalModalOpen] = useState(false);
   const [isDroneModalOpen, setIsDroneModalOpen] = useState(false);
 
@@ -47,7 +47,7 @@ export const HeroSection = () => {
   const closeDroneModal = () => {
     setIsDroneModalOpen(false);
   };
-  // ---------------------------- ----------------------------
+  // --------------------------------------------------------
   return (
     <>
       <div className="relative m-auto mb-12 mt-12 flex max-w-4xl flex-col items-center md:flex-row">
