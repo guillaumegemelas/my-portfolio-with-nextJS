@@ -534,10 +534,25 @@ export const HeroSection = () => {
                 web ou simplement immortaliser un moment unique, je suis à votre
                 service.
               </p>
-              <p className="mb-4 font-bold">
+              <p className="mb-4">
                 N’hésitez pas à me contacter, je me ferai un plaisir de
-                transformer vos idées en images spectaculaires !
+                transformer vos idées en images spectaculaires ! Si vous désirez
+                voir quelques vidéos, n'hésitez pas à visiter ma chaîne youtube!
               </p>
+              <p className="mb-6 font-bold">
+                {" "}
+                Si vous désirez voir quelques vidéos, n'hésitez pas à visiter ma
+                chaîne youtube!
+              </p>
+              <a
+                href="https://www.youtube.com/@guillaumegemelas7671"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="mb-4 mt-4 rounded-lg bg-red-400 px-4 py-2 text-white transition hover:bg-red-700">
+                  En voir plus
+                </button>
+              </a>
             </section>
             <div className="mb-24 flex justify-center">
               <Button className="w-64" onClick={closeDroneModal}>
