@@ -2,7 +2,7 @@
 // ---------------------------- ----------------------------
 import { useState } from "react";
 import { Button } from "../atom/Button";
-// ---------------------------- ----------------------------
+// ---------------------------- ------------------------------
 
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 
