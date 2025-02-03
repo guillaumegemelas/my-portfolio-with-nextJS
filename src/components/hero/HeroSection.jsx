@@ -507,7 +507,10 @@ export const HeroSection = () => {
                     >
                       <iframe
                         // src="https://www.youtube.com/embed/Vcva5RqbjUA"
-                        src="https://www.youtube.com/embed/RTPvkyMYa5w"
+                        //vidéo revermont
+                        // src="https://www.youtube.com/embed/RTPvkyMYa5w"
+                        //vidéo viaduc de bolozon
+                        src="https://www.youtube.com/embed/yG9CqYoxSzo"
                         title="YouTube video"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
