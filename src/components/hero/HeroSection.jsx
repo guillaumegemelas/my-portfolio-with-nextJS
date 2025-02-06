@@ -47,7 +47,7 @@ export const HeroSection = () => {
   const closeDroneModal = () => {
     setIsDroneModalOpen(false);
   };
-  // --------------------------------------------------------
+  // ------------------------------------------------------
   return (
     <>
       <div className="relative m-auto mb-12 mt-12 flex max-w-4xl flex-col items-center md:flex-row">
