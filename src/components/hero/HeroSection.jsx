@@ -317,12 +317,20 @@ export const HeroSection = () => {
               .
               <span>
                 {" "}
-                <button
+                <a
+                  href="https://aindev-drone.fr"
                   className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Vous voulez en savoir plus?
+                </a>
+                {/* <button
+                  className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text"
                   onClick={openDroneModal}
                 >
                   Vous voulez en savoir plus?
-                </button>
+                </button> */}
               </span>
             </span>
           </span>
@@ -452,12 +460,12 @@ export const HeroSection = () => {
           </div>
         </div>
       )}
-      {isDroneModalOpen && (
+      {/* {isDroneModalOpen && (
         <div className="modal-overlay-test">
-          <div className="modal-test max-h-screen overflow-y-auto ">
-            <div className="modal-content mt-24">
-              <div className="mb-16 flex items-center justify-center ">
-                <h2 className="text-center text-3xl ">
+          <div className="max-h-screen overflow-y-auto modal-test ">
+            <div className="mt-24 modal-content">
+              <div className="flex items-center justify-center mb-16 ">
+                <h2 className="text-3xl text-center ">
                   Prises de vue par drone
                 </h2>{" "}
                 <span className="ml-12 text-3xl">
@@ -465,7 +473,7 @@ export const HeroSection = () => {
                 </span>
               </div>
 
-              <section className="mx-auto mb-12 w-2/3 justify-center text-center">
+              <section className="justify-center w-2/3 mx-auto mb-12 text-center">
                 <p className="mb-4">
                   Avec mon DJI Air 3, je capture des photos et vidéos aériennes
                   spectaculaires, et réalise des{" "}
@@ -484,26 +492,22 @@ export const HeroSection = () => {
                 </p>
               </section>
 
-              {/* Section de contenu visuel */}
-              <section className="mb-24 mt-24">
+              <section className="mt-24 mb-24">
                 <div className="flex flex-col gap-16 xl:flex-row">
-                  {/* Colonne gauche */}
                   <div className="flex flex-col items-center gap-8 xl:w-1/2">
-                    {/* Image */}
                     <div className="flex h-[400px] w-full items-center justify-center  ">
                       <img
                         src="/images/revermont.webp"
                         alt="visuel drone sur montagnes"
-                        className="h-full w-full rounded-3xl object-cover shadow-lg"
+                        className="object-cover w-full h-full shadow-lg rounded-3xl"
                       />
                     </div>
 
-                    {/* Vidéo YouTube */}
                     <div
                       className="relative w-full"
                       style={{
                         height: "400px",
-                      }} /* Fixe la hauteur en pixels ---*/
+                      }}
                     >
                       <iframe
                         // src="https://www.youtube.com/embed/Vcva5RqbjUA"
@@ -515,23 +519,22 @@ export const HeroSection = () => {
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
-                        className="absolute left-0 top-0 h-full w-full rounded-3xl shadow-lg"
+                        className="absolute top-0 left-0 w-full h-full shadow-lg rounded-3xl"
                       ></iframe>
                     </div>
                   </div>
 
-                  {/* Colonne droite */}
                   <div className="flex h-[830px] w-full items-center justify-center   xl:w-1/2">
                     <img
                       src="/images/drone.jpg"
                       alt="visuel drone sur montagnes"
-                      className="h-full w-full rounded-3xl object-cover shadow-lg"
+                      className="object-cover w-full h-full shadow-lg rounded-3xl"
                     />
                   </div>
                 </div>
               </section>
             </div>
-            <section className="mx-auto mb-12 w-2/3 justify-center text-center">
+            <section className="justify-center w-2/3 mx-auto mb-12 text-center">
               <p className="mb-4">
                 Si vous souhaitez ajouter une touche de dynamisme à votre site
                 web ou simplement immortaliser un moment unique, je suis à votre
@@ -552,19 +555,19 @@ export const HeroSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="mb-4 mt-4 rounded-lg bg-red-400 px-4 py-2 text-white transition hover:bg-red-700">
+                <button className="px-4 py-2 mt-4 mb-4 text-white transition bg-red-400 rounded-lg hover:bg-red-700">
                   En voir plus
                 </button>
               </a>
             </section>
-            <div className="mb-24 flex justify-center">
+            <div className="flex justify-center mb-24">
               <Button className="w-64" onClick={closeDroneModal}>
                 Fermer
               </Button>
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 };
