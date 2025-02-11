@@ -60,7 +60,7 @@ export const Footer = () => {
           {/* I’ll be happy to chat with you about a potential job or a freelance. */}
           Si vous préférez échanger de vive voix, n'hésitez pas à me contacter!
         </Typography>
-        <div className="flex items-center pb-4 text-base text-primary">
+        <div className="flex items-center pb-6 text-base text-primary">
           <AiFillPhone className="mr-2" /> <p> 06.34.47.66.69</p>
         </div>
         <Typography variant="body2">
@@ -68,6 +68,21 @@ export const Footer = () => {
           ou me retrouver sur:
         </Typography>
         <SocialNetworks socialNetworks={SOCIAL_NETWORKS} />
+        <div className="pt-6">
+          <Typography variant="body2">
+            {/* I’ll be happy to chat with you about a potential job or a freelance. */}
+            ou encore sur ma fiche Google My business
+          </Typography>
+        </div>
+        <div className="flex items-center pb-6 text-base text-primary">
+          <a
+            href="https://g.co/kgs/52nCtbk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Par ici!
+          </a>
+        </div>
 
         {/* pour ajouter une publication facebook!! */}
         {/* <iframe
