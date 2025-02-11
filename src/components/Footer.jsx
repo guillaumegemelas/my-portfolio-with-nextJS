@@ -71,7 +71,7 @@ export const Footer = () => {
         <div className="pt-6">
           <Typography variant="body2">
             {/* I’ll be happy to chat with you about a potential job or a freelance. */}
-            ou encore sur ma fiche Google My business :
+            ou encore sur ma fiche d’établissement Google :
           </Typography>
         </div>
         <div className="flex items-center pb-6 text-base text-primary">
