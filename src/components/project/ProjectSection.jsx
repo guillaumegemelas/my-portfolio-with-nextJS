@@ -88,7 +88,20 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet nathalie et cie--------------*/}
+        {/* ----projet clinicarmes--------------*/}
+        <Project
+          key="9"
+          icon={<IoIosBed />}
+          image="/images/clinic.png"
+          name="Clinic Armes"
+          homepageUrl="https://www.clinic-armes.fr"
+          description="Conception d’un site vitrine pour Clinic Armes, armurerie à Villars-les-Dombes, mettant en avant leur passion pour les équipements de qualité, leur expertise et leurs conseils, au service des particuliés et les professionnels"
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://clinic-armes.fr"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
+        {/* ----projet mailland--------------*/}
         <Project
           key="9"
           icon={<IoIosBed />}
