@@ -26,6 +26,7 @@ import { IoIosBed } from "react-icons/io";
 import { FaTree } from "react-icons/fa";
 import { MdOutlineAutoGraph } from "react-icons/md";
 import { TbMoodKid } from "react-icons/tb";
+import { GiSawedOffShotgun } from "react-icons/gi";
 //--------------
 
 export const ProjectSection = () => {
@@ -91,7 +92,7 @@ export const ProjectSection = () => {
         {/* ----projet clinicarmes--------------*/}
         <Project
           key="9"
-          icon={<IoIosBed />}
+          icon={<GiSawedOffShotgun />}
           image="/images/clinic.png"
           name="Clinic Armes"
           homepageUrl="https://www.clinic-armes.fr"
