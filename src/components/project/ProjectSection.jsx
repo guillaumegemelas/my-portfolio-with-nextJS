@@ -89,7 +89,7 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet clinicarmes---------*/}
+        {/* ----projet clinicarmes-------*/}
         <Project
           key="9"
           icon={<GiSawedOffShotgun />}
