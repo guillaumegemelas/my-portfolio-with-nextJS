@@ -102,7 +102,7 @@ export const ProjectSection = () => {
           url="https://clinic-armes.fr"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
-        {/* ----projet mailland-----------*/}
+        {/* ----projet mailland--------------*/}
         <Project
           key="9"
           icon={<IoIosBed />}
