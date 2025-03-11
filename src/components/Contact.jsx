@@ -92,12 +92,12 @@ export const Contact = () => {
   };
 
   return (
-    <div className="w-full pt-12 pb-12">
+    <div className="w-full pb-12 pt-12">
       <form
         onSubmit={handleSubmit}
         className="flex w-full flex-col gap-4 md:px-8"
       >
-        {/* Vos champs de formulaire ici */}
+        {/* Vos champs de formulaire ici--- */}
 
         <label
           className="block text-xs font-medium text-skin-secondary md:text-sm"
@@ -163,7 +163,7 @@ export const Contact = () => {
           required
         ></textarea>
 
-        <div className="pb-20px mt-4 mb-4 flex justify-center">
+        <div className="pb-20px mb-4 mt-4 flex justify-center">
           <ReCAPTCHA
             className="g-recaptcha"
             size="normal"
