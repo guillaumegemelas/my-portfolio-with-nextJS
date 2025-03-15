@@ -97,7 +97,7 @@ export const Contact = () => {
         onSubmit={handleSubmit}
         className="flex w-full flex-col gap-4 md:px-8"
       >
-        {/* Vos champs de formulaire ici------ */}
+        {/* Vos champs de formulaire ici--- */}
 
         <label
           className="block text-xs font-medium text-skin-secondary md:text-sm"
