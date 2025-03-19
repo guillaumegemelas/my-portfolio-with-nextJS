@@ -154,7 +154,7 @@ export const ProjectSection = () => {
           url="https://sou-des-ecoles-01370.fr/"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
-        {/* ----projet comp&vous--------------------*/}
+        {/* ----projet comp&vous-----------------*/}
         <Project
           key="11"
           icon={<MdOutlineAutoGraph />}
