@@ -167,7 +167,7 @@ export const ProjectSection = () => {
           url="https://competencesetvous.fr/"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
-        {/* ----projet kodama----------------*/}
+        {/* ----projet kodama--------------*/}
         <Project
           key="10"
           icon={<FaTree />}
