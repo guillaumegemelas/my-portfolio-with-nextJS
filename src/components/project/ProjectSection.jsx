@@ -180,7 +180,7 @@ export const ProjectSection = () => {
           url="https://guillaume-gemelas-dev.com/#Projects"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
-        {/* ----projet glc-com---------------------*/}
+        {/* ----projet glc-com------------------*/}
         <Project
           key="3"
           icon={<MdSportsHandball />}
