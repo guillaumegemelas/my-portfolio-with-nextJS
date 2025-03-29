@@ -27,6 +27,7 @@ import { FaTree } from "react-icons/fa";
 import { MdOutlineAutoGraph } from "react-icons/md";
 import { TbMoodKid } from "react-icons/tb";
 import { GiSawedOffShotgun } from "react-icons/gi";
+import { MdFactory } from "react-icons/md";
 //--------------
 
 export const ProjectSection = () => {
@@ -91,7 +92,20 @@ export const ProjectSection = () => {
       <div className="flex flex-wrap justify-center gap-8">
         {/* ----projet clinicarmes-------*/}
         <Project
-          key="9"
+          key="15"
+          icon={<MdFactory />}
+          image="/images/formprotech3.png"
+          name="Formprotech"
+          homepageUrl="https://formprotech.fr"
+          description="Conception d’un site vitrine pour Formprotech,organisme spécialisé dans la formation professionnelle, alliant expertise technique, développement technico-commercial et accompagnement humain pour renforcer les compétences des entreprises et de leurs collaborateurs."
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://formprotech.fr"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
+        {/* ----projet clinicarmes-------*/}
+        <Project
+          key="14"
           icon={<GiSawedOffShotgun />}
           image="/images/clinic.png"
           name="Clinic Armes"
@@ -154,7 +168,7 @@ export const ProjectSection = () => {
           url="https://sou-des-ecoles-01370.fr/"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
-        {/* ----projet comp&vous--------------*/}
+        {/* ----projet comp&vous----------------*/}
         <Project
           key="11"
           icon={<MdOutlineAutoGraph />}
