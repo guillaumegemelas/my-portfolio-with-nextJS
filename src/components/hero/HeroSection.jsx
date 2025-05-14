@@ -138,7 +138,7 @@ export const HeroSection = () => {
           <div className="mt-24 flex w-full flex-col justify-center md:flex-row">
             <div className="flex w-full justify-center sm:mb-12 md:mb-0 md:mr-6 md:w-full lg:mr-16">
               <img
-                src="/images/logo6.png"
+                src="/images/logo6.webp"
                 alt="logo aindev"
                 className="w-64 rounded shadow-lg md:w-full "
               />

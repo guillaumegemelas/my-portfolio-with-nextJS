@@ -133,7 +133,7 @@ export const ProjectSection = () => {
         <Project
           key="1"
           icon={<MdOutlinePets />}
-          image="/images/nath.png"
+          image="/images/nath.webp"
           name="Nathalie & cie"
           homepageUrl="https://nathalie-et-cie.fr"
           description="Site web e-commerce développé pour l’entreprise Nathalie & Cie, intégrant une boutique en ligne avec un système avancé de gestion des produits et des commandes, et une interface utilisateur à la fois intuitive et moderne."
@@ -146,7 +146,7 @@ export const ProjectSection = () => {
         <Project
           key="2"
           icon={<RiTeamFill />}
-          image="/images/essain4.png"
+          image="/images/essain4.webp"
           name="ESS'Ain"
           homepageUrl="https://essain.com"
           description="Création d’un site web pour la Coopérative ESS’Ain, intégrant une fonctionnalité de connexion sécurisée pour les utilisateurs et un annuaire des membres, visant à améliorer la communication et la gestion des informations au sein de la coopérative."
@@ -159,7 +159,7 @@ export const ProjectSection = () => {
         <Project
           key="12"
           icon={<TbMoodKid />}
-          image="/images/sou.png"
+          image="/images/sou.webp"
           name="Sou des écoles"
           homepageUrl="https://sou-des-ecoles-01370.fr"
           description="Création d’un site pour le Sou des Écoles de Saint-Étienne-du-Bois, conçu pour refléter l’engagement solidaire de l’association. Ce site convivial et informatif permet de présenter les actions, événements et missions du Sou, tout en encourageant la participation des parents et bénévoles au service des enfants de l’école publique."
@@ -172,7 +172,7 @@ export const ProjectSection = () => {
         <Project
           key="11"
           icon={<MdOutlineAutoGraph />}
-          image="/images/comp3.png"
+          image="/images/comp3.webp"
           name="Compétences & vous"
           homepageUrl="https://competencesetvous.fr"
           description="Sécurisation et optimisation des performances du site, optimisation du SEO pour améliorer sa visibilité sur les moteurs de recherche. Mise en place de stratégies d’optimisation on-page et off-page pour un référencement durable"
@@ -185,7 +185,7 @@ export const ProjectSection = () => {
         <Project
           key="10"
           icon={<FaTree />}
-          image="/images/kodama.png"
+          image="/images/kodama.webp"
           name="Kodama"
           // homepageUrl="https://guillaume-gemelas-dev.com/#Projects"
           description="Développement d’une application web sur mesure intégrant une gestion avancée de marqueurs sur une carte interactive (Leaflet), avec suivi des projets clients, interface utilisateur optimisée en React, et gestion des données via une base MongoDB"
@@ -211,7 +211,7 @@ export const ProjectSection = () => {
         <Project
           key="4"
           icon={<SiGooglepodcasts />}
-          image="/images/glc3.png"
+          image="/images/glc3.webp"
           name="Glc Communication"
           homepageUrl="https://glc-com.com"
           description="Site web vitrine développé pour l’entreprise Glc Communication avec WordPress, intégrant un blog, des podcasts, et divers contenus multimédias. Ce site est conçu pour renforcer la présence en ligne de l’entreprise et offrir une plateforme interactive pour partager des actualités et des informations."
@@ -224,7 +224,7 @@ export const ProjectSection = () => {
         <Project
           key="5"
           icon={<BsEyeglasses />}
-          image="/images/essilo.png"
+          image="/images/essilo.webp"
           name="Essilor"
           homepageUrl="https://www.meyecustom.com"
           description="Développement d’une webapp interactive pour Essilor, permettant aux utilisateurs de personnaliser des lunettes de vue et solaires en magasin. Cette interface de personnalisation offre une expérience utilisateur fluide, avec des options variées pour ajuster le style, la couleur, et les fonctionnalités des lunettes."
