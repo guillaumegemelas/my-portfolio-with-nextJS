@@ -63,8 +63,8 @@ export const HeroSection = () => {
         {/* Hero - Exercise*/}
         <div className="flex flex-col gap-4 md:relative md:mr-32">
           {/* Hero - Exercise*/}
-          <h1 className="text-6xl dark:drop-shadow-[0_0px_20px_rgba(0,0,0,1)] md:text-6xl">
-            {/* I'm{" "} */}
+          {/* <h1 className="text-6xl dark:drop-shadow-[0_0px_20px_rgba(0,0,0,1)] md:text-6xl"> */}
+          <h1 className="text-3xl dark:drop-shadow-[0_0px_20px_rgba(0,0,0,1)] sm:text-4xl md:text-6xl">
             Je suis{" "}
             <span className="font-extrabold text-primary md:bg-gradient-to-r md:from-primary md:to-secondary md:bg-clip-text md:text-transparent">
               Guillaume Gemelas
