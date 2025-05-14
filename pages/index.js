@@ -58,6 +58,14 @@ const Home = () => {
           }}
         /> */}
 
+        {/* 🧠 Préchargement image de profil pour LCP */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/photo_profil.webp"
+          fetchpriority="high"
+        />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
