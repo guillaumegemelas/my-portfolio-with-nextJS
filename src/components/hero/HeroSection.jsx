@@ -66,10 +66,12 @@ export const HeroSection = () => {
           <h1 className="text-6xl dark:drop-shadow-[0_0px_20px_rgba(0,0,0,1)] md:text-6xl">
             {/* I'm{" "} */}
             Je suis{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-extrabold text-transparent">
-              {/* {FULL_NAME} */}
+            <span className="font-extrabold text-primary md:bg-gradient-to-r md:from-primary md:to-secondary md:bg-clip-text md:text-transparent">
               Guillaume Gemelas
             </span>
+            {/* <span className="font-extrabold text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+              Guillaume Gemelas
+            </span> */}
           </h1>
           <br />
           <br />
