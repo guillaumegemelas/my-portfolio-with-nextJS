@@ -43,10 +43,10 @@ const Home = () => {
         /> */}
 
         {/* Google tag (gtag.js) */}
-        <script
+        {/* <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-QQETYWE3PV"
-        ></script>
+        ></script> */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
