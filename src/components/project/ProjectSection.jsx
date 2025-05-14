@@ -107,7 +107,7 @@ export const ProjectSection = () => {
         <Project
           key="14"
           icon={<GiSawedOffShotgun />}
-          image="/images/clinic.png"
+          image="/images/clinic.webp"
           name="Clinic Armes"
           homepageUrl="https://www.clinic-armes.fr"
           description="Conception d’un site vitrine pour Clinic Armes, armurerie à Villars-les-Dombes, mettant en avant leur passion pour les équipements de qualité, leur expertise et leurs conseils, au service des particuliés et les professionnels"

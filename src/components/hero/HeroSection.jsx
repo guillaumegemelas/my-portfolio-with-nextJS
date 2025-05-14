@@ -55,7 +55,7 @@ export const HeroSection = () => {
           width={300}
           height={300}
           // src="/images/avatar.jpg"
-          src="/images/photo_profil.jpg"
+          src="/images/photo_profil.webp"
           alt="photo de guillaume gemelas, développeur web freelance"
           className="right-[-42px] top-[-16px] rounded-full shadow-lg md:absolute"
           //md:absolute l'image passe en dessous du texte
