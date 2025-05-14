@@ -46,7 +46,7 @@ const Home = () => {
         {/* <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-QQETYWE3PV"
-        ></script> */}
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -56,7 +56,7 @@ const Home = () => {
               gtag('config', 'G-QQETYWE3PV');
             `,
           }}
-        />
+        /> */}
 
         <script
           type="application/ld+json"
