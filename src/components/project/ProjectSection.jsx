@@ -90,7 +90,7 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet formprotech--------------*/}
+        {/* ----projet formprotech------------*/}
         <Project
           key="15"
           icon={<MdFactory />}
