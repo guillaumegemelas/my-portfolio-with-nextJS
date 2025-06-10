@@ -97,7 +97,7 @@ export const ProjectSection = () => {
           image="/images/formprotech3.png"
           name="Formprotech"
           homepageUrl="https://formprotech.fr"
-          description="Conception '' d’un site vitrine pour Formprotech, organisme spécialisé dans la formation professionnelle, alliant expertise technique, développement technico-commercial et accompagnement humain pour renforcer les compétences des entreprises et de leurs collaborateurs."
+          description="Conception d’un site vitrine pour Formprotech, organisme spécialisé dans la formation professionnelle, alliant expertise technique, développement technico-commercial et accompagnement humain pour renforcer les compétences des entreprises et de leurs collaborateurs."
           handleClick={handleClick}
           // showAlertOnClick={true} // Activer l'ale
           url="https://formprotech.fr"
