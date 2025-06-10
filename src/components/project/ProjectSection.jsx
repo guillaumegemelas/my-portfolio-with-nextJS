@@ -103,7 +103,7 @@ export const ProjectSection = () => {
           url="https://formprotech.fr"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
-        {/* ----projet clinicarmes--------*/}
+        {/* ----projet clinicarmes-----------*/}
         <Project
           key="14"
           icon={<GiSawedOffShotgun />}
