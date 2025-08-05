@@ -28,6 +28,7 @@ import { MdOutlineAutoGraph } from "react-icons/md";
 import { TbMoodKid } from "react-icons/tb";
 import { GiSawedOffShotgun } from "react-icons/gi";
 import { MdFactory } from "react-icons/md";
+import { TbBackhoe } from "react-icons/tb";
 //--------------
 
 export const ProjectSection = () => {
@@ -90,6 +91,19 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
+        {/* ----projet accessproTP----------*/}
+        <Project
+          key="16"
+          icon={<TbBackhoe />}
+          image="/images/access.webp"
+          name="AccessPro'TP"
+          homepageUrl="https://accessprotp.fr"
+          description="Conception d’un site vitrine pour Access’Pro TP, spécialiste de la vente d'équipements pour les professionnels du TP, du bâtiment, de l’environnement, de l’industrie ou du paysage avec un accompagnement sur mesure et des marques européennes reconnues"
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://accessprotp.fr"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
         {/* ----projet formprotech----------*/}
         <Project
           key="15"
