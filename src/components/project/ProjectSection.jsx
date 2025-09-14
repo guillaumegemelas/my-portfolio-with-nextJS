@@ -104,7 +104,7 @@ export const ProjectSection = () => {
           url="https://accessprotp.fr"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
-        {/* ----projet formprotech-------------*/}
+        {/* ----projet formprotech----------------*/}
         <Project
           key="15"
           icon={<MdFactory />}
