@@ -91,7 +91,7 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet accessproTP----------------*/}
+        {/* ----projet accessproTP------------------*/}
         <Project
           key="16"
           icon={<TbBackhoe />}
