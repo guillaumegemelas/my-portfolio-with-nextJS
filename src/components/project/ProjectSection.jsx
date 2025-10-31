@@ -29,6 +29,7 @@ import { TbMoodKid } from "react-icons/tb";
 import { GiSawedOffShotgun } from "react-icons/gi";
 import { MdFactory } from "react-icons/md";
 import { TbBackhoe } from "react-icons/tb";
+import { GiSonicShoes } from "react-icons/gi";
 //--------------
 
 export const ProjectSection = () => {
@@ -91,6 +92,20 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
+        {/* ----projet mille et un pas-----------*/}
+        <Project
+          key="16"
+          icon={<GiSonicShoes />}
+          image="/images/mille.webp"
+          name="Mille et un pas"
+          homepageUrl="https://mille-et-un-pas.fr"
+          description="Conception d’un site vitrine pour Mille et un pas, magasin de chaussures à Pontarlier, offrant une large gamme de chaussures pour toute la famille, alliant confort, style et qualité, avec un service personnalisé pour répondre aux besoins de chaque client."
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://mille-et-un-pas.fr"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
+
         {/* ----projet accessproTP-----------*/}
         <Project
           key="16"
@@ -104,6 +119,7 @@ export const ProjectSection = () => {
           url="https://accessprotp.fr"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
+
         {/* ----projet formprotech------*/}
         <Project
           key="15"
