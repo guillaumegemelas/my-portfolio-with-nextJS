@@ -106,7 +106,7 @@ export const ProjectSection = () => {
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
 
-        {/* ----projet accessproTP-----------*/}
+        {/* ----projet accessproTP--------------*/}
         <Project
           key="16"
           icon={<TbBackhoe />}
