@@ -30,6 +30,7 @@ import { GiSawedOffShotgun } from "react-icons/gi";
 import { MdFactory } from "react-icons/md";
 import { TbBackhoe } from "react-icons/tb";
 import { GiSonicShoes } from "react-icons/gi";
+import { FaRecycle } from "react-icons/fa";
 //--------------
 
 export const ProjectSection = () => {
@@ -92,6 +93,19 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
+        {/* ----projet EGT Environnement-----------*/}
+        <Project
+          key="16"
+          icon={<FaRecycle />}
+          image="/images/egt.webp"
+          name="EGT Environnement"
+          homepageUrl="https://www.egt-environnement.fr"
+          description="Conception d’un site vitrine pour EGT Environnement, entreprise spécialisée dans la collecte, le tri et la gestion responsable des déchets, proposant également la location de bennes et un accompagnement personnalisé pour les professionnels et collectivités."
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://www.egt-environnement.fr"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
         {/* ----projet mille et un pas-----------*/}
         <Project
           key="16"
