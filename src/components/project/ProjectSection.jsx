@@ -106,7 +106,7 @@ export const ProjectSection = () => {
           url="https://www.egt-environnement.fr"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
-        {/* ----projet mille et un pas-----------*/}
+        {/* ----projet mille et un pas---------*/}
         <Project
           key="16"
           icon={<GiSonicShoes />}
