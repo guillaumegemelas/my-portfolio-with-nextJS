@@ -123,7 +123,7 @@ const Home = () => {
         <HeroSection />
         <Skills />
         <ProjectSection />
-        <Curriculum />
+        {/* <Curriculum /> */}
         <DynamicMemorySection />
         {/* <DrawSection /> */}
         <CommentSection />
