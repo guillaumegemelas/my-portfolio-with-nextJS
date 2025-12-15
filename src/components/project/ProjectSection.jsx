@@ -251,7 +251,7 @@ export const ProjectSection = () => {
           url="https://epgv01.fr"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
-        {/* ----projet glc-com--------------------*/}
+        {/* ----projet glc-com------------------*/}
         <Project
           key="4"
           icon={<SiGooglepodcasts />}
