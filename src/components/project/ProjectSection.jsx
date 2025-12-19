@@ -264,7 +264,7 @@ export const ProjectSection = () => {
           url="https://glc-com.com"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
-        {/* ----projet essilor------------------*/}
+        {/* ----projet essilor----------------------*/}
         <Project
           key="5"
           icon={<BsEyeglasses />}
