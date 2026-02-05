@@ -93,7 +93,7 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet EGT Environnement---------*/}
+        {/* ----projet EGT Environnement-------*/}
         <Project
           key="16"
           icon={<FaRecycle />}
