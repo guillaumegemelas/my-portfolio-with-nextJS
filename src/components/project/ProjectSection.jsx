@@ -31,6 +31,7 @@ import { MdFactory } from "react-icons/md";
 import { TbBackhoe } from "react-icons/tb";
 import { GiSonicShoes } from "react-icons/gi";
 import { FaRecycle } from "react-icons/fa";
+import { GiBulldozer } from "react-icons/gi";
 //--------------
 
 export const ProjectSection = () => {
@@ -93,6 +94,20 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
+        {/* ----projet Access Machines-----------*/}
+        <Project
+          key="16"
+          icon={<GiBulldozer />}
+          image="/images/accessmachines.webp"
+          name="Access Machines"
+          homepageUrl="https://accesspromachines.fr"
+          description="Conception d’un site vitrine pour Access Machines, spécialiste de la vente de machines TP pour les professionnels du bâtiment, des travaux publics et de l’industrie, avec un accompagnement sur mesure et des conseils personnalisés."
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://accesspromachines.fr/"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
+
         {/* ----projet EGT Environnement-----------*/}
         <Project
           key="16"
@@ -302,8 +317,8 @@ export const ProjectSection = () => {
         {/* <Project {...projects[0]} /> */}
       </div>
       {showAlert && (
-        <div className="fixed top-0 left-0 z-10 flex items-center justify-center w-full h-full">
-          <div className="absolute top-0 left-0 right-0 p-2 text-center text-white transition-opacity duration-500 bg-red-500 opacity-100">
+        <div className="fixed left-0 top-0 z-10 flex h-full w-full items-center justify-center">
+          <div className="absolute left-0 right-0 top-0 bg-red-500 p-2 text-center text-white opacity-100 transition-opacity duration-500">
             Le code source ne peut pas être visualisé.
           </div>
         </div>

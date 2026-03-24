@@ -37,14 +37,24 @@ export const Project = ({
         />
       </div>
 
-      <a onClick={handleNameClick} href={url}>
+      <a
+        onClick={handleNameClick}
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Typography className="font-bold" variant="h3">
           {name}
         </Typography>
       </a>
       <Typography variant="body2">{description}</Typography>
       {homepageUrl ? (
-        <a className="text-primary underline" href={homepageUrl}>
+        <a
+          className="text-primary underline"
+          href={homepageUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {homepageUrl.replace("https://", "")}
         </a>
       ) : null}
