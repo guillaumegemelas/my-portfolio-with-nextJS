@@ -32,6 +32,7 @@ import { TbBackhoe } from "react-icons/tb";
 import { GiSonicShoes } from "react-icons/gi";
 import { FaRecycle } from "react-icons/fa";
 import { GiBulldozer } from "react-icons/gi";
+import { PiPlantFill } from "react-icons/pi";
 //--------------
 
 export const ProjectSection = () => {
@@ -96,7 +97,20 @@ export const ProjectSection = () => {
       <div className="flex flex-wrap justify-center gap-8">
         {/* ----projet Access Machines-----------*/}
         <Project
-          key="16"
+          key="20"
+          icon={<PiPlantFill />}
+          image="/images/soupe2.webp"
+          name="Soupe Horticulture"
+          homepageUrl="https://soupe-horticulture.fr"
+          description="Conception d’un site vitrine pour la SCEA Soupe horticulture, producteur horticole familial spécialisé dans la production de plantes, fleurs et légumes, avec la mise en valeur de ses deux sites de production, de ses jardineries et de son savoir-faire local."
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://soupe-horticulture.fr"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
+        {/* ----projet Access Machines-----------*/}
+        <Project
+          key="19"
           icon={<GiBulldozer />}
           image="/images/accessmachines.webp"
           name="Access Machines"
@@ -110,7 +124,7 @@ export const ProjectSection = () => {
 
         {/* ----projet EGT Environnement-----------*/}
         <Project
-          key="16"
+          key="18"
           icon={<FaRecycle />}
           image="/images/egt.webp"
           name="EGT Environnement"
@@ -123,7 +137,7 @@ export const ProjectSection = () => {
         />
         {/* ----projet mille et un pas---------*/}
         <Project
-          key="16"
+          key="17"
           icon={<GiSonicShoes />}
           image="/images/mille.webp"
           name="Mille et un pas"
