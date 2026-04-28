@@ -33,6 +33,7 @@ import { GiSonicShoes } from "react-icons/gi";
 import { FaRecycle } from "react-icons/fa";
 import { GiBulldozer } from "react-icons/gi";
 import { PiPlantFill } from "react-icons/pi";
+import { FaFileMedicalAlt } from "react-icons/fa";
 //--------------
 
 export const ProjectSection = () => {
@@ -95,7 +96,20 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet Access Machines-----------*/}
+        {/* ----projet MCL gestion-----------*/}
+        <Project
+          key="21"
+          icon={<FaFileMedicalAlt />}
+          image="/images/mcl.webp"
+          name="MCL Gestion"
+          homepageUrl="https://mclgestion.fr/"
+          description="Conception d’un site vitrine pour MCL Gestion, cabinet spécialisé en DAF externalisée et accompagnement des PME, avec la mise en valeur de son expertise en gestion financière, de ses solutions sur mesure et de son accompagnement de proximité auprès des entreprises."
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://mclgestion.fr/"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
+        {/* ----projet Soupe horticulture-----------*/}
         <Project
           key="20"
           icon={<PiPlantFill />}
