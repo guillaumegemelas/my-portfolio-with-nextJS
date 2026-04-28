@@ -102,11 +102,11 @@ export const ProjectSection = () => {
           icon={<FaFileMedicalAlt />}
           image="/images/mcl.webp"
           name="MCL Gestion"
-          homepageUrl="https://mclgestion.fr/"
+          homepageUrl="https://mclgestion.fr"
           description="Conception d’un site vitrine pour MCL Gestion, cabinet spécialisé en DAF externalisée et accompagnement des PME, avec la mise en valeur de son expertise en gestion financière, de ses solutions sur mesure et de son accompagnement de proximité auprès des entreprises."
           handleClick={handleClick}
           // showAlertOnClick={true} // Activer l'ale
-          url="https://mclgestion.fr/"
+          url="https://mclgestion.fr"
           //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
         />
         {/* ----projet Soupe horticulture-----------*/}
