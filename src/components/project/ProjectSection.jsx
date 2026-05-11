@@ -96,7 +96,7 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
-        {/* ----projet MCL gestion-----------*/}
+        {/* ----projet MCL gestion---------*/}
         <Project
           key="21"
           icon={<FaFileMedicalAlt />}
