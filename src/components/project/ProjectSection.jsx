@@ -34,6 +34,7 @@ import { FaRecycle } from "react-icons/fa";
 import { GiBulldozer } from "react-icons/gi";
 import { PiPlantFill } from "react-icons/pi";
 import { FaFileMedicalAlt } from "react-icons/fa";
+import { TbWood } from "react-icons/tb";
 //--------------
 
 export const ProjectSection = () => {
@@ -96,6 +97,19 @@ export const ProjectSection = () => {
       }
     >
       <div className="flex flex-wrap justify-center gap-8">
+        {/* ----projet Tournbois Creations-----------*/}
+        <Project
+          key="22"
+          icon={<TbWood />}
+          image="/images/tourn.webp"
+          name="Tour'bois Créations"
+          homepageUrl="https://tournbois-creations.fr"
+          description="Conception d’un site e-commerce pour Tournbois Création, entreprise spécialisée dans tournerie sur bois, visant à digitaliser son offre. Le projet met en avant l'authenticité et la qualité du savoir-faire tout en offrant une expérience d'achat fluide pour les visiteurs."
+          handleClick={handleClick}
+          // showAlertOnClick={true} // Activer l'ale
+          url="https://tournbois-creations.fr"
+          //modif de l'uril (avant pas d'url, car sinon SEO pas ortpimisé, lien pas suivi)
+        />
         {/* ----projet MCL gestion-----------*/}
         <Project
           key="21"
